@@ -45,15 +45,116 @@
       <div class="row-fluid">
          <div class="span3 bs-docs-sidebar" id="navparent">
             <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
-               <li><a href="#CSE417"> CSE417: Data mining and Data warehouse</a></li>
-               <li><a href="#CSE417">CSE424: Neural Network</a></li>
+               <li><a href="#CSE317">CSE317: Numerical Methods</a></li>
+               <li><a href="#CSE417">CSE417: Data mining and Data warehouse</a></li>
+               <li><a href="#CSE421">CSE421: Machine Learning</a></li>
+               <li><a href="#CSE424">CSE424: Neural Network</a></li>   
+               <li><a href="#CSE425">CSE421: Artificial Intelligence</a></li>
+
             </ul>
          </div>
 
 
          <div class="span8 offset1">
 
+            <section id="CSE317">
+               <div class="page-header">
+                  <h3><a href="">CSE317: Numerical Methods</a></h3>
+                  <hr>
+                  <b>Course Objective</b>
+                  <p>The objective of this course is to introduce the student computational methods required by engineers, mathematicians, physicists and economists to explore complex systems. Mathematical models developed to explore complex systems can be rarely “solvable” algebraically and hence computational methods have been developed. This course introduces such methods that range from techniques for system of linear equations, nonlinear equations, approximation of functions, interpolation, clustering, least square data fitting and classification, differentiation and integration. More emphasis will be put on applied linear algebra topics which are prerequisite for Artificial Intelligence, Machine Learning, and other advanced courses. We will make use of Matlab programming to implement and analyze the methods. 
 
+                  </p>
+                  <p><b>Course Information:</b> <a href="https://docs.google.com/document/d/1x2mq2jyS_rgHAzMAFnG7QGxouPmJHUeT">Syllabus</a></p>
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th>Topics</th>
+                           <th>Readings</th>
+                           <th># of lectures</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td colspan="3">Approximation errors and approximating single variable functions</td>
+                        </tr>
+                        <tr>
+                           <td>Floating point number system and error in number representation, review of derivatives, Taylor Series, finding optima of single variable functions</td>
+                           <td>Ch 3, 4 NME</td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>Finding roots of single variable functions – Bisection, Secant and Newton-Raphson Method</td>
+                           <td>Ch 5, 6 NME</td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">Vectors and Matrices</td>
+                        </tr>
+                        <tr>
+                           <td>Vectors - review of vector notation, vector operations, linear and affine multivariable functions, complex vectors, complexity of vector computations, <br>applications: vector representation of data (e.g., images, documents, timeseries, features), vector representation of linear and affine functions (e.g., regression, Linear (Taylor) approximation of multivariable function functions)</td>
+                           <td>Ch 1,2 VMLS</td>
+                           <td>2</td>
+                        </tr>
+                        <tr>
+                           <td>Norms and distances - Euclidean norm and distances, properties (Cauchy-Schwarz and triangle inequalities, Pythagorean theorem), statistical measurements of data: average, rms, standard deviation, and angle between vectors and correlation, covariance; representation of hyperplanes, <br>application: single variable linear regression, k-means clustering</td>
+                           <td>Ch 3,4 VMLS</td>
+                           <td>2</td>
+                        </tr>
+                        <tr>
+                           <td>Direct Methods for Solving System of Linear Equations</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Solving system of linear equations using LU decomposition,&nbsp;&nbsp;application: Polynomial interpolation and Vandermonde matrix, applications of solving system of linear equations<br></td>
+                           <td>Ch 8 VMLS</td>
+                           <td>2</td>
+                        </tr>
+                        <tr>
+                           <td>Matrix Inverses: Left and right inverses, solving system of linear equations using matrix inverses, Gram matrix and Pseudo-inverse</td>
+                           <td>Ch 5, 11 VMLS</td>
+                           <td>2</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">Orthogonality and Least Square Methods</td>
+                        </tr>
+                        <tr>
+                           <td>Basis, orthogonality and inner products: basis and change of basis, Orthogonal basis, Gram-Schmidt, modified-Gram Schmidt algorithms, QR decomposition of matrices, *Householder reflections, <br>application: solving system of linear equations using QR factorization, *lower dimensional data representation</td>
+                           <td>Ch 5, 10, 11 VMLS</td>
+                           <td>2</td>
+                        </tr>
+                        <tr>
+                           <td>Linear least-Squares: solution to over-determined systems, normal equation and pseudo inverse of a matrix, computing pseudo inverse using QR and Cholesky factorization, solving least squares using matrix-vector derivates, <br>application: data fitting and least-square regression, feature engineering, Least-square classification, regularized least square data fitting, *least square function approximation</td>
+                           <td>Ch 12-14 VMLS; Ch 17 NME</td>
+                           <td>3</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">*Interpolation</td>
+                        </tr>
+                        <tr>
+                           <td>Interpolation using monomial and Lagrange bases will be discussed in Linear equation lecture. *Interpolation using other basis functions: Newton, Legendre, Chebyshev bases, Hermite interpolation, cubic spline interpolation</td>
+                           <td>Ch 18 NME</td>
+                           <td>2</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">Numerical Differentiation and Integration</td>
+                        </tr>
+                        <tr>
+                           <td>Finite divided difference approximation of derivatives, Trapezoidal rule, Simpson’s rule</td>
+                           <td>Ch 22, 23 NME</td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>Problem Condition, Algorithm Stability</td>
+                           <td>Ch 6, 7 (notes)</td>
+                           <td>2</td>
+                        </tr>
+                     </tbody>
+                     </table>
+                 
+               </div>
+            </section> 
             <section id="CSE417">
                <div class="page-header">
                   <h3><a href="">CSE417: Data mining and Data warehouse</a></h3>
@@ -171,9 +272,81 @@
                      </tbody>
                   </table>
                </div>
-            </section>   
+            </section> 
 
-
+            <section id="CSE421">
+               <div class="page-header">
+                  <h3><a href="">CEN/CSE 421: Machine Learning</a></h3>
+                  <hr>
+                  <b>Course Objective</b>
+                  <p> We have entered the era of big data. This deluge of data calls for automated methods of data analysis, which is what machine learning or pattern recognition provides. 
+                     Machine learning as a set of methods that can automatically detect patterns in data, and then use the uncovered patterns to predict future data, or to perform other kinds
+                     of decision making under uncertainty (such as planning how to collect more data!). This introductory pattern recognition/machine learning course will give an overview of
+                     many popular models and algorithms used in modern machine learning - both statistical and non-statistical. The course will give the student the basic ideas and intuition behind
+                     these methods, as well as a more formal understanding of how and why they work. Students will have an opportunity to experiment with machine learning techniques and apply them 
+                     on real life problems.
+                  </p>
+                  <p><b>Course Information:</b> <a href="https://docs.google.com/document/d/1x_YDDx4j-2IRObUaYlTI3zLyy1usrJ9Z">Syllabus</a></p>
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                          <th># of Lectures</th>
+                          <th>Topics</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Machine Learning/Pattern Recognition basics:<br> Supervised and Unsupervised Learning - Classification, Clustering and Regression, Parametric and Non-parametric Models, Curse of Dimensionality, Over-fitting, and Model Selection, Performance Measures</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Data:&nbsp;&nbsp;Attribute types, Basic Statistical description of Data, Review of probability theory</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Bayesian Decision Theory: Likelihood Ratio Test, Bayes Risk; Bayes, ML and MAP Criteria, Naive Bayes classifier</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Normal Variables and its Discriminant Analysis</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Parametric Density Estimation: MLE, Bayesian Density Estimation</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Nonparametric Density Estimation: Kernel Density Estimators and Nearest Neighbor Method</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Regression: Linear Regression Analysis and Bayesian Linear Regression</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Decision Trees and Random Forests, Ensemble Methods: Bagging and Boosting</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Feature Selection and Extraction, Dimensionality Reduction : PCA and SVD</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Linear Models for Classification: Fisher's Linear Discriminant, Support Vector Machines</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Introduction to Graphical Models: Bayesian Networks, Exact and Approximate Inference Methods</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>*Introduction to Reinforcement Learning: Policy gradient, Q-learning</td>
+                        </tr>
+                      </tbody>
+                      </table>
+               </div>
+            </section>  
 
             <section id="CSE424">
                <div class="page-header">
@@ -279,7 +452,78 @@
                </div>
             </section>   
 
+            <section id="CSE425">
+               <div class="page-header">
+                  <h3><a href="">CSE 425/525: Artificial Intellingence</a></h3>
+                  <hr>
+                  <b>Course Description</b>
+                  <p> An introduction to the basic principles, techniques, and applications of Artificial Intelligence. Coverage includes perception and learning, searching and logical inference and knowledge base.  Methods used in this course will have wide applications in different artificial intelligent systems such as expert system, robotics, computer vision, and natural language processing. Students will have practical experience in designing and implementing components of an intelligent system.
 
+
+                  </p>
+                  <p><b>Course Information:</b> <a href="https://docs.google.com/document/d/1ajzuv55ds7rBtLIRdCRkE5NnRTlw4BBs">Syllabus</a></p>
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th>Topics</th>
+                           <th>Descriptions</th>
+                           <th># of lectures</th>
+                           <th>CLO mapping</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Introduction</td>
+                           <td>Intelligent agents: a discussion on what Artificial Intelligence is about and different types of AI agents</td>
+                           <td>2</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">https://dataminingbook.info/resources/</a><br>Book: DMML, Chapter 1 and Chapter 2</td>
+                        </tr>
+                        <tr>
+                           <td>Search</td>
+                           <td>Optimization on a Discrete state-space - Uninformed and informed search methods – BFS, DFS, IDS, A*, and IDA* search methods</td>
+                           <td>3</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">https://dataminingbook.info/resources/</a><br>Book: DMML, Chapter 1 and Chapter 2</td>
+                        </tr>
+                        <tr>
+                           <td>Constraint Satisfaction Search</td>
+                           <td>Constraint Satisfaction Problems (CSP), Arc consistency algorithm</td>
+                           <td>3</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">http://www.mmds.org/#book</a><br>Book: MMDS, Chapter 6</td>
+                        </tr>
+                        <tr>
+                           <td>Local search</td>
+                           <td>Hill Climbing, Simulated Annealing, Genetic algorithms, Swarm intelligence – Particle Swarms, Ant Colony Optimization</td>
+                           <td>3</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">http://www.mmds.org/#book</a><br>Book: MMDS, Chapter 4</td>
+                        </tr>
+                        <tr>
+                           <td>Logical Reasoning</td>
+                           <td>Propositional logic, Reasoning - Forward and Backward Chaining, *First order Logic and Reasoning</td>
+                           <td>2</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">http://www.mmds.org/#book</a><br>Book: MMDS, Chapter 5</td>
+                        </tr>
+                        <tr>
+                           <td>Optimization</td>
+                           <td>Review of Linear Algebra and Calculus for Multivalued Functions. Optimization of multivariable functions, Directional Derivatives, Gradient, Hessian, Gradient-based Optimization, Numerical Differentiation</td>
+                           <td>3</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">http://www.mmds.org/#book/&gt;Book: MMDS, Chapter 9</a></td>
+                        </tr>
+                        <tr>
+                           <td>Machine Learning I</td>
+                           <td>Supervised learning, Regression, Classification methods - formulation of Linear Regression, Logistic regression, Linear classifiers</td>
+                           <td>3</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">http://www.mmds.org/#book</a><br>Book: MMDS, Chapter 9, 11</td>
+                        </tr>
+                        <tr>
+                           <td>Machine Learning II</td>
+                           <td>Neural Networks, Backpropagation, Regression and Multiclass Classification, Training of Neural Networks</td>
+                           <td>3</td>
+                           <td><a href="https://www.tablesgenerator.com/html_tables">http://www.mmds.org/#book</a><br>Book: MMDS, Chapter 9, 11</td>
+                        </tr>
+                     </tbody>
+                     </table>
+               </div>
+            </section>   
 
 
 
