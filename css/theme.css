@@ -329,6 +329,57 @@ body > .navbar {
   }
 }
 
+/* carousel images */
+/* 
+  TODO: replace carousel with a single recent image
+  of researchers
+*/
+.carousel-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .carousel-caption > * {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .carousel-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .carousel-caption > * {
+    font-size: 1em;
+  }
+}
+
+/* hero text is better justified */
+.hero-text {
+  font-size: 1.2em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-text {
+    padding: 0 16px;
+  }
+}
+
 /* Change the docs' brand */
 
 body > .navbar .brand {
