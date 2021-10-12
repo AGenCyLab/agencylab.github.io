@@ -81,6 +81,13 @@ body > .navbar {
   }
 }
 
+/* fix text padding in mobile view */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
 /* responsive nav-bar with hamburger menu on mobile screens */
 
 #overview {
@@ -372,12 +379,6 @@ body > .navbar {
   font-size: 1.2em;
   text-align: justify;
   hyphens: auto;
-}
-
-@media screen and (max-width: 767px) {
-  .hero-text {
-    padding: 0 16px;
-  }
 }
 
 /* Change the docs' brand */
