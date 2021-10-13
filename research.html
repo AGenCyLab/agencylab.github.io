@@ -30,28 +30,35 @@
       <div class="row-fluid">
          <div class="span3 bs-docs-sidebar" id="navparent">
             <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
-               <li><a href="#nano"> Current Research Projects </a></li>
+               <li><a href="#current"> Current Research Projects </a></li>
                <li><a class="subhead" href="#har"> Human Activity Recognition </a></li>
-               <li><a class="subhead" href="#etraffic"> Traffic Modelling </a></li>
-               <li><a class="subhead" href="#bio-electro"> Bio-Electrochemical Activity </a></li>
-               <li><a class="subhead" href="#planets"> Habitable Planets</a></li>
-               <li><a class="subhead" href="#air-quality"> Air Quality Monitoring </a></li>
-               <li><a class="subhead" href="#gis"> Geospatial Data Analysis </a></li>
-               <li><a class="subhead" href="#cern"> CRN Data Analysis </a></li>
-               <li><a class="subhead" href="#bangla-corpus"> Bangla Corpus Creation </a></li>
-               <li><a class="subhead" href="#pill-detection"> Medical Pill Detection </a></li>
+               <li><a class="subhead" href="#etraffic"> Traffic Modeling using GCN </a></li>
+               <li><a class="subhead" href="#gis"> Semantic Segmentation of Satellite Images </a></li>
+               <li><a class="subhead" href="#hilsha"> Understanding the transcriptomic responses to environmental change in Hilsa </a></li>
+               <li><a class="subhead" href="#image-generation">  Image Generation using Variational Autoencoders and Energy Based Models </a></li>
+               <li><a class="subhead" href="#bio-network">  Predicting Associations between Biological Entities in Heterogeneous Biological Networks using Markov Random Fields and Graph Neural Networks </a></li>
+               <li><a class="subhead" href="#planets">  Identifying habitable planets from 21 cm telescope data using machine learning</a></li>
+               <li><a class="subhead" href="#cern"> Particle physics work - barryon </a></li>
+               <li><a class="subhead" href="#bnlp"> Bangla Natural Language Processing </a></li>
+               <li><a href="#past"> Past Research Projects </a></li>
                <li><a class="subhead" href="#disaster"> Disaster Severity Analysis </a></li>
+               <li><a class="subhead" href="#bangla-corpus"> Bangla Embedding Evaluation </a></li>
+               <li><a class="subhead" href="#pill-detection"> Medical Pill Detection </a></li>
+               <li><a class="subhead" href="#video-captioning"> Video Captioning </a></li>
+               <li><a class="subhead" href="#air-quality"> Air Quality Monitoring </a></li>
+               <li><a class="subhead" href="#bio-electro"> Bio-Electrochemical Activity </a></li>
                <li><a class="subhead" href="#retinal"> Retinal Image Analysis </a></li>
                <li><a class="subhead" href="#dermatology"> Dermatological Desease Diagnosis</a></li>
                <li><a class="subhead" href="#facial-expression"> Facial Expression Recognition </a></li>
                <li><a class="subhead" href="#nav-aid"> Navigational Aid for Visually Impaired </a></li>
                <li><a class="subhead" href="#leaf-shape"> Leaf Shape Identification </a></li>
                <li><a class="subhead" href="#iris-classification"> Iris Based Identification </a></li>
+
             </ul>
          </div>
          <div class="span8 offset1">
 
-            <section id="nano">
+            <section id="current">
                <div class="page-header">
                   <h3>Current Research Projects</h3>
                </div>
@@ -62,35 +69,176 @@
                         <h4>HUMAN ACTIVITY RECOGNITION</h4>
                         <br />
                         <img src="images/projects/activity.png" class="float-center" alt="HAR" />
-                        <p>This ICT Division and IUB funded project intends to create a wearable sensor that will be
-                           able to measure movement of different body parts. Once the device is ready, we intend to use
-                           this device on people seeking rehabilitation support at the CRP
-                           (https://www.crp-bangladesh.org/). Our research intention is to record movement data while
-                           the rehabilitation process occurs. During the same exercise we intend to collect visual data
-                           of the patient performing, using 3D sensors. Finally, we intend to use time series data
-                           analysis to learn the activity, measure (or grade) the performance of patient, level of
-                           improvement, identify the areas and time when patient is facing difficulty. This all should
-                           be done automatically or semi-automatically.</p>
-                     </section>
+                        <p>This ICT Division and IUB funded project intends to develop machine learning-based approaches which can be used for
+                           the recognition of various activities using data from wearable sensors. In addition, we intend to develop models
+                           which could be used by people seeking rehabilitation support at the CRP (https://www.crp-bangladesh.org/).
+                           Particularly, our research intention is to record movement data while the rehabilitation exercises are performed. In
+                           addition to sensor data, the plan includes collection of visual data of the patient performing exercises using 3D
+                           sensors. Finally, we intend to use time series data analysis to learn the activity, measure (or grade) the
+                           performance of patient, level of improvement, identify the areas and time when patient is facing difficulty. This all
+                           should be done automatically or semi-automatically.</p>
+                        </section>
                      <hr>
-
                      <section id="etraffic">
-                        <h4>E-TRAFFIC STATISTICAL MODELING OF TRAFFIC CONGESTION IN DHAKA</h4>
+                        <h4>Traffic Modeling using GCN</h4>
                         <br />
-                        <img src="images/projects/placeholder.png" class="float-center" alt="e-traffic" />
-                        <p>Statistical modeling of traffic congestion in Dhaka.
-                           This proposal aims to build a web-based/mobile-based framework that can estimate the severity
-                           of
-                           congestion in any intersection using the statistical traffic congestion model that is learned
-                           from past
-                           time-series data. If we can statistically learn the traffic congestion for a significant
-                           number of days, we
-                           can use the learned-model in addition to real-time traffic congestion (google maps) to
-                           suggest the user
-                           about possible congestion along his/her travel-route at certain time of a regular day.</p>
+                        <img src="images/projects/traffic-modelling.png" class="float-center" alt="e-traffic" />
+                        <p>Intelligent Transportation System (ITS) is being developed in many countries around the world and traffic forecasting lies in the heart of ITS. Traffic intensity is determined by the average speed of vehicles passing through observed road junctions in a traffic network at each time interval and the goal of traffic forecasting is to predict the traffic intensity in near future by observing the traffic data from the past and current time along with the physical traffic network. Research in deep learning models to forecast traffic intensities has gained great attention in recent years due to their capability to capture the complex spatio-temporal relationships within the traffic data. However, the task of traffic forecasting is challenging because there lies a complex spatio-temporal relationship in traffic data as the traffic within a busy city changes heavily in different locations throughout different periods in a day. As the traffic junctions and roads between them can be considered as a graph, we employ graph neural networks to model the traffic forecasting problem [1], [2] . Also, to capture the repetitive traffic pattern we consider the traffic data of the past few days instead of considering the traffic data of the past day only. With rigorous experiments we have produced better results for accurate traffic forecasting. 
+                        </p>
                      </section>
                      <hr>
-
+                     <section id="gis">
+                        <h4>GEOSPATIAL ANALYSIS AND SEGMENTATION OF REMOTE SENSING AND AERIAL IMAGERY USING DEEP
+                           LEARNING</h4>
+                        <br />
+                        <img src="images/projects/geo.png" class="float-center" alt="Geospatial Analysis" />
+                        <p>This IUB funded projects primary goal is to create a standard dataset for Dhaka City that
+                           contains satellite images with manual labeling of different type of buildups. Then based on
+                           this dataset, we intend to create a deep learning model that will bale to automatically
+                           classify the type of build up each location has, if a satellite image is provided. The build
+                           up that is under consideration is: buildings, roads, fields, greenery, waterbody. The system
+                           should also be able to provide visual and quantifiable representation of loss of greenery and
+                           water bodies due to urban expansion.</a> </p>
+                     </section>
+                     <hr>
+                     <section id="hilsha">
+                        <h4> Understanding the transcriptomic responses to environmental change in Hilsa</h4>
+                        <br />
+                        <img src="images/projects/hilsha.jpg" class="float-center" alt="Hilsha Habitat" />
+                        <p>In order to gain an in-depth understanding of the change in Hilsa migration, adaptation and reproduction emanating from climate change an integrated omics (genomics, transcriptomics, proteomics, metabolomics and metagenomics) approach has to be adopted. Use and development of different bioinformatics algorithms, tools, and scripts as well as high-performance computing facilities are required to analyze these omics datasets. Moreover, GIS and Remote sensing technologies are required to identify deep sea habitats and collect samples. Here at AGenCy lab IUB, we made connections with the group, led by Professor Haseena Khan, who were responsible for first sequencing of Hilsa. In this project, we will work in direct collaboration with this group. Professor Haseena Khan and her team will lead the sample collection, quality control and sequence data generation and analysis. We at IUB, in collaboration with Dr. A Baten from AgResearch, NZ and Professor M Shoyaib from IIT, DU will lead the computational analysis of the data extracted. In this project we aim to focus on the first phase of the integrated omics approach </p>
+                     </section>
+                     <hr>
+                     <section id="image-generation">
+                        <h4> Image Generation using Variational Autoencoders and Energy Based Models
+                        </h4>
+                        <br />
+                        <img src="images/projects/image-gen.png" class="float-center" alt="Image Genreation" />
+                        <p>Machine learning practitioners have long sought generative models that can accurately estimate the underlying data distribution and are able to produce diverse and semantically meaningful image samples. In this project, led by Dr. Amin Ahsan Ali, we take part in a similar quest. Our research directions include (but not limited to) developing improved variational inference techniques, coming up with more efficient methods to train energy based models and better traversing the latent space with Riemannian geometry and manifold assumption.
+                        </p>
+                     </section>
+                     <hr>
+                     <section id="bio-network">
+                        <h4>Predicting Associations between Biological Entities in Heterogeneous Biological Networks using Markov Random Fields and Graph Neural Networks</h4>
+                        <br />
+                        <img src="images/projects/bio-network.png" class="float-center" alt="Biological Networks" />
+                        <p>Heterogeneity is inherent in biological networks which consist of different entities as nodes (i.e., genes, diseases, drugs, function) and represent the relationships between these entities as edges. Predicting potential associations between biological entities currently has been an important problem in biomedical research. In general, a deep learning model uses the contextual information and structures of the heterogeneous networks to identify the associations. This project will utilize powerful tools, e.g., GNN & MRF, to develop a more accurate, explainable model for link predictions in heterogeneous networks. Dr. Azad Abul Kalam will collaborate with us on this project, led by Dr. Amin Ahsan Ali.
+                        </p>
+                     </section>
+                     <hr>
+                     <section id="planets">
+                        <h4>IDENTIFYING HABITABLE PLANETS FROM 21 CM TELESCOPE DATA USING MACHINE LEARNING</h4>
+                        <br />
+                        <img src="images/projects/astro.png" class="float-center" alt="Astro" />
+                        <p>Modern astronomers together with engineers have built large array of radio telescopes to look
+                           for faint signals generated billions of years back buried in big chaotic datasets, like a
+                           needle in a haystack. The contributors of noise in those signals range from humans to all
+                           celestial events happening in the path the signal is traveling. To be able to extract a
+                           signal successfully, they need to first simulate the complete pipeline of an observation so
+                           that each element within the pipeline can be understood and taken care of separately. It used
+                           to be dose based on some predefined models developed by astrophysicists, however in recent
+                           times the amount and scope of data accumulated by these telescopes have increased
+                           exponentially in amount. In this project we intend to develop or modify existing techniques
+                           of noise removal in radio telescope signals, specially 21-cm signals using various machine
+                           learning and deep learning techniques. This project is collaborated with <a
+                              href="https://www.sarao.ac.za"> South African Radio Astronomy Observatory</a> and <a
+                              href="http://www.lofar.org"> Low Frequency Array (LOFAR) telescope</a>. </p>
+                     </section>
+                     <hr>
+                     <section id="cern">
+                        <h4>Particle physics work (Barryon)</h4>
+                        <br />
+                        <img src="images/projects/particle.png" class="float-center" alt="CERN Data Analysis" />
+                        <p>Quantum chromodynamics (QCD) is the theory of the Strong interaction. In QCD, massive fermionic particles (quarks and antiquarks) interact via the exchange of massless bosons (gluons). The fundamental particles of QCD, quarks and gluons, carry colour charge and form colourless bound states at low energies, of which mesons and baryons are subjects of interest  From knowledge of the meson spectrum, we use Neural Networks and Gaussian Processes to predict the masses of baryons. These results compare favourably to the Constituent Quark Model.
+                        </p>
+                        <p>From here on, interesting research avenues can be pursued, such as the existence and predictions of the existence of glueballs, and the masses of pentaquarks and other exotic hadrons.
+                        </p>
+                     </section>
+                     <hr>
+                     <section id="bnlp">
+                        <h4>Bangla Natural Language Processing</h4>
+                        <br />
+                        <img src="images/projects/placeholder.png" class="float-center" alt="Bangla NLP" />
+                        <p>The goal of this project is to contribute to Bangla NLP tasks such as Speech to text conversion and automatic video captioning.  
+                        </p>
+                     </section>
+                     <hr>
+               
+                     
+                   
+                     <hr>
+                  </div>
+               </div>
+            </section>
+            <hr>
+            <section id="past">
+               <div class="page-header">
+                  <h3>Past Research Projects</h3>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <section id="disaster">
+                        <h4>A COMPARATIVE STUDY ON DISASTER DETECTION FROM SOCIAL MEDIA IMAGES USING DEEP LEARNING</h4>
+                        <br />
+                        <img src="images/projects/disaster-1.png" class="float-center" alt="Disaster" />
+                        <p>The primary objective of this ICT Division, Bangladesh project is to create an annotated
+                           database containing images or videos of different types of disasters. Once the database is
+                           created this data will be used to train a deep learning module that will be able to identify
+                           what disaster is happening given an image. We intend to also improve further finetune the
+                           classification to detect the degree of severity of a disaster. Intended final product is to
+                           build a system for the ministry of Disaster management and relief that will be able to inform
+                           appropriate authority the location, type and severity of a disaster.</p>
+                     </section>
+                     <hr>
+                     <section id="bangla-corpus">
+                        <h4>Bangla Embedding Evaluation</h4>
+                        <br />
+                        <img src="images/projects/Bangla-Word-Embading.jpg" class="float-center" alt="Bangla Corpus" />
+                        <p>This IUB funded project aims to create a Bangla language corpus. Currently there are 700,000
+                           articles are included in this corpus and increasing. Based on this corpus we are working
+                           improving bangle word embedding issue. This word embedding are vector representations of word
+                           that allow machines to learn semantic and syntactic meanings by performing computations on
+                           them. Two well known embedding models are CBOW and Skipgram. Different methods proposed to
+                           evaluate the quality of embedding are categorized into extrinsic and intrinsic evaluation
+                           methods. This research will focuses on intrinsic evaluation of the evaluation of the models
+                           on tasks, such as analogy prediction, semantic relatedness, synonym detection, antonym
+                           detection and concept categorization.
+                        </p>
+                     </section>
+                     <hr>
+                     <section id="pill-detection">
+                        <h4>MEDICAL PILL IMAGE AND VIDEO DATASET CREATION</h4>
+                        <br />
+                        <img src="images/projects/pill.png" class="float-center" alt="Pill Dataset" />
+                        <p>This ICT Division, Bangladesh funded project focuses on creating an annotated database of
+                           images and videos of all medicine available in Bangladesh. After the database is available a
+                           deep learning model will be used to detect pills in an images or video. Ones the pill is
+                           detected next task is to identify the pill using deep learning and computer vision
+                           techniques. Based on this understanding a mobile application will be created that will be
+                           able to confirm visually impared individuals or elderly patients with short-term memory loss
+                           what medicine they are taking.</p>
+                     </section>
+                     <hr>
+                     <section id="video-captioning">
+                        <h4>Video Captioning</h4>
+                        <br />
+                        <img src="images/projects/placeholder.png" class="float-center" alt="Video Captioning" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolorum optio sunt aliquid, veniam quae! Dignissimos commodi rerum nisi, dolorum quam alias dolor pariatur animi corrupti nobis, delectus adipisci similique.</p>
+                     </section>
+                     <hr>
+                     <section id="air-quality">
+                        <h4>REALTIME AIR QUALITY MONITORING AND POLLUTION MODELING FROM IOT DEVICE</h4>
+                        <br />
+                        <img src="images/other/iot.png" class="float-center" alt="Air-Quality" />
+                        <p>This ICT Division, Bangladesh, funded project intends to deploy 100+ inhouse IoT air quality
+                           monitoring devices in five different locations of dhaka city to record the level of PM2.5,
+                           CO, CO2, flammable gas. Based on the data collected an air pollution model will be developed
+                           for the Department of Environment of People's republic of Bangladesh Government. The
+                           objective of the system is to provide real time dynamic visualization of pollution trends and
+                           forecasting. Moreover, the model should also be able to identify sources and causes of
+                           pollution. This project is collaborated with <a href="http://www.doe.gov.bd/">Department of
+                              Environment Bangladesh government</a>. </p>
+                     </section>
+                     <hr>
                      <section id="bio-electro">
                         <h4>DECIPHERING OF BIO-ELECTROCHEMICAL ACTIVITIES GENERATED DURING ARGON PLASMA JET DEFORMATION
                            OF BACTERIA CELL MORPHOLOGY USING MACHINE LEARNING</h4>
@@ -114,106 +262,6 @@
                               Japan</a>. </p>
                      </section>
                      <hr>
-                     <section id="planets">
-                        <h4>IDENTIFYING HABITABLE PLANETS FROM 21 CM TELESCOPE DATA USING MACHINE LEARNING</h4>
-                        <br />
-                        <img src="images/projects/astro.png" class="float-center" alt="Astro" />
-                        <p>Modern astronomers together with engineers have built large array of radio telescopes to look
-                           for faint signals generated billions of years back buried in big chaotic datasets, like a
-                           needle in a haystack. The contributors of noise in those signals range from humans to all
-                           celestial events happening in the path the signal is traveling. To be able to extract a
-                           signal successfully, they need to first simulate the complete pipeline of an observation so
-                           that each element within the pipeline can be understood and taken care of separately. It used
-                           to be dose based on some predefined models developed by astrophysicists, however in recent
-                           times the amount and scope of data accumulated by these telescopes have increased
-                           exponentially in amount. In this project we intend to develop or modify existing techniques
-                           of noise removal in radio telescope signals, specially 21-cm signals using various machine
-                           learning and deep learning techniques. This project is collaborated with <a
-                              href="https://www.sarao.ac.za"> South African Radio Astronomy Observatory</a> and <a
-                              href="http://www.lofar.org"> Low Frequency Array (LOFAR) telescope</a>. </p>
-                     </section>
-                     <hr>
-                     <section id="air-quality">
-                        <h4>REALTIME AIR QUALITY MONITORING AND POLLUTION MODELING FROM IOT DEVICE</h4>
-                        <br />
-                        <img src="images/other/iot.png" class="float-center" alt="Air-Quality" />
-                        <p>This ICT Division, Bangladesh, funded project intends to deploy 100+ inhouse IoT air quality
-                           monitoring devices in five different locations of dhaka city to record the level of PM2.5,
-                           CO, CO2, flammable gas. Based on the data collected an air pollution model will be developed
-                           for the Department of Environment of People's republic of Bangladesh Government. The
-                           objective of the system is to provide real time dynamic visualization of pollution trends and
-                           forecasting. Moreover, the model should also be able to identify sources and causes of
-                           pollution. This project is collaborated with <a href="http://www.doe.gov.bd/">Department of
-                              Environment Bangladesh government</a>. </p>
-                     </section>
-                     <hr>
-                     <section id="gis">
-                        <h4>GEOSPATIAL ANALYSIS AND SEGMENTATION OF REMOTE SENSING AND AERIAL IMAGERY USING DEEP
-                           LEARNING</h4>
-                        <br />
-                        <img src="images/projects/geo.png" class="float-center" alt="Geospatial Analysis" />
-                        <p>This IUB funded projects primary goal is to create a standard dataset for Dhaka City that
-                           contains satellite images with manual labeling of different type of buildups. Then based on
-                           this dataset, we intend to create a deep learning model that will bale to automatically
-                           classify the type of build up each location has, if a satellite image is provided. The build
-                           up that is under consideration is: buildings, roads, fields, greenery, waterbody. The system
-                           should also be able to provide visual and quantifiable representation of loss of greenery and
-                           water bodies due to urban expansion.</a> </p>
-                     </section>
-                     <hr>
-                     <section id="cern">
-                        <h4>ANALYSIS OF CERN'S VERY LARGE PARTICLE DATA USING MACHINE LEARNING</h4>
-                        <br />
-                        <img src="images/projects/cern.png" class="float-center" alt="CERN Data Analysis" />
-                        <p>This is the first initiative from Bangladesh to join CERN to work on their very large
-                           particle data. This project is jointly funded by ICT Division, Bangladesh and IUB. The
-                           primary goal of this project is to establish communication and technical knowledge sharing
-                           regarding the petabyte level data acquired from the large hadron collider. We intend to use
-                           our expertise in machine learning and deep learning on this very large datasets. This project
-                           is collaborated with <a href="https://home.cern/">CERN</a>.</p>
-                     </section>
-                     <hr>
-                     <section id="bangla-corpus">
-                        <h4>BANGLA LANGUAGE CORPUS CREATION</h4>
-                        <br />
-                        <img src="images/projects/Bangla-Word-Embading.jpg" class="float-center" alt="Bangla Corpus" />
-                        <p>This IUB funded project aims to create a Bangla language corpus. Currently there are 700,000
-                           articles are included in this corpus and increasing. Based on this corpus we are working
-                           improving bangle word embedding issue. This word embedding are vector representations of word
-                           that allow machines to learn semantic and syntactic meanings by performing computations on
-                           them. Two well known embedding models are CBOW and Skipgram. Different methods proposed to
-                           evaluate the quality of embedding are categorized into extrinsic and intrinsic evaluation
-                           methods. This research will focuses on intrinsic evaluation of the evaluation of the models
-                           on tasks, such as analogy prediction, semantic relatedness, synonym detection, antonym
-                           detection and concept categorization.</p>
-                     </section>
-                     <hr>
-                     <section id="pill-detection">
-                        <h4>MEDICAL PILL IMAGE AND VIDEO DATASET CREATION</h4>
-                        <br />
-                        <img src="images/projects/pill.png" class="float-center" alt="Pill Dataset" />
-                        <p>This ICT Division, Bangladesh funded project focuses on creating an annotated database of
-                           images and videos of all medicine available in Bangladesh. After the database is available a
-                           deep learning model will be used to detect pills in an images or video. Ones the pill is
-                           detected next task is to identify the pill using deep learning and computer vision
-                           techniques. Based on this understanding a mobile application will be created that will be
-                           able to confirm visually impared individuals or elderly patients with short-term memory loss
-                           what medicine they are taking.</p>
-                     </section>
-            
-                     <section id="disaster">
-                        <h4>A COMPARATIVE STUDY ON DISASTER DETECTION FROM SOCIAL MEDIA IMAGES USING DEEP LEARNING</h4>
-                        <br />
-                        <img src="images/projects/disaster-1.png" class="float-center" alt="Disaster" />
-                        <p>The primary objective of this ICT Division, Bangladesh project is to create an annotated
-                           database containing images or videos of different types of disasters. Once the database is
-                           created this data will be used to train a deep learning module that will be able to identify
-                           what disaster is happening given an image. We intend to also improve further finetune the
-                           classification to detect the degree of severity of a disaster. Intended final product is to
-                           build a system for the ministry of Disaster management and relief that will be able to inform
-                           appropriate authority the location, type and severity of a disaster.</p>
-                     </section>
-                     
                      <section id="retinal">
                         <h4>HIGH SPEED DETECTION OF OPTICAL DISC IN RETINAL FUNDUS IMAGE</h4>
                         <br />
@@ -348,7 +396,6 @@
                   </div>
                </div>
             </section>
-            <hr>
          </div>
       </div>
    </div>
