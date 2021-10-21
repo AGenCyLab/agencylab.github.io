@@ -22,6 +22,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- MathJAX -->
+    <script type="text/x-mathjax-config;executed=false">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[', '\\]']],
+          processEscapes: true,
+        }
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
     <script>
       $(function () {
         $("#header").load("header.html");
@@ -41,19 +55,25 @@
         <div class="span9">
           <h2>Blog List</h2>
           <div class="row-fluid post-container">
-            <h3><a href="#">The Future of Emails</a></h3>
+            <h3><a href="1_vae.html">Variational Auto Encoder*</a></h3>
             <div>
               <div class="span8">
                 <p class="text post-body" id="post-body0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                  itaque quia nemo repellendus praesentium modi labore atque
-                  deserunt earum totam? Labore veritatis sed ex possimus
-                  reprehenderit architecto quasi reiciendis error.
+                  More flexible posteriors help to better capture the manifold
+                  of the data. Also as we are defining $gφ ()$ the variational
+                  posterior $q(z|x)$ are also being specified. For this reason, a
+                  more sophisticated $gφ ()$ is used so that the variational
+                  distribution becomes more flexible.
                 </p>
-                <a href="#" class="btn btn-info">Read more</a>
+                <a href="1_vae.html" class="btn btn-info">Read more</a>
                 <div class="media">
-                  <p class="post-author">Posted by <strong>Author 1</strong></p>
-                  <p class="post-date">September 20, 2021</p>
+                  <p class="post-author">
+                    Posted by <strong>Fahim Faisal Niloy</strong>
+                  </p>
+                  <p class="post-date">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    September 20, 2021
+                  </p>
                 </div>
               </div>
               <div class="span4">
@@ -79,7 +99,10 @@
                   <p class="post-author">
                     Posted by <strong>Author Unknown</strong>
                   </p>
-                  <p class="post-date">October 1, 2021</p>
+                  <p class="post-date">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    October 1, 2021
+                  </p>
                 </div>
               </div>
               <div class="span4">
@@ -111,7 +134,10 @@
                   <p class="post-author">
                     Posted by <strong>Anonymous</strong>
                   </p>
-                  <p class="post-date">November 11, 2020</p>
+                  <p class="post-date">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    November 11, 2020
+                  </p>
                 </div>
               </div>
               <div class="span4">
