@@ -32,12 +32,16 @@
             <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
                <li><a href="#current"> Current Research Projects </a></li>
                <li><a class="subhead" href="#har"> Human Activity Recognition </a></li>
-               <li><a class="subhead" href="#etraffic"> Traffic Modeling using GCN </a></li>
+               <li><a class="subhead" href="#etraffic"> Traffic Forecasting using GCN </a></li>
                <li><a class="subhead" href="#gis"> Semantic Segmentation of Satellite Images </a></li>
-               <li><a class="subhead" href="#hilsha"> Understanding the transcriptomic responses to environmental change in Hilsa </a></li>
-               <li><a class="subhead" href="#image-generation">  Image Generation using Variational Autoencoders and Energy Based Models </a></li>
-               <li><a class="subhead" href="#bio-network">  Predicting Associations between Biological Entities in Heterogeneous Biological Networks using Markov Random Fields and Graph Neural Networks </a></li>
-               <li><a class="subhead" href="#planets">  Identifying habitable planets from 21 cm telescope data using machine learning</a></li>
+               <li><a class="subhead" href="#hilsha"> Understanding the transcriptomic responses to environmental change
+                     in Hilsa </a></li>
+               <li><a class="subhead" href="#image-generation"> Image Generation using VAE and Energy Based Models </a>
+               </li>
+               <li><a class="subhead" href="#bio-network"> Predicting Associations between Biological Entities in
+                     Heterogeneous Biological Networks using Markov Random Fields and Graph Neural Networks </a></li>
+               <li><a class="subhead" href="#planets"> Identifying habitable planets from 21 cm telescope data using
+                     machine learning</a></li>
                <li><a class="subhead" href="#cern"> Particle physics work - barryon </a></li>
                <li><a class="subhead" href="#bnlp"> Bangla Natural Language Processing </a></li>
                <li><a href="#past"> Past Research Projects </a></li>
@@ -66,30 +70,60 @@
                   <div class="span12">
 
                      <section id="har">
-                        <h4>HUMAN ACTIVITY RECOGNITION</h4>
+                        <h4>Human Activity Recognition and Rehabilitation Exercise Evaluation</h4>
                         <br />
-                        <img src="images/projects/activity.png" class="float-center" alt="HAR" />
-                        <p>This ICT Division and IUB funded project intends to develop machine learning-based approaches which can be used for
-                           the recognition of various activities using data from wearable sensors. In addition, we intend to develop models
-                           which could be used by people seeking rehabilitation support at the CRP (https://www.crp-bangladesh.org/).
-                           Particularly, our research intention is to record movement data while the rehabilitation exercises are performed. In
-                           addition to sensor data, the plan includes collection of visual data of the patient performing exercises using 3D
-                           sensors. Finally, we intend to use time series data analysis to learn the activity, measure (or grade) the
-                           performance of patient, level of improvement, identify the areas and time when patient is facing difficulty. This all
-                           should be done automatically or semi-automatically.</p>
-                        </section>
+
+                        <img src="images/projects/har.gif" class="float-center" alt="HAR" />
+                        <p>This ICT Division and IUB funded project intends to develop machine learning-based approaches
+                           which can be used for the recognition of various activities using data from wearable sensors
+                           (e.g. accelerometer, gyroscope) and motion sensing devices (e.g. kinect). In addition, we
+                           intend to develop models which could be used by people seeking rehabilitation support at the
+                           <a href="https://www.crp-bangladesh.org/">CRP</a>. Particularly, our research intention is to
+                           record
+                           movement data while the rehabilitation exercises are performed. In addition to sensor data,
+                           the plan includes collection of visual data of the patient performing exercises using 3D
+                           sensors. Finally, we intend to use time series data analysis to learn the activity, measure
+                           (or grade) the performance of the patient, level of improvement, identify the areas and time
+                           when the patient is facing difficulty. In order to achieve automatic or semi-automatic
+                           activity recognition and exercise evaluation, we have designed self attention and graph
+                           convolution based architectures. The works on self-attention based architectures for activity
+                           recognition from sensor data have been published in ECAI 2020 and PAKDD 2021.
+                        </p>
+                     </section>
                      <hr>
                      <section id="etraffic">
-                        <h4>Traffic Modeling using GCN</h4>
+                        <h4>Traffic Forecasting using Graph Convolutional Network</h4>
                         <br />
                         <img src="images/projects/traffic-modelling.png" class="float-center" alt="e-traffic" />
-                        <p>Intelligent Transportation System (ITS) is being developed in many countries around the world and traffic forecasting lies in the heart of ITS. Traffic intensity is determined by the average speed of vehicles passing through observed road junctions in a traffic network at each time interval and the goal of traffic forecasting is to predict the traffic intensity in near future by observing the traffic data from the past and current time along with the physical traffic network. Research in deep learning models to forecast traffic intensities has gained great attention in recent years due to their capability to capture the complex spatio-temporal relationships within the traffic data. However, the task of traffic forecasting is challenging because there lies a complex spatio-temporal relationship in traffic data as the traffic within a busy city changes heavily in different locations throughout different periods in a day. As the traffic junctions and roads between them can be considered as a graph, we employ graph neural networks to model the traffic forecasting problem [1], [2] . Also, to capture the repetitive traffic pattern we consider the traffic data of the past few days instead of considering the traffic data of the past day only. With rigorous experiments we have produced better results for accurate traffic forecasting. 
+                        <p>Intelligent Transportation System (ITS) is being developed in many countries around the world
+                           and traffic forecasting lies in the heart of ITS. Traffic intensity is determined by the
+                           average speed of vehicles passing through observed road junctions in a traffic network at
+                           each time interval and the goal of traffic forecasting is to predict the traffic intensity in
+                           near future by observing the traffic data from the past and current time along with the
+                           physical traffic network. Research in deep learning models to forecast traffic intensities
+                           has gained great attention in recent years due to their capability to capture the complex
+                           spatio-temporal relationships within the traffic data. However, the task of traffic
+                           forecasting is challenging because there lies a complex spatio-temporal relationship in
+                           traffic data as the traffic within a busy city changes heavily in different locations
+                           throughout different periods in a day. As the traffic junctions and roads between them can be
+                           considered as a graph, we employ graph neural networks to model the traffic forecasting
+                           problem [1], [2] . Also, to capture the repetitive traffic pattern we consider the traffic
+                           data of the past few days instead of considering the traffic data of the past day only. With
+                           rigorous experiments we have produced better results for accurate traffic forecasting.
+                           <br>
+                           <br>
+                           [1] Unified Spatio-Temporal Modeling for Traffic Forecasting using Graph Neural Network, Amit
+                           Roy*, Kashob Kumar Roy*, Amin Ahsan Ali, M Ashraful Amin and A K M Mahbubur Rahman,
+                           International Joint Conference on Neural Networks (IJCNN-2021)
+                           <br>
+                           [2] SST-GNN: Simplified Spatio-temporal Traffic forecasting model using Graph Neural Network,
+                           Amit Roy*, Kashob Kumar Roy*, Amin Ahsan Ali, M Ashraful Amin and A K M Mahbubur Rahman,
+                           PAKDD 2021
                         </p>
                      </section>
                      <hr>
                      <section id="gis">
-                        <h4>GEOSPATIAL ANALYSIS AND SEGMENTATION OF REMOTE SENSING AND AERIAL IMAGERY USING DEEP
-                           LEARNING</h4>
+                        <h4>Semantic Segmentation of Satellite Images</h4>
                         <br />
                         <img src="images/projects/geo.png" class="float-center" alt="Geospatial Analysis" />
                         <p>This IUB funded projects primary goal is to create a standard dataset for Dhaka City that
@@ -105,7 +139,19 @@
                         <h4> Understanding the transcriptomic responses to environmental change in Hilsa</h4>
                         <br />
                         <img src="images/projects/hilsha.jpg" class="float-center" alt="Hilsha Habitat" />
-                        <p>In order to gain an in-depth understanding of the change in Hilsa migration, adaptation and reproduction emanating from climate change an integrated omics (genomics, transcriptomics, proteomics, metabolomics and metagenomics) approach has to be adopted. Use and development of different bioinformatics algorithms, tools, and scripts as well as high-performance computing facilities are required to analyze these omics datasets. Moreover, GIS and Remote sensing technologies are required to identify deep sea habitats and collect samples. Here at AGenCy lab IUB, we made connections with the group, led by Professor Haseena Khan, who were responsible for first sequencing of Hilsa. In this project, we will work in direct collaboration with this group. Professor Haseena Khan and her team will lead the sample collection, quality control and sequence data generation and analysis. We at IUB, in collaboration with Dr. A Baten from AgResearch, NZ and Professor M Shoyaib from IIT, DU will lead the computational analysis of the data extracted. In this project we aim to focus on the first phase of the integrated omics approach </p>
+                        <p>In order to gain an in-depth understanding of the change in Hilsa migration, adaptation and
+                           reproduction emanating from climate change an integrated omics (genomics, transcriptomics,
+                           proteomics, metabolomics and metagenomics) approach has to be adopted. Use and development of
+                           different bioinformatics algorithms, tools, and scripts as well as high-performance computing
+                           facilities are required to analyze these omics datasets. Moreover, GIS and Remote sensing
+                           technologies are required to identify deep sea habitats and collect samples. Here at AGenCy
+                           lab IUB, we made connections with the group, led by Professor Haseena Khan, who were
+                           responsible for first sequencing of Hilsa. In this project, we will work in direct
+                           collaboration with this group. Professor Haseena Khan and her team will lead the sample
+                           collection, quality control and sequence data generation and analysis. We at IUB, in
+                           collaboration with Dr. A Baten from AgResearch, NZ and Professor M Shoyaib from IIT, DU will
+                           lead the computational analysis of the data extracted. In this project we aim to focus on the
+                           first phase of the integrated omics approach </p>
                      </section>
                      <hr>
                      <section id="image-generation">
@@ -113,15 +159,29 @@
                         </h4>
                         <br />
                         <img src="images/projects/image-gen.png" class="float-center" alt="Image Genreation" />
-                        <p>Machine learning practitioners have long sought generative models that can accurately estimate the underlying data distribution and are able to produce diverse and semantically meaningful image samples. In this project, led by Dr. Amin Ahsan Ali, we take part in a similar quest. Our research directions include (but not limited to) developing improved variational inference techniques, coming up with more efficient methods to train energy based models and better traversing the latent space with Riemannian geometry and manifold assumption.
+                        <p>Machine learning practitioners have long sought generative models that can accurately
+                           estimate the underlying data distribution and are able to produce diverse and semantically
+                           meaningful image samples. In this project, led by Dr. Amin Ahsan Ali, we take part in a
+                           similar quest. Our research directions include (but not limited to) developing improved
+                           variational inference techniques, coming up with more efficient methods to train energy based
+                           models and better traversing the latent space with Riemannian geometry and manifold
+                           assumption.
                         </p>
                      </section>
                      <hr>
                      <section id="bio-network">
-                        <h4>Predicting Associations between Biological Entities in Heterogeneous Biological Networks using Markov Random Fields and Graph Neural Networks</h4>
+                        <h4>Predicting Associations between Biological Entities in Heterogeneous Biological Networks
+                           using Markov Random Fields and Graph Neural Networks</h4>
                         <br />
                         <img src="images/projects/bio-network.png" class="float-center" alt="Biological Networks" />
-                        <p>Heterogeneity is inherent in biological networks which consist of different entities as nodes (i.e., genes, diseases, drugs, function) and represent the relationships between these entities as edges. Predicting potential associations between biological entities currently has been an important problem in biomedical research. In general, a deep learning model uses the contextual information and structures of the heterogeneous networks to identify the associations. This project will utilize powerful tools, e.g., GNN & MRF, to develop a more accurate, explainable model for link predictions in heterogeneous networks. Dr. Azad Abul Kalam will collaborate with us on this project, led by Dr. Amin Ahsan Ali.
+                        <p>Heterogeneity is inherent in biological networks which consist of different entities as nodes
+                           (i.e., genes, diseases, drugs, function) and represent the relationships between these
+                           entities as edges. Predicting potential associations between biological entities currently
+                           has been an important problem in biomedical research. In general, a deep learning model uses
+                           the contextual information and structures of the heterogeneous networks to identify the
+                           associations. This project will utilize powerful tools, e.g., GNN & MRF, to develop a more
+                           accurate, explainable model for link predictions in heterogeneous networks. Dr. Azad Abul
+                           Kalam will collaborate with us on this project, led by Dr. Amin Ahsan Ali.
                         </p>
                      </section>
                      <hr>
@@ -148,9 +208,17 @@
                         <h4>Particle physics work (Barryon)</h4>
                         <br />
                         <img src="images/projects/particle.png" class="float-center" alt="CERN Data Analysis" />
-                        <p>Quantum chromodynamics (QCD) is the theory of the Strong interaction. In QCD, massive fermionic particles (quarks and antiquarks) interact via the exchange of massless bosons (gluons). The fundamental particles of QCD, quarks and gluons, carry colour charge and form colourless bound states at low energies, of which mesons and baryons are subjects of interest  From knowledge of the meson spectrum, we use Neural Networks and Gaussian Processes to predict the masses of baryons. These results compare favourably to the Constituent Quark Model.
+                        <p>Quantum chromodynamics (QCD) is the theory of the Strong interaction. In QCD, massive
+                           fermionic particles (quarks and antiquarks) interact via the exchange of massless bosons
+                           (gluons). The fundamental particles of QCD, quarks and gluons, carry colour charge and form
+                           colourless bound states at low energies, of which mesons and baryons are subjects of interest
+                           From knowledge of the meson spectrum, we use Neural Networks and Gaussian Processes to
+                           predict the masses of baryons. These results compare favourably to the Constituent Quark
+                           Model.
                         </p>
-                        <p>From here on, interesting research avenues can be pursued, such as the existence and predictions of the existence of glueballs, and the masses of pentaquarks and other exotic hadrons.
+                        <p>From here on, interesting research avenues can be pursued, such as the existence and
+                           predictions of the existence of glueballs, and the masses of pentaquarks and other exotic
+                           hadrons.
                         </p>
                      </section>
                      <hr>
@@ -158,13 +226,14 @@
                         <h4>Bangla Natural Language Processing</h4>
                         <br />
                         <img src="images/projects/placeholder.png" class="float-center" alt="Bangla NLP" />
-                        <p>The goal of this project is to contribute to Bangla NLP tasks such as Speech to text conversion and automatic video captioning.  
+                        <p>The goal of this project is to contribute to Bangla NLP tasks such as Speech to text
+                           conversion and automatic video captioning.
                         </p>
                      </section>
                      <hr>
-               
-                     
-                   
+
+
+
                      <hr>
                   </div>
                </div>
@@ -222,7 +291,9 @@
                         <h4>Video Captioning</h4>
                         <br />
                         <img src="images/projects/placeholder.png" class="float-center" alt="Video Captioning" />
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolorum optio sunt aliquid, veniam quae! Dignissimos commodi rerum nisi, dolorum quam alias dolor pariatur animi corrupti nobis, delectus adipisci similique.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolorum optio sunt aliquid,
+                           veniam quae! Dignissimos commodi rerum nisi, dolorum quam alias dolor pariatur animi corrupti
+                           nobis, delectus adipisci similique.</p>
                      </section>
                      <hr>
                      <section id="air-quality">
