@@ -9,12 +9,16 @@
       content="Research Lab, Home, Velit Aliquet Sagittis University"
     />
     <meta name="author" content="" />
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="css/theme.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/blog_style.css" />
-    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- use root domain folder to load the css inside subfolders -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/bootstrap-responsive.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -38,14 +42,14 @@
     ></script>
     <script>
       $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
       });
     </script>
   </head>
 
   <body>
-    <script src="js/web-components/NavBar.js"></script>
+    <script src="/js/web-components/NavBar.js"></script>
     <div id="header"></div>
     <nav-bar></nav-bar>
 
@@ -152,29 +156,20 @@
           two distributions.
         </p>
         <span>
-          $$ 
-          \begin{align} 
-          D_{KL}\left[q_\phi(z|x)\space ||\space
+          $$ \begin{align} D_{KL}\left[q_\phi(z|x)\space ||\space
           p_\theta(z|x)\right] &= E_{q_\phi(z|x)}\left[ log \left[
           \frac{q_\phi(z|x)}{p_\theta(z|x)} \right] \right]\notag\\
-          
           &=E_{q_\phi(z|x)}\left[ log \left[
           \frac{q_\phi(z|x)p_\theta(x)}{p_\theta(z|x)p_\theta(x)} \right]
-          \right]\notag\\
-
-          &=E_{q_\phi(z|x)}\left[ log \left[
+          \right]\notag\\ &=E_{q_\phi(z|x)}\left[ log \left[
           \frac{q_\phi(z|x)p_\theta(x)}{p_\theta(x,z)} \right] \right]\notag\\
-          
           &=E_{q_\phi(z|x)}\left[ -log \left[
           \frac{p_\theta(x,z)}{q_\phi(z|x)p_\theta(x)} \right] \right]\notag\\
-          
           &=E_{q_\phi(z|x)}log\space p_\theta(x) - E_{q_\phi(z|x)}\left[ log
           \left[ \frac{p_\theta(x,z)}{q_\phi(z|x)} \right] \right]\notag\\
-          
-          &=log\space p_\theta(x) - \underbrace{E_{q_\phi(z|x)}\left[
-          log\space p_\theta(x,z) - log\space q_\phi(z|x) \right]}_{ELBO}\tag{2}
-          \end{align}
-          $$
+          &=log\space p_\theta(x) - \underbrace{E_{q_\phi(z|x)}\left[ log\space
+          p_\theta(x,z) - log\space q_\phi(z|x) \right]}_{ELBO}\tag{2}
+          \end{align} $$
         </span>
       </div>
     </div>
@@ -184,7 +179,7 @@
          ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function () {
         $(document.body).scrollspy({
@@ -192,6 +187,6 @@
         });
       });
     </script>
-    <script src="js/post.js"></script>
+    <script src="/js/post.js"></script>
   </body>
 </html>
