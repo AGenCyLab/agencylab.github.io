@@ -32,9 +32,11 @@
         }
       });
     </script>
+    <!-- cdnjs is the recommended cdn for mathjax -->
     <script
       type="text/javascript"
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
     ></script>
     <script>
       $(function () {
@@ -46,6 +48,8 @@
 
   <body>
     <script src="js/web-components/NavBar.js"></script>
+    <script src="js/web-components/Video.js"></script>
+
     <div id="header"></div>
     <nav-bar></nav-bar>
 
@@ -53,6 +57,35 @@
       <hr />
       <div class="row-fluid">
         <div class="span9">
+          <!-- videos section -->
+
+          <h2>Videos</h2>
+          <div class="row-fluid post-container">
+            <div class="span4">
+              <video-element
+                video_title="Newton's Fractal (which Newton knew nothing about)"
+                video_description="3Blue1Brown talks about Newton's fractals. Who knew root-finding could be so complicated?"
+                video_link="https://www.youtube.com/embed/-RdOwhmqP5s"
+              ></video-element>
+            </div>
+            <div class="span4">
+              <video-element
+                video_title="This AI Makes Digital Copies of Humans!"
+                video_description="'Two Minute Papers' talks about a paper titled 'The Relightables: Volumetric Performance Capture of Humans with Realistic Relighting'"
+                video_link="https://www.youtube.com/embed/rawsSOLNYE0"
+              ></video-element>
+            </div>
+            <div class="span4">
+              <video-element
+                video_title="Why Tensor Calculus?"
+                video_description="MathTheBeautiful's introductory lecture on Tensor Calculus and its applications"
+                video_link="https://www.youtube.com/embed/e0eJXttPRZI"
+              ></video-element>
+            </div>
+          </div>
+
+          <!-- blog posts -->
+
           <h2>Blog List</h2>
           <div class="row-fluid post-container">
             <h3>
