@@ -38,7 +38,8 @@
     </script>
     <script
       type="text/javascript"
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
     ></script>
     <script>
       $(function () {
@@ -119,7 +120,10 @@
           estimate $p_\theta (x)$ by
         </p>
         <span> $$p_\theta(x) \sim \frac{p_\theta(x,z)}{q\phi(x|z)}$$ </span>
-        <p>In fact $[3]$ uses a similar method (importance sampling).</p>
+        <p>
+          In fact <a href="#ref_3">$[3]$</a> uses a similar method (importance
+          sampling).
+        </p>
         <span>
           $$ log\space p_\theta(x) = log\space E_{q_\phi(z,x)}\left[
           \frac{p(x,z)}{q(x,z)} \right] $$
@@ -141,8 +145,8 @@
             respect to variational parameters possi- ble.
           </li>
           <li>
-            Later at 2016 came normalization flow $[1]$ based variational
-            inference.
+            Later at 2016 came normalization flow
+            <a href="#ref_1">$[1]$</a> based variational inference.
           </li>
           <li>
             Recently adversarial techniques to estimate the posterior are
@@ -171,6 +175,97 @@
           p_\theta(x,z) - log\space q_\phi(z|x) \right]}_{ELBO}\tag{2}
           \end{align} $$
         </span>
+        <p>
+          The last term is always positive.So it acts as a lower bound. It is
+          named as Variational Lower Bound or Evidence Lower Bound, in short
+          <b>ELBO</b> <a href="#ref_2">$[2]$</a>. We could also come at the ELBO
+          objective from the log marginal distribution:
+        </p>
+        <span>
+          $$ \begin{align} log \space p_{\theta} (x) &= E_{q_\phi (z | x)} [log
+          p_{\theta} (x)]\\ &= E_{q_\phi (z | x)} \left[log \left[\frac{
+          p_{\theta} (x, z)}{p_{\theta} (z|x)}\right]\right]\\ &= E_{q_\phi (z |
+          x)} \left[log \left[\frac{ p_{\theta} (x, z)q_{\phi}(z|x)}{p_{\theta}
+          (z|x)q_{\phi}(z|x)}\right]\right]\\ &= E_{q_\phi (z | x)} \left[log
+          \left[\frac{p_{\theta} (x, z)}{q_{\phi}(z|x)}\right]\right] +
+          E_{q_\phi (z | x)} \left[log \left[\frac{q_{\phi}(z|x)}{p_{\theta}
+          (z|x)}\right]\right]\\ &= \underbrace{E_{q_\phi (z | x)} \left[log
+          \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]}_{ELBO} +
+          D_{KL}\left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right]
+          \end{align} $$
+        </span>
+        <p>
+          Maximizing ELBO with respect to $\theta$ and $\phi$ maximises the
+          probability of observing the data. So, the ELBO objective $L_{θ,φ}(x)$
+          is:
+        </p>
+        <span>
+          $$ \begin{align} L_{θ,φ}(x) = E_{q_\phi (z | x)} \left[log
+          \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]
+          \end{align}\tag{3} $$
+        </span>
+        <p>
+          There are different modifications to the ELBO objective in literature.
+          All of them can be derived from (3). One common (probably more
+          prevalent) modification is:
+        </p>
+        <span>
+          $$ \begin{align} L_{θ,φ}(x) &= E_{q_\phi (z | x)} \left[log
+          \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]\\ &= E_{q_\phi
+          (z | x)}\left[log \left[p_{\theta} (x|z) p_{\theta}(z)\right] -
+          q_{\phi}(z|x)\right]\\ &= E_{q_\phi (z | x)}\left[log \space
+          p_{\theta} (x|z) + log \space p_{\theta}(z) - log \space
+          q_{\phi}(z|x)\right]\\ &= E_{q_\phi (z | x)}\left[log \space
+          p_{\theta} (x|z) + log \frac{p_{\theta}(z)}{q_{\phi}(z|x)}\right]\\ &=
+          E_{q_\phi (z | x)}\left[log \space p_{\theta} (x|z) - log
+          \frac{q_{\phi}(z|x)}{p_{\theta}(z)}\right]\\ &= E_{q_\phi (z | x)}
+          \space log \space p_{\theta} (x|z) - E_{q_\phi (z | x)} \space log
+          \frac{q_{\phi}(z|x)}{p_{\theta}(z)}\\ &= E_{q_\phi (z | x)} \space log
+          \space p_{\theta} (x|z) - D_{KL} (q_\phi(z|x)\space ||\space
+          p_\theta(z)) \tag{4} \end{align} $$
+        </span>
+        <p>
+          Here, $q_{\phi}(z|x)$ is the encoder, $p_{\theta}(z)$ is prior and
+          $p_{\theta}(x|z)$ is the decoder. The encoder and decoder parameters
+          $\phi$ and $\theta$ are usually learned with deep neural networks.
+          <br />
+          Our objective is to maximize the lower bound with respect to $\phi$
+          and $\theta$. It serves two purposes. From (2) it can be observed,
+        </p>
+        <span>
+          $$ \begin{align} ELBO = log \space p_{\theta} (x) - D_{KL}
+          \left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right] \end{align} $$
+        </span>
+        <p>
+          $ELBO$ is maximized if $log \space p_{\theta} (x)$ is maximized and
+          $D_{KL} \left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right]$ becomes
+          0. So maximizing the $ELBO$ ensures that the probability of observing
+          the data is maximized and simultaneously the variational posterior
+          distribution becomes close to the true posterior distribution.
+        </p>
+      </div>
+      <br />
+      <h3>References</h3>
+      <div>
+        <p id="ref_1">
+          $[1]$ Diederik P Kingma, Tim Salimans, Rafal Jozefowicz, Xi Chen, Ilya
+          Sutskever, and Max Welling. Improving variational inference with
+          inverse autoregressive flow. <em>arXiv preprint arXiv:1606.04934</em>,
+          2016.
+        </p>
+
+        <p id="ref_2">
+          $[2]$ Diederik P Kingma and Max Welling. Auto-encoding variational
+          bayes. <em>arXiv preprint arXiv:1312.6114</em>, 2013.
+        </p>
+
+        <p id="ref_3">
+          $[3]$ Danilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra.
+          Stochas- tic backpropagation and approximate inference in deep
+          generative models. In
+          <em>International conference on machine learning</em>, pages
+          1278–1286. PMLR, 2014.
+        </p>
       </div>
     </div>
     <div id="footer"></div>
