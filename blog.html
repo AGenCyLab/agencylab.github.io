@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Research Lab, Home, Velit Aliquet Sagittis University"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/blog_style.css" />
+    <link rel="stylesheet" href="css/video_style.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MathJAX -->
+    <script type="text/x-mathjax-config;executed=false">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[', '\\]']],
+          processEscapes: true,
+        }
+      });
+    </script>
+    <!-- cdnjs is the recommended cdn for mathjax -->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="js/web-components/NavBar.js"></script>
+    <script src="js/web-components/Video.js"></script>
+
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <hr />
+      <div class="row-fluid">
+        <div class="span9">
+          <!-- videos section -->
+
+          <h2>Videos</h2>
+          <div class="row-fluid post-container">
+            <div class="span4 video-root">
+              <video-element
+                video_title="SST-GNN: Simplified Spatio temporal Traffic forecasting model using Graph Neural Network"
+                video_description="Video presentation of our paper 'SST-GNN: Simplified Spatio temporal Traffic forecasting model using Graph Neural Network' which is accepted as a conference paper in PAKDD 2021"
+                video_link="https://www.youtube.com/embed/Vl4P5IfbuE4"
+              ></video-element>
+            </div>
+            <div class="span4 video-root">
+              <video-element
+                video_title="Hierarchical Graph Pooling using Information Bottleneck"
+                video_description="Video presentation on a research paper named 'Structure Structure Aware Hierarchical Graph Pooling using Information Bottleneck' which is accepted as a conference paper in IJCNN 2021"
+                video_link="https://www.youtube.com/embed/L3amRKyaCsw"
+              ></video-element>
+            </div>
+            <div class="span4 video-root">
+              <video-element
+                video_title="USTGCN:Unified Spatio Temporal Modeling for Traffic Forecasting using Graph Neural Network"
+                video_description="Video presentation of our paper 'Unified Spatio Temporal Modeling for Traffic Forecasting using Graph Neural Network' which is accepted as a conference paper in IJCNN 2021. "
+                video_link="https://www.youtube.com/embed/95EJAFOsUmY"
+              ></video-element>
+            </div>
+          </div>
+
+          <!-- blog posts -->
+
+          <h2>Blog List</h2>
+          <div class="row-fluid post-container">
+            <h3>
+              <a href="blog-posts/1_vae.html">Variational Auto Encoder*</a>
+            </h3>
+            <div>
+              <div class="span8">
+                <p class="text post-body" id="post-body0">
+                  More flexible posteriors help to better capture the manifold
+                  of the data. Also as we are defining $gφ ()$ the variational
+                  posterior $q(z|x)$ are also being specified. For this reason,
+                  a more sophisticated $gφ ()$ is used so that the variational
+                  distribution becomes more flexible.
+                </p>
+                <a href="blog-posts/1_vae.html" class="btn btn-info"
+                  >Read more</a
+                >
+                <div class="media">
+                  <p class="post-author">
+                    Posted by <strong>Fahim Faisal Niloy</strong>
+                  </p>
+                  <p class="post-date">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    September 20, 2021
+                  </p>
+                </div>
+              </div>
+              <div class="span4">
+                <img src="images/harnessingsolar-3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul>
+              <li><a href="#">Prev</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="span3">
+          <h3>Categories</h3>
+          <ul class="nav nav-list">
+            <li><a href="#">Variational Auto-encoder</a></li>
+            <li><a href="#">Energy-based Model</a></li>
+          </ul>
+          <h3>Authors</h3>
+          <ul class="nav nav-list">
+            <li><a href="blog-posts/1_vae.html">Fahim Faisal Niloy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
+    <script src="js/post.js"></script>
+  </body>
+</html>

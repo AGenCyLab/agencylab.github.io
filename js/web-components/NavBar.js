@@ -9,23 +9,24 @@
 
 const template = document.createElement("template");
 template.innerHTML = `
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
-  <link href="css/theme.css" rel="stylesheet" />
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+  <link href="/css/theme.css" rel="stylesheet" />
   
   <div class="masthead">
     <div class="navbar">
       <div class="navbar-inner">
           <div class="container">
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/people.html">People</a></li>
+                <li><a href="/research.html">Research</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/teaching.html">Teaching</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
           </div>
       </div>
