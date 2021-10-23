@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Research Lab, Home, Velit Aliquet Sagittis University"
-    />
-    <meta name="author" content="" />
-    <!-- use root domain folder to load the css inside subfolders -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link
-      href="/css/bootstrap-responsive.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
-    <script src="/js/jquery-1.9.1.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- MathJAX -->
-    <script type="text/x-mathjax-config;executed=false">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Blog : VAE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AGenCy Lab, Independent University Bangladesh" />
+  <meta name="author" content="" />
+  <!-- use root domain folder to load the css inside subfolders -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/theme.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
+  <script src="/js/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- MathJAX -->
+  <script type="text/x-mathjax-config;executed=false">
       MathJax.Hub.Config({
         tex2jax: {
           inlineMath: [['$', '$'], ['\\(', '\\)']],
@@ -36,253 +26,251 @@
         }
       });
     </script>
-    <!-- cdnjs is the recommended cdn for mathjax -->
-    <script
-      type="text/javascript"
-      async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
-    ></script>
-    <script>
-      $(function () {
-        $("#header").load("/header.html");
-        $("#footer").load("/footer.html");
-      });
-    </script>
-  </head>
+  <!-- cdnjs is the recommended cdn for mathjax -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script>
+    $(function () {
+      $("#header").load("/header.html");
+      $("#footer").load("/footer.html");
+    });
+  </script>
+</head>
 
-  <body>
-    <script src="/js/web-components/NavBar.js"></script>
-    <div id="header"></div>
-    <nav-bar></nav-bar>
+<body>
+  <script src="/js/web-components/NavBar.js"></script>
+  <div id="header"></div>
+  <nav-bar></nav-bar>
 
-    <div class="container">
-      <div class="row-fluid">
-        <h1>Variational Auto Encoder</h1>
-        <span class="post-author">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          Fahim Faisal Niloy
-        </span>
-        <br /><br />
-        <h3>Introduction</h3>
-        <br />
-        <p>
-          In this document, we will address two fundamental problems in machine
-          learn-ing,
-        </p>
-        <ul>
-          <li>
-            Density estimation: Modeling $p(x)$. This distribution helps us to
-            quantify how probable a new data point is.
-          </li>
-          <li>
-            Classification: Modeling the distribution $p(y|x)$, which gives us
-            the class distribution given the input data distribution
-          </li>
-        </ul>
-        <p>
-          At first, we will look into the first problem, that is modeling the
-          data gen- erating process.
-        </p>
-        <br />
-        <h3>Density Estimation</h3>
-        <br />
-        <p>
-          $p_\theta(x)$ is comparatively easier to model if all the variables of
-          the system are observed in data. However, if there are latent
-          variables associated in the system, modeling $p(x)$ is difficult
-          because the latent variables have to be taken into account while
-          modeling $p_\theta(x)$ with the following equation.
-        </p>
-        <span> $$ p_\theta (x) = \int{p_\theta(x,z)dz} \tag{1} $$ </span>
-        <p>
-          The distribution $p_\theta(x,z)$ can be assumed by making suitable
-          choices for $p_\theta(z)$ and $p_\theta(x|z)$. Because,
-        </p>
-        <span>$$ p_\theta(x,z) = p_\theta(x|z)p_\theta(z) $$</span>
-        <p>
-          So $p_\theta(x,z)$ is easy to calculate for any given $x$ or $z$. The
-          intractability of $p_\theta(x)$ stems from the integration operation
-          in $(1)$. Because, the distribution $p_\theta(x|z)$ is usually
-          characterized with neural networks, which makes the integration
-          operation in $(1)$ intractable. Even if we assume the distributions
-          $p_\theta(x|z)$ and $p_\theta(z)$ with known probability
-          distributions, only in the case of conjugate pairs this integration is
-          tractable. So, in most of the cases it is not possible to find an
-          analytical solution to the integration. Also,
-        </p>
-        <span> $$p_\theta(x,z) = p_\theta(z|x)p_\theta(x)$$ </span>
-        <span> $$p_\theta(x,z) = \frac{p_\theta(x,z)}{p_\theta(x)}$$ </span>
-        <p>
-          So, intractable $p_\theta(x)$ makes $p_\theta(z|x)$ intractable.
-          Estimating $p_\theta (z|x)$ using variational distribution $q_\phi
-          (z|x)$ is one solution.
-          <strong>Our sole objective is to estimate</strong> $p_\theta (x)$. If
-          $q_\varphi (z|x)$ is a close estimate of $p_\theta (z|x)$ we can
-          estimate $p_\theta (x)$ by
-        </p>
-        <span> $$p_\theta(x) \sim \frac{p_\theta(x,z)}{q\phi(x|z)}$$ </span>
-        <p>
-          In fact <a href="#ref_3">$[3]$</a> uses a similar method (importance
-          sampling).
-        </p>
-        <span>
-          $$ log\space p_\theta(x) = log\space E_{q_\phi(z,x)}\left[
-          \frac{p(x,z)}{q(x,z)} \right] $$
-        </span>
-        <p>
-          There are several methods to variational inference (approximating the
-          true posterior with $q(z|x)$).
-        </p>
-        <ul>
-          <li>
-            Comparatively older literature used to perform classical methods
-            (MCMC, Mean field, conjugate priors etc.) to approximate $p(z|x)$
-            with q(z|x).
-          </li>
-          <li>
-            At around 2014 stochastic variational inference emerged where
-            stochas- tic gradient descent is used by performing
-            reparamitarization trick, which makes calculating gradients with
-            respect to variational parameters possi- ble.
-          </li>
-          <li>
-            Later at 2016 came normalization flow
-            <a href="#ref_1">$[1]$</a> based variational inference.
-          </li>
-          <li>
-            Recently adversarial techniques to estimate the posterior are
-            becoming popular.
-          </li>
-        </ul>
-        <p>
-          Now getting back to our objective. We want to make the approximate
-          poste- rior $q_\varphi (z|x)$ close to the true posterior $p_\theta
-          (z|x)$. Essentially, we want to minimize the divergence between the
-          two distributions.
-        </p>
-        <span>
-          $$ \begin{align} D_{KL}\left[q_\phi(z|x)\space ||\space
-          p_\theta(z|x)\right] &= E_{q_\phi(z|x)}\left[ log \left[
-          \frac{q_\phi(z|x)}{p_\theta(z|x)} \right] \right]\notag\\
-          &=E_{q_\phi(z|x)}\left[ log \left[
-          \frac{q_\phi(z|x)p_\theta(x)}{p_\theta(z|x)p_\theta(x)} \right]
-          \right]\notag\\ &=E_{q_\phi(z|x)}\left[ log \left[
-          \frac{q_\phi(z|x)p_\theta(x)}{p_\theta(x,z)} \right] \right]\notag\\
-          &=E_{q_\phi(z|x)}\left[ -log \left[
-          \frac{p_\theta(x,z)}{q_\phi(z|x)p_\theta(x)} \right] \right]\notag\\
-          &=E_{q_\phi(z|x)}log\space p_\theta(x) - E_{q_\phi(z|x)}\left[ log
-          \left[ \frac{p_\theta(x,z)}{q_\phi(z|x)} \right] \right]\notag\\
-          &=log\space p_\theta(x) - \underbrace{E_{q_\phi(z|x)}\left[ log\space
-          p_\theta(x,z) - log\space q_\phi(z|x) \right]}_{ELBO}\tag{2}
-          \end{align} $$
-        </span>
-        <p>
-          The last term is always positive.So it acts as a lower bound. It is
-          named as Variational Lower Bound or Evidence Lower Bound, in short
-          <b>ELBO</b> <a href="#ref_2">$[2]$</a>. We could also come at the ELBO
-          objective from the log marginal distribution:
-        </p>
-        <span>
-          $$ \begin{align} log \space p_{\theta} (x) &= E_{q_\phi (z | x)} [log
-          p_{\theta} (x)]\\ &= E_{q_\phi (z | x)} \left[log \left[\frac{
-          p_{\theta} (x, z)}{p_{\theta} (z|x)}\right]\right]\\ &= E_{q_\phi (z |
-          x)} \left[log \left[\frac{ p_{\theta} (x, z)q_{\phi}(z|x)}{p_{\theta}
-          (z|x)q_{\phi}(z|x)}\right]\right]\\ &= E_{q_\phi (z | x)} \left[log
-          \left[\frac{p_{\theta} (x, z)}{q_{\phi}(z|x)}\right]\right] +
-          E_{q_\phi (z | x)} \left[log \left[\frac{q_{\phi}(z|x)}{p_{\theta}
-          (z|x)}\right]\right]\\ &= \underbrace{E_{q_\phi (z | x)} \left[log
-          \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]}_{ELBO} +
-          D_{KL}\left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right]
-          \end{align} $$
-        </span>
-        <p>
-          Maximizing ELBO with respect to $\theta$ and $\phi$ maximises the
-          probability of observing the data. So, the ELBO objective $L_{θ,φ}(x)$
-          is:
-        </p>
-        <span>
-          $$ \begin{align} L_{θ,φ}(x) = E_{q_\phi (z | x)} \left[log
-          \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]
-          \end{align}\tag{3} $$
-        </span>
-        <p>
-          There are different modifications to the ELBO objective in literature.
-          All of them can be derived from (3). One common (probably more
-          prevalent) modification is:
-        </p>
-        <span>
-          $$ \begin{align} L_{θ,φ}(x) &= E_{q_\phi (z | x)} \left[log
-          \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]\\ &= E_{q_\phi
-          (z | x)}\left[log \left[p_{\theta} (x|z) p_{\theta}(z)\right] -
-          q_{\phi}(z|x)\right]\\ &= E_{q_\phi (z | x)}\left[log \space
-          p_{\theta} (x|z) + log \space p_{\theta}(z) - log \space
-          q_{\phi}(z|x)\right]\\ &= E_{q_\phi (z | x)}\left[log \space
-          p_{\theta} (x|z) + log \frac{p_{\theta}(z)}{q_{\phi}(z|x)}\right]\\ &=
-          E_{q_\phi (z | x)}\left[log \space p_{\theta} (x|z) - log
-          \frac{q_{\phi}(z|x)}{p_{\theta}(z)}\right]\\ &= E_{q_\phi (z | x)}
-          \space log \space p_{\theta} (x|z) - E_{q_\phi (z | x)} \space log
-          \frac{q_{\phi}(z|x)}{p_{\theta}(z)}\\ &= E_{q_\phi (z | x)} \space log
-          \space p_{\theta} (x|z) - D_{KL} (q_\phi(z|x)\space ||\space
-          p_\theta(z)) \tag{4} \end{align} $$
-        </span>
-        <p>
-          Here, $q_{\phi}(z|x)$ is the encoder, $p_{\theta}(z)$ is prior and
-          $p_{\theta}(x|z)$ is the decoder. The encoder and decoder parameters
-          $\phi$ and $\theta$ are usually learned with deep neural networks.
-          <br />
-          Our objective is to maximize the lower bound with respect to $\phi$
-          and $\theta$. It serves two purposes. From (2) it can be observed,
-        </p>
-        <span>
-          $$ \begin{align} ELBO = log \space p_{\theta} (x) - D_{KL}
-          \left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right] \end{align} $$
-        </span>
-        <p>
-          $ELBO$ is maximized if $log \space p_{\theta} (x)$ is maximized and
-          $D_{KL} \left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right]$ becomes
-          0. So maximizing the $ELBO$ ensures that the probability of observing
-          the data is maximized and simultaneously the variational posterior
-          distribution becomes close to the true posterior distribution.
-        </p>
-      </div>
+  <div class="container">
+    <div class="row-fluid">
+      <h1>Variational Auto Encoder</h1>
+      <span class="post-author">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        Fahim Faisal Niloy
+      </span>
+      <br /><br />
+      <h3>Introduction</h3>
       <br />
-      <h3>References</h3>
-      <div>
-        <p id="ref_1">
-          $[1]$ Diederik P Kingma, Tim Salimans, Rafal Jozefowicz, Xi Chen, Ilya
-          Sutskever, and Max Welling. Improving variational inference with
-          inverse autoregressive flow. <em>arXiv preprint arXiv:1606.04934</em>,
-          2016.
-        </p>
-
-        <p id="ref_2">
-          $[2]$ Diederik P Kingma and Max Welling. Auto-encoding variational
-          bayes. <em>arXiv preprint arXiv:1312.6114</em>, 2013.
-        </p>
-
-        <p id="ref_3">
-          $[3]$ Danilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra.
-          Stochas- tic backpropagation and approximate inference in deep
-          generative models. In
-          <em>International conference on machine learning</em>, pages
-          1278–1286. PMLR, 2014.
-        </p>
-      </div>
+      <p>
+        In this document, we will address two fundamental problems in machine
+        learning,
+      </p>
+      <ul>
+        <li>
+          Density estimation: Modeling $p(x)$. This distribution helps us to
+          quantify how probable a new data point is.
+        </li>
+        <li>
+          Classification: Modeling the distribution $p(y|x)$, which gives us
+          the class distribution given the input data distribution
+        </li>
+      </ul>
+      <p>
+        At first, we will look into the first problem, that is modeling the
+        data gen- erating process.
+      </p>
+      <br />
+      <h3>Density Estimation</h3>
+      <br />
+      <p>
+        $p_\theta(x)$ is comparatively easier to model if all the variables of
+        the system are observed in data. However, if there are latent
+        variables associated in the system, modeling $p(x)$ is difficult
+        because the latent variables have to be taken into account while
+        modeling $p_\theta(x)$ with the following equation.
+      </p>
+      <span> $$ p_\theta (x) = \int{p_\theta(x,z)dz} \tag{1} $$ </span>
+      <p>
+        The distribution $p_\theta(x,z)$ can be assumed by making suitable
+        choices for $p_\theta(z)$ and $p_\theta(x|z)$. Because,
+      </p>
+      <span>$$ p_\theta(x,z) = p_\theta(x|z)p_\theta(z) $$</span>
+      <p>
+        So $p_\theta(x,z)$ is easy to calculate for any given $x$ or $z$. The
+        intractability of $p_\theta(x)$ stems from the integration operation
+        in $(1)$. Because, the distribution $p_\theta(x|z)$ is usually
+        characterized with neural networks, which makes the integration
+        operation in $(1)$ intractable. Even if we assume the distributions
+        $p_\theta(x|z)$ and $p_\theta(z)$ with known probability
+        distributions, only in the case of conjugate pairs this integration is
+        tractable. So, in most of the cases it is not possible to find an
+        analytical solution to the integration. Also,
+      </p>
+      <span> $$p_\theta(x,z) = p_\theta(z|x)p_\theta(x)$$ </span>
+      <span> $$p_\theta(x,z) = \frac{p_\theta(x,z)}{p_\theta(x)}$$ </span>
+      <p>
+        So, intractable $p_\theta(x)$ makes $p_\theta(z|x)$ intractable.
+        Estimating $p_\theta (z|x)$ using variational distribution $q_\phi
+        (z|x)$ is one solution.
+        <strong>Our sole objective is to estimate</strong> $p_\theta (x)$. If
+        $q_\varphi (z|x)$ is a close estimate of $p_\theta (z|x)$ we can
+        estimate $p_\theta (x)$ by
+      </p>
+      <span> $$p_\theta(x) \sim \frac{p_\theta(x,z)}{q\phi(x|z)}$$ </span>
+      <p>
+        In fact <a href="#ref_3">$[3]$</a> uses a similar method (importance
+        sampling).
+      </p>
+      <span>
+        $$ log\space p_\theta(x) = log\space E_{q_\phi(z,x)}\left[
+        \frac{p(x,z)}{q(x,z)} \right] $$
+      </span>
+      <p>
+        There are several methods to variational inference (approximating the
+        true posterior with $q(z|x)$).
+      </p>
+      <ul>
+        <li>
+          Comparatively older literature used to perform classical methods
+          (MCMC, Mean field, conjugate priors etc.) to approximate $p(z|x)$
+          with q(z|x).
+        </li>
+        <li>
+          At around 2014 stochastic variational inference emerged where
+          stochas- tic gradient descent is used by performing
+          reparamitarization trick, which makes calculating gradients with
+          respect to variational parameters possi- ble.
+        </li>
+        <li>
+          Later at 2016 came normalization flow
+          <a href="#ref_1">$[1]$</a> based variational inference.
+        </li>
+        <li>
+          Recently adversarial techniques to estimate the posterior are
+          becoming popular.
+        </li>
+      </ul>
+      <p>
+        Now getting back to our objective. We want to make the approximate
+        poste- rior $q_\varphi (z|x)$ close to the true posterior $p_\theta
+        (z|x)$. Essentially, we want to minimize the divergence between the
+        two distributions.
+      </p>
+      <span>
+        $$ \begin{align} D_{KL}\left[q_\phi(z|x)\space ||\space
+        p_\theta(z|x)\right] &= E_{q_\phi(z|x)}\left[ log \left[
+        \frac{q_\phi(z|x)}{p_\theta(z|x)} \right] \right]\notag\\
+        &=E_{q_\phi(z|x)}\left[ log \left[
+        \frac{q_\phi(z|x)p_\theta(x)}{p_\theta(z|x)p_\theta(x)} \right]
+        \right]\notag\\ &=E_{q_\phi(z|x)}\left[ log \left[
+        \frac{q_\phi(z|x)p_\theta(x)}{p_\theta(x,z)} \right] \right]\notag\\
+        &=E_{q_\phi(z|x)}\left[ -log \left[
+        \frac{p_\theta(x,z)}{q_\phi(z|x)p_\theta(x)} \right] \right]\notag\\
+        &=E_{q_\phi(z|x)}log\space p_\theta(x) - E_{q_\phi(z|x)}\left[ log
+        \left[ \frac{p_\theta(x,z)}{q_\phi(z|x)} \right] \right]\notag\\
+        &=log\space p_\theta(x) - \underbrace{E_{q_\phi(z|x)}\left[ log\space
+        p_\theta(x,z) - log\space q_\phi(z|x) \right]}_{ELBO}\tag{2}
+        \end{align} $$
+      </span>
+      <p>
+        The last term is always positive.So it acts as a lower bound. It is
+        named as Variational Lower Bound or Evidence Lower Bound, in short
+        <b>ELBO</b> <a href="#ref_2">$[2]$</a>. We could also come at the ELBO
+        objective from the log marginal distribution:
+      </p>
+      <span>
+        $$ \begin{align} log \space p_{\theta} (x) &= E_{q_\phi (z | x)} [log
+        p_{\theta} (x)]\\ &= E_{q_\phi (z | x)} \left[log \left[\frac{
+        p_{\theta} (x, z)}{p_{\theta} (z|x)}\right]\right]\\ &= E_{q_\phi (z |
+        x)} \left[log \left[\frac{ p_{\theta} (x, z)q_{\phi}(z|x)}{p_{\theta}
+        (z|x)q_{\phi}(z|x)}\right]\right]\\ &= E_{q_\phi (z | x)} \left[log
+        \left[\frac{p_{\theta} (x, z)}{q_{\phi}(z|x)}\right]\right] +
+        E_{q_\phi (z | x)} \left[log \left[\frac{q_{\phi}(z|x)}{p_{\theta}
+        (z|x)}\right]\right]\\ &= \underbrace{E_{q_\phi (z | x)} \left[log
+        \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]}_{ELBO} +
+        D_{KL}\left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right]
+        \end{align} $$
+      </span>
+      <p>
+        Maximizing ELBO with respect to $\theta$ and $\phi$ maximises the
+        probability of observing the data. So, the ELBO objective $L_{θ,φ}(x)$
+        is:
+      </p>
+      <span>
+        $$ \begin{align} L_{θ,φ}(x) = E_{q_\phi (z | x)} \left[log
+        \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]
+        \end{align}\tag{3} $$
+      </span>
+      <p>
+        There are different modifications to the ELBO objective in literature.
+        All of them can be derived from (3). One common (probably more
+        prevalent) modification is:
+      </p>
+      <span>
+        $$ \begin{align} L_{θ,φ}(x) &= E_{q_\phi (z | x)} \left[log
+        \left[p_{\theta} (x, z) - q_{\phi}(z|x)\right]\right]\\ &= E_{q_\phi
+        (z | x)}\left[log \left[p_{\theta} (x|z) p_{\theta}(z)\right] -
+        q_{\phi}(z|x)\right]\\ &= E_{q_\phi (z | x)}\left[log \space
+        p_{\theta} (x|z) + log \space p_{\theta}(z) - log \space
+        q_{\phi}(z|x)\right]\\ &= E_{q_\phi (z | x)}\left[log \space
+        p_{\theta} (x|z) + log \frac{p_{\theta}(z)}{q_{\phi}(z|x)}\right]\\ &=
+        E_{q_\phi (z | x)}\left[log \space p_{\theta} (x|z) - log
+        \frac{q_{\phi}(z|x)}{p_{\theta}(z)}\right]\\ &= E_{q_\phi (z | x)}
+        \space log \space p_{\theta} (x|z) - E_{q_\phi (z | x)} \space log
+        \frac{q_{\phi}(z|x)}{p_{\theta}(z)}\\ &= E_{q_\phi (z | x)} \space log
+        \space p_{\theta} (x|z) - D_{KL} (q_\phi(z|x)\space ||\space
+        p_\theta(z)) \tag{4} \end{align} $$
+      </span>
+      <p>
+        Here, $q_{\phi}(z|x)$ is the encoder, $p_{\theta}(z)$ is prior and
+        $p_{\theta}(x|z)$ is the decoder. The encoder and decoder parameters
+        $\phi$ and $\theta$ are usually learned with deep neural networks.
+        <br />
+        Our objective is to maximize the lower bound with respect to $\phi$
+        and $\theta$. It serves two purposes. From (2) it can be observed,
+      </p>
+      <span>
+        $$ \begin{align} ELBO = log \space p_{\theta} (x) - D_{KL}
+        \left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right] \end{align} $$
+      </span>
+      <p>
+        $ELBO$ is maximized if $log \space p_{\theta} (x)$ is maximized and
+        $D_{KL} \left[q_\phi(z|x)\space ||\space p_\theta(z|x)\right]$ becomes
+        0. So maximizing the $ELBO$ ensures that the probability of observing
+        the data is maximized and simultaneously the variational posterior
+        distribution becomes close to the true posterior distribution.
+      </p>
     </div>
-    <div id="footer"></div>
+    <br />
+    <h3>References</h3>
+    <div>
+      <p id="ref_1">
+        $[1]$ Diederik P Kingma, Tim Salimans, Rafal Jozefowicz, Xi Chen, Ilya
+        Sutskever, and Max Welling. Improving variational inference with
+        inverse autoregressive flow. <em>arXiv preprint arXiv:1606.04934</em>,
+        2016.
+      </p>
 
-    <!-- Le javascript
+      <p id="ref_2">
+        $[2]$ Diederik P Kingma and Max Welling. Auto-encoding variational
+        bayes. <em>arXiv preprint arXiv:1312.6114</em>, 2013.
+      </p>
+
+      <p id="ref_3">
+        $[3]$ Danilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra.
+        Stochas- tic backpropagation and approximate inference in deep
+        generative models. In
+        <em>International conference on machine learning</em>, pages
+        1278–1286. PMLR, 2014.
+      </p>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <!-- Le javascript
          ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(document.body).scrollspy({
-          target: "#navparent",
-        });
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+  <script src="/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(document.body).scrollspy({
+        target: "#navparent",
       });
-    </script>
-    <script src="/js/post.js"></script>
-  </body>
+    });
+  </script>
+  <script src="/js/post.js"></script>
+</body>
+
 </html>
