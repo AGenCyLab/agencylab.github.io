@@ -30,6 +30,7 @@
           inlineMath: [['$', '$'], ['\\(', '\\)']],
           displayMath: [['$$','$$'], ['\\[', '\\]']],
           processEscapes: true,
+          processEnvironments: false
         }
       });
     </script>
@@ -310,38 +311,111 @@
           </div>
 
           <!-- blog posts -->
-
           <h2>Resource Contents</h2>
           <div class="row-fluid post-container">
-            <h3>
-              <a href="resource-contents/1_vae.html"
-                >Variational Auto Encoder (Part - 1)</a
-              >
-            </h3>
-            <div>
-              <div class="span8">
-                <p class="text post-body" id="post-body0">
-                  More flexible posteriors help to better capture the manifold
-                  of the data. Also as we are defining $gφ ()$ the variational
-                  posterior $q(z|x)$ are also being specified. For this reason,
-                  a more sophisticated $gφ ()$ is used so that the variational
-                  distribution becomes more flexible.
-                </p>
-                <a href="resource-contents/1_vae.html" class="btn btn-info"
-                  >Read more</a
+            <div class="row-fluid">
+              <h3>
+                <a href="resource-contents/3_linear_algebra_topics.html"
+                  >Topics on Linear Algebra for Data Analysis</a
                 >
-                <div class="media">
-                  <p class="post-author">
-                    Posted by <strong>Fahim Faisal Niloy</strong>
+              </h3>
+              <div>
+                <div class="span8">
+                  <p class="text post-body" id="post-body0">
+                    Multiplication of two matrices, two vectors, and a matrix and a vector can be written in many different ways. 
+                    <ul>
+                      <li>We will use lower case letters to denote $n$-vectors in column or row orientations. We will use, for example, $\mathbf{a}$ to denote a column vector ($n \times 1$) and $\mathbf{a}^*$ to denote a row vector ($1 \times n$) respectively.</li>
+                      <!-- <li>We will use upper case letters to denote a matrix. An $m \times n$ matrix $A$ can be written in terms of its $n$ columns (where each column $\mathbf{a_i}$ is an $m$-vector) or its $m$ rows (where each row $\mathbf{a_i}^*$ is an $n$-vector):</li> -->
+                    </ul>
                   </p>
-                  <p class="post-date">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    October 23, 2021
-                  </p>
+                  <a href="resource-contents/3_linear_algebra_topics.html" class="btn btn-info"
+                    >Read more</a
+                  >
+                  <div class="media">
+                    <p class="post-author">
+                      Posted by <strong>Sugandha Roy, Hasnain Hossain</strong>
+                    </p>
+                    <p class="post-date">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                      November 03, 2021
+                    </p>
+                  </div>
+                </div>
+                <div class="span4">
+                  <img src="images/blog/topics_on_la.png" alt="Topics on Linear Algebra for Data Analysis" />
                 </div>
               </div>
-              <div class="span4">
-                <img src="images/blog/vae.png" alt="" />
+            </div>
+            <div class="row-fluid">
+              <h3>
+                <a href="resource-contents/1_vae.html"
+                  >Variational Auto Encoder (Part - 1)</a
+                >
+              </h3>
+              <div>
+                <div class="span8">
+                  <p class="text post-body" id="post-body0">
+                    More flexible posteriors help to better capture the manifold
+                    of the data. Also as we are defining $gφ ()$ the variational
+                    posterior $q(z|x)$ are also being specified. For this
+                    reason, a more sophisticated $gφ ()$ is used so that the
+                    variational distribution becomes more flexible.
+                  </p>
+                  <a href="resource-contents/1_vae.html" class="btn btn-info"
+                    >Read more</a
+                  >
+                  <div class="media">
+                    <p class="post-author">
+                      Posted by <strong>Fahim Faisal Niloy</strong>
+                    </p>
+                    <p class="post-date">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                      October 23, 2021
+                    </p>
+                  </div>
+                </div>
+                <div class="span4">
+                  <img src="images/blog/vae.png" alt="Variational auto encoder" />
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <h3>
+                <a href="resource-contents/2_group_theory.html"
+                  >Groups, Representation, Invariance and Equivariance</a>
+              </h3>
+              <div>
+                <div class="span8">
+                  <p class="text post-body" id="post-body0">
+                    Group G is a set and a binary operation "." $ \big( G_i, .
+                    \big) $ such that: $\\$
+                    <ol class="alpha">
+                      <li>$G$ is closed under the binary operation:
+                        $$ \forall g_1, g_2 \in G \Rightarrow g_1.g_2 = g_3 \in G $$
+                      </li>
+                      <li>"." operation is associative:
+                        $$ \big( g_1 . g_2 \big) . g_3 = g_1 . \big( g_2 . g_3 \big) $$
+                      </li>
+                    </ol>
+                  </p>
+                  <a
+                    href="resource-contents/2_group_theory.html"
+                    class="btn btn-info"
+                    >Read more</a
+                  >
+                  <div class="media">
+                    <p class="post-author">
+                      Posted by <strong>Mir Sazzat Hossain</strong>
+                    </p>
+                    <p class="post-date">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                      August 21, 2021
+                    </p>
+                  </div>
+                </div>
+                <div class="span4">
+                  <img src="images/blog/group_theory.jpg" alt="Group Theory" />
+                </div>
               </div>
             </div>
           </div>

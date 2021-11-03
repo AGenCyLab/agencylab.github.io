@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resources : Topics on Linear Algebra for Data Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- use root domain folder to load the css inside subfolders -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/bootstrap-responsive.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MathJAX -->
+    <script type="text/x-mathjax-config;executed=false">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[', '\\]']],
+          processEscapes: true,
+        }
+      });
+    </script>
+    <script>
+      window.MathJax = {
+        loader: {
+          load: ["[text]/tagformat"],
+        },
+        startup: {
+          pageReady: () => {
+            return MathJax.startup.defaultPageReady();
+          },
+        },
+        text: {
+          packages: { "[+]": ["tagformat"] },
+          tagSide: "left",
+          macros: {},
+          tagFormat: {
+            tag: (n) => "[" + n + "]",
+          },
+        },
+      };
+    </script>
+    <!-- cdnjs is the recommended cdn for mathjax -->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div class="row-fluid">
+        <h1>Topics on Linear Algebra for Data Analysis</h1>
+        <span class="post-author">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Sugandha Roy, Hasnain Hossain
+          <p class="post-date">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            November 03, 2021
+          </p>
+        </span>
+        <br /><br />
+        <h3>Matrix Multiplication</h3>
+        <br />
+
+        Multiplication of two matrices, two vectors, and a matrix and a vector
+        can be written in many different ways.
+        <ul>
+          <li>
+            We will use lower case letters to denote $n$-vectors in column or
+            row orientations. We will use, for example, $\textbf{a}$ to denote a
+            column vector ($n \times 1$) and $\textbf{a}^*$ to denote a row
+            vector ($1 \times n$) respectively.
+          </li>
+          <li>
+            We will use upper case letters to denote a matrix. An $m \times n$
+            matrix $A$ can be written in terms of its $n$ columns (where each
+            column $\textbf{a_i}$ is an $m$-vector) or its $m$ rows (where each
+            row $\textbf{a_i}^*$ is an $n$-vector):
+          </li>
+        </ul>
+        \begin{align*} \underbrace{A}_{m \times n} = \begin{bmatrix} | & | & & |
+        \\ a_1 & a_2 & \ldots & a_n \\ | & | & & | \end{bmatrix} =
+        \begin{bmatrix} - a^*_1 - \\ - a^*_2 - \\ \vdots \\ - a^*_m - \\
+        \end{bmatrix} \\ \end{align*}
+        <br />
+        <h4>Useful formulas</h4>
+        <br />
+        <div>
+          <ol type="1">
+            <li>
+              \begin{gather*} a_\text{col} b_\text{row} =
+              \underbrace{\begin{bmatrix} a_1 \\ \vdots \\ a_m \\
+              \end{bmatrix}}_{m \times 1} \underbrace{\begin{bmatrix} b_1 \ldots
+              b_p \\ \end{bmatrix}}_{1 \times p} = \underbrace{\begin{bmatrix} |
+              & | & & | \\ b_1 a & b_2 a & \ldots & b_p a \\ | & | & & |
+              \end{bmatrix}}_{m \times p} \tag{$\text{A rank 1 matrix}$}
+              \end{gather*}
+            </li>
+            <li>
+              \begin{align*} \underbrace{A B}_{m \times p} &=
+              \underbrace{\begin{bmatrix} | & | & & | \\ a_1 & a_2 & \ldots &
+              a_{n} \\ | & | & & | \end{bmatrix}}_{m \times n}
+              \underbrace{\begin{bmatrix} - b^*_1 - \\ - b^*_2 - \\ \vdots \\ -
+              b^*_n - \\ \end{bmatrix}}_{n \times p} \\ &= a_1 b^*_1 + \ldots +
+              a_n b^*_n \tag{$\text{Sum of rank 1 matrices}$} \end{align*}
+            </li>
+            <li>
+              \begin{gather*} \textbf{AB} = \textbf{A} \begin{bmatrix} | & | & &
+              | \\ \textbf{b_1} & \textbf{b_2} & \ldots & \textbf{b_p} \\ | & |
+              & & | \end{bmatrix} = \begin{bmatrix} \textbf{Ab_1} &
+              \textbf{Ab_2} & \ldots & \textbf{Ab_p} \end{bmatrix} \end{gather*}
+            </li>
+            <li>
+              <p>From 3</p>
+              \begin{gather*} \textbf{A} \textbf{B} = \underbrace{
+              \begin{bmatrix} - {a}^*_1 - \\ - {a}^*_2 - \\ \vdots \\ - {a}^*_m
+              - \\ \end{bmatrix} }_{m \times n} \underbrace{ \begin{bmatrix} | &
+              | & & | \\ {b}_1 & {b}_2 & \ldots & {b}_{p} \\ | & | & & |
+              \end{bmatrix} }_{n \times p} = \begin{bmatrix} {a}_1^* {b_1} &
+              {a}_1^* {b_2} & \ldots & {a}_1^* {b_p} \\ {a}_2^* {b_1} & {a}_1^*
+              {b_2} & \ldots & {a}_1^* {b_p} \\ \vdots & \vdots & \ddots &
+              \vdots \\ {a}_m^* {b_1} & {a}_m^* {b_2} & \ldots & {a}_m^* {b_p}
+              \\ \end{bmatrix} = \underbrace{ \begin{bmatrix} - {a}_1^*
+              \textbf{B} - \\ - {a}_2^* \textbf{B} - \\ \vdots \\ - {a}_m^*
+              \textbf{B} - \end{bmatrix} }_{m \times p} \end{gather*}
+            </li>
+            <li>
+              <p>From 2</p>
+              \begin{gather*} \textbf{A} {x} = \underbrace{ \begin{bmatrix} | &
+              | & & | \\ {a}_1 & {a}_2 & \ldots & {a}_{n} \\ | & | & & |
+              \end{bmatrix} }_{m \times n} \underbrace{ \begin{bmatrix} x_1 \\
+              x_2 \\ \vdots \\ x_n \\ \end{bmatrix} }_{n \times 1} = x_1 {a}_1 +
+              x_2 {a}_2 + \ldots + x_n {a}_n \end{gather*}
+            </li>
+            <li>
+              <p>From 4</p>
+              \begin{gather*} \textbf{A} {x} = \begin{bmatrix} - {a}_1^* - \\ -
+              {a}_2^* - \\ \vdots \\ - {a}_m^* - \end{bmatrix} {x} =
+              \begin{bmatrix} - {a}_1^* {x} - \\ - {a}_2^* {x} - \\ \vdots \\ -
+              {a}_m^* {x} - \end{bmatrix} \end{gather*}
+            </li>
+            <li>
+              <p>From 2</p>
+              \begin{gather*} \textbf{A} = \begin{bmatrix} | & | & & | \\ {a}_1
+              & {a}_2 & \ldots & {a}_{n} \\ | & | & & | \end{bmatrix} \\
+              \textbf{A}\textbf{A}^T = \sum_{i=1}^n a_i a_i^T \end{gather*}
+            </li>
+            <li>
+              <p>From 4</p>
+              \begin{gather*} \textbf{A}^T \textbf{A} = \begin{bmatrix} a_1^T
+              a_1 & a_1^T a_2 & \ldots & a_1^T a_n \\ a_2^T a_1 & a_2^T a_2 &
+              \ldots & a_2^T a_n \\ \vdots & \vdots & \ddots & \vdots \\ a_m^T
+              a_1 & a_m^T a_2 & \ldots & a_m^T a_n \end{bmatrix} =
+              \begin{bmatrix} - {a}_1^T \textbf{A} - \\ - {a}_2^T \textbf{A} -
+              \\ \vdots \\ - {a}_m^T \textbf{A} - \end{bmatrix} \end{gather*}
+            </li>
+            <li>
+              <p>From 7</p>
+              \begin{align*} \sum_{i=1}^n ({a}^T {x}_i)^2 &= \sum ({a}^T
+              {x}_i)({a}^T {x}_i) \\ &= {a}^T (\sum {x}_i {x}_i^T) {a} \\ &=
+              {a}^T \textbf{X} \textbf{X}^T {a} \end{align*}
+            </li>
+            <li>
+              <p>From 7</p>
+              \begin{gather*} \sum_{i=1}^n (\textbf{A} {x}_i)(\textbf{A}
+              {x}_i)^T = \textbf{A} (\sum {x}_i {x}_i^T) \textbf{A}^T =
+              \textbf{A} \textbf{X} \textbf{X}^T \textbf{A}^T \end{gather*}
+            </li>
+          </ol>
+        </div>
+        <h3>Matrix/Vector Derivatives</h3>
+        <h4>Layout Conventions</h4>
+        <p>
+          The derivative of a vector with respect to a vector, i.e. $\frac
+          {\partial \textbf {y} }{\partial \textbf {x}}$, is often written in
+          two competing ways. If the numerator y is of size m and the
+          denominator x of size n, then the result can be laid out as either an
+          m×n matrix or $n \times m$ matrix, i.e. the elements of y laid out in
+          columns and the elements of x laid out in rows, or vice versa. This
+          leads to the following possibilities:
+        </p>
+        <ol type="1">
+          <li>
+            Numerator layout, i.e. lay out according to $y$ and $x^T$ (i.e.
+            contrarily to x). This is sometimes known as the Jacobian
+            formulation. This corresponds to the $m \times n$ layout.
+          </li>
+          <li>
+            Denominator layout, i.e. lay out according to $y^T$ and $x$ (i.e.
+            contrarily to y). This is sometimes known as the Hessian
+            formulation. Some authors term this layout the gradient, in
+            distinction to the Jacobian (numerator layout), which is its
+            transpose. (However, gradient more commonly means the derivative
+            $\frac {\partial y}{\partial \textbf {x} }$, regardless of layout.).
+            This corresponds to the $n \times m$ layout in the previous example.
+          </li>
+          <li>
+            A third possibility sometimes seen is to insist on writing the
+            derivative as $\frac {\partial \textbf {y} }{\partial \textbf {x}
+            '}$, (i.e. the derivative is taken with respect to the transpose of
+            x) and follow the numerator layout. This makes it possible to claim
+            that the matrix is laid out according to both numerator and
+            denominator. In practice this produces results the same as the
+            numerator layout.
+          </li>
+        </ol>
+        <h4>Numerator-layout notation</h4>
+        <div>
+          \begin{gather*} \frac{\partial y}{\partial \textbf {x}} =
+          \begin{bmatrix} \frac{\partial y}{\partial x_{1}} & \frac {\partial
+          y}{\partial x_{2}} & \ldots \frac{\partial y}{\partial x_{n}}
+          \end{bmatrix} \\ \frac{\partial \textbf {y} }{\partial x} =
+          \begin{bmatrix} \frac{\partial y_{1}}{\partial x} \\ \frac{\partial
+          y_{2}}{\partial x} \\ \vdots \\ \frac{\partial y_{m}}{\partial x}
+          \end{bmatrix} \\ \frac {\partial \textbf {y} }{\partial \textbf {x} }
+          = \begin{bmatrix} \frac{\partial y_{1}}{\partial x_{1}} & \frac
+          {\partial y_{1}}{\partial x_{2}} & \cdots & \frac {\partial
+          y_{1}}{\partial x_{n}} \\ \frac{\partial y_{2}}{\partial x_{1}} &
+          \frac {\partial y_{2}}{\partial x_{2}} & \cdots & \frac {\partial
+          y_{2}}{\partial x_{n}} \\ \vdots &\vdots &\ddots &\vdots \\
+          \frac{\partial y_{m}}{\partial x_{1}} & \frac{\partial y_{m}}{\partial
+          x_{2}} & \cdots & \frac {\partial y_{m}}{\partial x_{n}} \\
+          \end{bmatrix} \\ \frac {\partial y}{\partial \textbf {X} } =
+          \begin{bmatrix} \frac{\partial y}{\partial x_{11}} & \frac {\partial
+          y}{\partial x_{21}} & \cdots & \frac {\partial y}{\partial x_{p1}} \\
+          \frac{\partial y}{\partial x_{12}} & \frac {\partial y}{\partial
+          x_{22}} & \cdots & \frac {\partial y}{\partial x_{p2}} \\ \vdots
+          &\vdots &\ddots &\vdots \\ \frac{\partial y}{\partial x_{1q}} & \frac
+          {\partial y}{\partial x_{2q}} & \cdots & \frac {\partial y}{\partial
+          x_{pq}} \\ \end{bmatrix} \end{gather*}
+
+          <p>
+            The following definitions are only provided in numerator-layout
+            notation:
+          </p>
+
+          \begin{gather*} \frac {\partial \textbf{Y}}{\partial x} =
+          \begin{bmatrix} \frac{\partial y_{11}}{\partial x} & \frac {\partial
+          y_{12}}{\partial x} & \cdots & \frac {\partial y_{1n}}{\partial x} \\
+          \frac{\partial y_{21}}{\partial x} & \frac {\partial y_{22}}{\partial
+          x} & \cdots & \frac {\partial y_{2n}}{\partial x} \\ \vdots &\vdots
+          &\ddots &\vdots \\ \frac{\partial y_{m1}}{\partial x} & \frac
+          {\partial y_{m2}}{\partial x} & \cdots & \frac {\partial
+          y_{mn}}{\partial x} \\ \end{bmatrix} \\ d\textbf{X} = \begin{bmatrix}
+          dx_{11} & dx_{11} & \ldots & dx_{1n} \\ dx_{21} & dx_{22} & \ldots &
+          dx_{2n} \\ \vdots &\vdots &\ddots &\vdots \\ dx_{m1} & dx_{m2} &
+          \ldots & dx_{mn} \end{bmatrix} \end{gather*}
+        </div>
+        <h4>Denominator-layout notation</h4>
+        <div>
+          \begin{gather*} \frac{\partial y}{\partial \textbf {x}} =
+          \begin{bmatrix} \frac{\partial y}{\partial x_{1}} \\ \frac {\partial
+          y}{\partial x_{2}} \\ \vdots \\ \frac{\partial y}{\partial x_{n}}
+          \end{bmatrix} \\ \frac{\partial \textbf {y} }{\partial x} =
+          \begin{bmatrix} \frac{\partial y_{1}}{\partial x} & \frac{\partial
+          y_{2}}{\partial x} & \ldots & \frac{\partial y_{m}}{\partial x}
+          \end{bmatrix} \\ \frac {\partial \textbf {y} }{\partial \textbf {x} }
+          = \begin{bmatrix} \frac{\partial y_{1}}{\partial x_{1}} & \frac
+          {\partial y_{2}}{\partial x_{1}} & \cdots & \frac {\partial
+          y_{m}}{\partial x_{1}} \\ \frac{\partial y_{1}}{\partial x_{2}} &
+          \frac {\partial y_{2}}{\partial x_{2}} & \cdots & \frac {\partial
+          y_{m}}{\partial x_{2}} \\ \vdots &\vdots &\ddots &\vdots \\
+          \frac{\partial y_{1}}{\partial x_{n}} & \frac{\partial y_{2}}{\partial
+          x_{n}} & \cdots & \frac {\partial y_{m}}{\partial x_{n}} \\
+          \end{bmatrix} \\ \frac {\partial y}{\partial \textbf {X} } =
+          \begin{bmatrix} \frac{\partial y}{\partial x_{11}} & \frac {\partial
+          y}{\partial x_{12}} & \cdots & \frac {\partial y}{\partial x_{1q}} \\
+          \frac{\partial y}{\partial x_{21}} & \frac {\partial y}{\partial
+          x_{22}} & \cdots & \frac {\partial y}{\partial x_{2q}} \\ \vdots
+          &\vdots &\ddots &\vdots \\ \frac{\partial y}{\partial x_{p1}} & \frac
+          {\partial y}{\partial x_{p2}} & \cdots & \frac {\partial y}{\partial
+          x_{pq}} \\ \end{bmatrix} \end{gather*}
+        </div>
+        <h4>Useful formulas</h4>
+        <ol>
+          <li>
+            \begin{gather*} \frac{d}{dx}({x}^T {x}) = \begin{bmatrix}
+            \frac{\partial{}}{\partial{} x_1} ({x}^T {x})\\
+            \frac{\partial{}}{\partial{} x_2} ({x}^T {x})\\ \vdots \\
+            \frac{\partial{}}{\partial{} x_n} ({x}^T {x})\\ \end{bmatrix} =
+            \begin{bmatrix} 2x_1\\ 2x_2\\ \vdots \\ 2x_n\\ \end{bmatrix} = 2 {x}
+            \end{gather*} [Since, $\frac{\partial{}}{\partial{} x_i} ({x}^T {x})
+            = \frac{\partial{}}{\partial{} x_i} (x_1^2 + x_2^2 + \ldots + x_n^2)
+            = 2 x_i$]
+          </li>
+          <li>
+            \begin{gather*} \frac{d}{dx} ({a}^T {x}) = \frac{d}{dx} (a_1 x_1 +
+            a_2 x_2 + \ldots + a_n x_n) = \begin{bmatrix} a_1 \\ a_2 \\ \vdots
+            \\ a_n \\ \end{bmatrix} = {a} \end{gather*}
+          </li>
+          <li>
+            \begin{gather*} \frac{d}{dx} ({x}^T {a}) = {a}^T \end{gather*}
+            \begin{gather*} \frac{d}{dx} (\textbf{A} {x}) = \textbf{A}
+            \end{gather*}
+          </li>
+          <li>
+            \begin{align*} \frac{d}{dx} ({x}^T \textbf{A} {x}) &= 2 \sum_i
+            \sum_j a_{ij} \; x_i \; x_j \\ \frac{\partial{}}{\partial{}
+            x_i}({x}^T \textbf{A} {x}) &= 2 \sum_j a_{ij} \; x_j \\ &= 2
+            (\textbf{A} x)_{i} \\ \therefore \frac{d}{dx} &= 2 \textbf{A} {x}
+            \end{align*} Example: \begin{align*} &\implies \begin{bmatrix} x_1 &
+            x_2 & x_3 \\ \end{bmatrix} \begin{bmatrix} a_{11} & a_{12} & a_{13}
+            \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \\
+            \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ \end{bmatrix} =
+            \\ &\implies a_{11} \; x_1^2 + a_{22} \; x_2^2 + a_{3} \; x_3^2 + 2
+            \; a_{12} \; x_1 x_2 + 2 \; a_{13} \; x_1 x_3 + 2 \; a_{23} \; x_2
+            x_3 \\ &\implies \frac{\partial{}}{\partial{} x_1} ({x}^T \textbf{A}
+            {x}) = 2(a_{11} \; x_1 + a_{12} \; x_2 + a_{13} \; x_3) \\ &\implies
+            \frac{\partial{}}{\partial{} x_2} ({x}^T \textbf{A} {x}) = 2(a_{21}
+            \; x_1 + a_{22} \; x_2 + a_{23} \; x_3) \\ &\implies
+            \frac{\partial{}}{\partial{} x_3} ({x}^T \textbf{A} {x}) = 2(a_{31}
+            \; x_1 + a_{32} \; x_2 + a_{33} \; x_3) \end{align*}
+          </li>
+        </ol>
+        <div class="pdf_link_container">
+          <span class="pdf_link_text">
+            To read more click
+            <a target="_blank" href="/pdfs/topics_on_linear_algebra.pdf">here</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
+    <script src="/js/post.js"></script>
+  </body>
+</html>

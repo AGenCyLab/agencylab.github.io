@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Resources : Groups, Representation, Invariance and Equivariance
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- use root domain folder to load the css inside subfolders -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/bootstrap-responsive.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MathJAX -->
+    <script type="text/x-mathjax-config;executed=false">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[', '\\]']],
+          processEscapes: true,
+        }
+      });
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          loader: { load: ["[tex]/action"] },
+          macros: {
+            RR: "{\\bf R}",
+            bold: ["{\\bf #1}", 1],
+          },
+          tags: "ams",
+        },
+      };
+    </script>
+    <!-- cdnjs is the recommended cdn for mathjax -->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div class="row-fluid">
+        <h1>Groups, Representation, Invariance and Equivariance</h1>
+        <span class="post-author">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Mir Sazzat Hossain
+          <p class="post-date">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            October 23, 2021
+          </p>
+        </span>
+        <br /><br />
+        <h3>Group/Representation</h3>
+        <br />
+        <ol class="alpha">
+          <li>
+            $G$ is closed under the binary operation: $$ \forall g_1, g_2 \in G
+            \Rightarrow g_1.g_2 = g_3 \in G $$
+          </li>
+          <li>
+            "." operation is associative: $$ \big( g_1 . g_2 \big) . g_3 = g_1 .
+            \big( g_2 . g_3 \big) $$
+          </li>
+          <li>
+            $\forall g \in G $ there exists some elements in G; $ \exists e \in
+            G $ such that: $$ e.g = g.e = g $$
+          </li>
+          <li>
+            \item There exists an unique inverse $ \exists g^{-1}, \forall g $
+            such that: $$ g^{-1}.g = g.g^{-1} = e $$
+          </li>
+        </ol>
+        <p>
+          It is customary in physics/engineering to think of $G$ as a set of
+          symmetry operations on a set $V$. Sometimes set $V$ is called
+          "realization of space".
+        </p>
+        <br />
+        <div style="margin: auto; width: 400px">
+          <img src="/images/blog/group_theory.jpg" alt="Group theory example" />
+        </div>
+        <p>Multiplication or Composition Table:</p>
+        <div>
+          \begin{array} {|r|r|}\hline & E &M & N & \sigma_A & \sigma_B &
+          \sigma_C \\ \hline E & E & M & N & \sigma_A & \sigma_B & \sigma_C \\
+          \hline M & N & E & M & \sigma_B & \sigma_C & \sigma_A \\ \hline N & M
+          & N & E & \sigma_C & \sigma_A & \sigma_B \\ \hline \sigma_A & \sigma_A
+          & \sigma_C & \sigma_B & E & M & N \\ \hline \sigma_B & \sigma_B &
+          \sigma_A & \sigma_C & N & E & M \\ \hline \sigma_C & \sigma_C &
+          \sigma_B & \sigma_A & M & N & E \\ \hline \end{array}
+        </div>
+        <p>
+          Inverse of N is M as from table we can see M.N = N.M = E, similarly
+          inverse of M is N and inverse of E is E itself as it is the identity
+          of our group. Inverse of $ \sigma_A $ is $ \sigma_A $, $ \sigma_B $ is
+          $ \sigma_C $ and $ \sigma_C $ is $ \sigma_C $. $[\pmb{Theorem:}
+          Inverse\ elements\ are\ unique.]$
+        </p>
+        <h3>Subgroups:</h3>
+        <br />
+        <p>
+          If we have a H which is a proper subset of G ($ H \subset G $) then,
+          that itself is a group under the same operation, is a subgroup G.
+        </p>
+        <ul>
+          <li>How to identify a subgroup?</li>
+        </ul>
+        $$\forall h_1, h_2 \in H \subseteq G \text{, if } h_1.h_2^{-1} \in
+        \text{H, then H is a subgroup.}$$
+        <p>
+          Every group has a trivial subgroup which is identity element. Identity
+          element itself is a group. Inverse of identity is itself and if we
+          compose identity with itself it will always give back identity itself.
+        </p>
+        <h3>Closet:</h3>
+        <br />
+        <p>
+          Pick a subgroup $ H \subseteq G $. Consider, an element $ g \in G $
+          but $ g \notin H $. Then $ g_1H, g_2H, ... $ are called left cosets of
+          H. Likewise $ Hg_i $ are right cosets.
+        </p>
+        <ul>
+          <li>
+            Statements: Cosets are not subgroups. $$ \text{Let, } g \notin H. H
+            = \{h_1, h_2, . . . e\} $$ $$ gH = \{ gh_1, gh_2, ... , h_1 \}
+            \not\owns e $$ If there exists an identity in gH then g will be the
+            inverse of an element in H but then that element should have belong
+            to the set G. Hence, there is no identity element in H and it is not
+            a subgroup.
+          </li>
+          <li>
+            Cosets form a partition: If $ g_1 \neq g_2 $ then $ ( g_1H \cap g_2H
+            ) = \varnothing $ or $ g_1 = g_2 $ Suppose there is an element, $$
+            g_1h_1 \in g_1H = g_2h_2 \in g_2H $$ $$ g_1 = g_2h_2h_1^{-1} =
+            g_2h_3 \text{ [As } h_2h_1^{-1} \in H \text{]} $$ Therefore, $ g_1 $
+            is in the coset of $ g_2h_3 \in g_2H \Rightarrow g_1 \in g_2H $. But
+            originally $g_1$ and $g_2$ are not in the coset they are outside.
+            That contradicts the initial assumption.
+          </li>
+        </ul>
+        <h4>Example:</h4>
+        <p>
+          Let's take a simple sub-group $ \Sigma_A = \{E, \sigma_A\} $. Multiply
+          $ \Sigma_A $ with any element of the group we have seen before. $$
+          M\Sigma_A = \{M, \sigma_C\} \text{; [It is not a sub-group]} $$
+          Multiply $ \Sigma_A $ with another element from the group. $$
+          N\Sigma_A = \{N, \sigma_A\} \text{; [It is also not a sub-group]} $$
+          We can see there is no intersection between $ M\Sigma_A \text{ and }
+          N\Sigma_A $. Order (numbers of element in each set) of each of these
+          cosets are same as there is no intersection. Order of a particular
+          sub-group is same as the order of its cosets.
+        </p>
+        <p>Let there is a group G and H is a sub-group of G.</p>
+        <div>
+          \begin{array}{ |c|c|c|c|c| } \hline & & G & & \\ \hline H & g_1H &
+          g_2H & . . . & g_mH \\ \hline \end{array}
+        </div>
+
+        <span>$ n_G = \text{ number of elements in } G $</span> <br />
+        <span>$ n_H = \text{ number of elements in } H $</span> <br /><br />
+        <p>$ n_G = n_H + n_{g_{1}H} + n_{g_{2}H} + . . . + n_{g_{m}H} $</p>
+
+        <span>$\text{As, cosets form a partition.} $</span><br />
+        <span>$ n_H = n_{g_{1}H} = . . . = n_{g_{m}H} $</span><br /><br />
+        <p>
+          Hence, $ n_G = Nn_H $; where N is an nonzero positive integer. And $
+          n_G = Nn_H \geq 1 $ as each group has an identity element.
+        </p>
+        <p>Therefore, $ \frac{n_G}{n_H} = integer $ [Lagrange's theorem]</p>
+        <h3>Normal Subgroup</h3>
+        <p>
+          If left coset is same as right coset ($ gH = Hg \Rightarrow gHg^{-1} =
+          H $) then H is a normal subgroup.
+        </p>
+        <p>
+          For normal subgroups, cosets also form a group, which is called
+          ``Quotient Subgroup" $(G/H)$.
+        </p>
+        <p>
+          Let assume gH and g'H are cosets. Now if we take any two elements: $$
+          g_1Hg_2H = g_1g_2HH = g_3H \text{ (As left and right cosets are
+          same)}$$
+        </p>
+        <p>
+          $$ HH = \{e, h_1\}.\{e, h_1\} = \{e.e, e.h_1, h_1.e, h_1.h_1\} = \{e,
+          h_1, h_1, e\} = \{e, h_1\} $$
+        </p>
+        <p>
+          Product of two coset for a normal subgroup is also another coset.
+          Therefor cosets forms a group for normal subgroups.
+        </p>
+        <h3>Rotation</h3>
+        <div style="margin: auto; width: 400px">
+          <img src="/images/blog/Rotation.jpg" alt="Group theory example" />
+        </div>
+        <div>
+          <p>
+            $ \text{Let, we have a vector } \vec{r} = \begin{bmatrix} x\\ y\\ z
+            \end{bmatrix} $
+          </p>
+          <p>
+            Under rotation the length of vector remains same. Which means under
+            rotation $ r^Tr = (length)^2 $ is a liner transformation such-that $
+            (length)^2 $ is invariant. Rotation maps origin int origin and the
+            length of the vector. $$ \vec{r'} = R\vec{r} $$
+          </p>
+          <p>
+            If we want the $ (length)^2 $ of vector to be invariant then we get:
+            $$ \vec{r'}^{T}\vec{r'} = \vec{r}^{T}R^{T}R\vec{r} $$
+          </p>
+          <p>
+            Therefore $R^{T}R = I $, hence rotational matrices are orthogonal
+            matrices.
+          </p>
+        </div>
+        <h4>Rotation matrices form a group</h4>
+        <p>
+          Let's take product of two rotational matrix $ R_1 $ and $ R_2 $ $$
+          R_1R_2 = R_3 $$ To prove if $ R_3 $ is a rotation matrix, we have to
+          show that $ R_3^{T}R_3 = I $ $$ R_3^{T} = R_2^{T}R_1{T} $$ $$
+          \text{Now, } R_3^{T}R_3 = R_2^{T}R_1{T}R_1R_2 = R_2^{T}IR_2 =
+          R_2^{T}R_2 = I $$
+        </p>
+        <h3>Translation</h3>
+        <div>
+          <p>$ \vec{r'} = R\vec{r} + \vec{a} $ this set also forms a group.</p>
+          <p>
+            Check for closure property: $$ \vec{r"} = R'\vec{r'} + \vec{a'} =
+            R'(R\vec{r} + \vec{a}) + \vec{a'} = R'R\vec{r} + (R'\vec{a} +
+            \vec{a'}) $$
+          </p>
+          <p>
+            We can write the operation $ \vec{r'} = R\vec{r} + \vec{a} $ as $
+            \vec{r'} = (R, \vec{a})\vec{r} $
+          </p>
+          <p>
+            The composition rule is $ (R', \vec{a'})(R, \vec{a}) = (R'R,
+            R'\vec{a} + \vec{a'}) $
+          </p>
+          <p>
+            Check for inverse: $$ (R, \vec{a})^{-1} = (R^{T}, -R^{T}\vec{a}) $$
+          </p>
+          <p>There are two sub-groups of this:</p>
+          <ol type="1">
+            <li>$ (R, 0) = $ rotation</li>
+            <li>$ (I, \vec{a}) = $ translation</li>
+          </ol>
+          <p>*H.W. $ \Rightarrow $ Which one is a normal subgroup?</p>
+          <p>
+            Let, $ \vec{r'} = R\vec{r} + \vec{a} $ the first part of this
+            operation ($ R\vec{r} $) is multiplicative and second part ($
+            \vec{a} $) is additive. We can do this in a single operation if we
+            do the following: $$ \begin{bmatrix}\vec{r'} \\ 1\end{bmatrix} =
+            \begin{bmatrix}R & & \vec{a} \\ 0 & 0 & 1\end{bmatrix}
+            \begin{bmatrix}\vec{r} \\ 1\end{bmatrix} =
+            \begin{bmatrix}R\vec{r}+\vec{a} \\ 1\end{bmatrix} $$ $$
+            \text{[Rotation in 3D + Translation]} $$
+          </p>
+        </div>
+
+        <div class="pdf_link_container">
+          <span class="pdf_link_text">
+            To read more click
+            <a target="_blank" href="/pdfs/group_theory.pdf">here</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
+    <script src="/js/post.js"></script>
+  </body>
+</html>
