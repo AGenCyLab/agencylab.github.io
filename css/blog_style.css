@@ -85,6 +85,18 @@ ol.alpha > li:before {
   color: "#666";
 }
 
+.c22 {
+  font-style: italic;
+}
+
+span.c13.c6 {
+  font-weight: 600;
+}
+
+h3.c12.c8 {
+  font-size: 17.5px;
+}
+
 @media screen and (min-width: 1200px) {
 }
 
