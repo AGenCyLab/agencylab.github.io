@@ -1,1243 +1,1527 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="utf-8">
-   <title>Publications</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="AGenCy Lab, Independent University Bangladesh">
-   <meta name="author" content="">
-   <!-- Le styles -->
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-   <link href="css/theme.css" rel="stylesheet">
-   <script src="js/jquery-1.9.1.min.js"></script>
-   <script>
+  <head>
+    <meta charset="utf-8" />
+    <title>Publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
       $(function () {
-         $("#header").load("header.html");
-         $("#footer").load("footer.html");
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
       });
-   </script>
-</head>
+    </script>
+  </head>
 
-<body>
-   <script src="js/web-components/NavBar.js"></script>
-   <div id="header"></div>
-   <nav-bar></nav-bar>
+  <body>
+    <script src="js/web-components/NavBar.js"></script>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
 
-   <div class="container">
-      <hr>
+    <div class="container">
+      <hr />
       <div class="row-fluid">
-         <div class="span3 bs-docs-sidebar" id="navparent">
-            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix"
-               style="max-height: calc(100vh - 4rem); overflow-y: auto; overflow-x: hidden;" data-offset-top="200"
-               data-offset-bottom="260">
-               <li><a href="#refereed"> Conference Papers</a></li>
-               <li><a class="subhead" href="#2021c"> 2021 </a></li>
-               <li><a class="subhead" href="#2020c"> 2020 </a></li>
-               <li><a class="subhead" href="#2019c"> 2019 </a></li>
-               <li><a class="subhead" href="#2018c"> 2018 </a></li>
-               <li><a class="subhead" href="#2017c"> 2017 </a></li>
-               <li><a class="subhead" href="#2016c"> 2016 </a></li>
-               <li><a class="subhead" href="#2015c"> 2015 </a></li>
-               <li><a class="subhead" href="#2014c"> 2014 </a></li>
-               <li><a class="subhead" href="#2013c"> 2013 </a></li>
-               <li><a class="subhead" href="#2012c"> 2012 </a></li>
-               <li><a class="subhead" href="#2011c"> 2011 </a></li>
-               <li><a class="subhead" href="#2010c"> 2010 </a></li>
-               <li><a class="subhead" href="#2009c"> 2009 </a></li>
-               <li><a class="subhead" href="#2008c"> 2008 </a></li>
-               <li><a class="subhead" href="#2007c"> 2007 </a></li>
-               <li><a class="subhead" href="#2006c"> 2006 </a></li>
-               <li><a class="subhead" href="#2005c"> 2005 </a></li>
-               <li><a class="subhead" href="#2004c"> 2004 </a></li>
-               <li><a class="subhead" href="#2003c"> 2003 </a></li>
-               <li><a class="subhead" href="#2002c"> 2002 </a></li>
-               <li><a href="#published"> Journal Publications</a></li>
-               <li><a class="subhead" href="#2020"> 2020 </a></li>
-               <li><a class="subhead" href="#2016"> 2016 </a></li>
-               <li><a class="subhead" href="#2015"> 2015 </a></li>
-               <li><a class="subhead" href="#2014"> 2014 </a></li>
-               <li><a class="subhead" href="#2013"> 2013 </a></li>
-               <li><a class="subhead" href="#2011"> 2011 </a></li>
-               <li><a class="subhead" href="#2010"> 2010 </a></li>
-               <li><a class="subhead" href="#2009"> 2009 </a></li>
-               <li><a class="subhead" href="#2006"> 2006 </a></li>
-               <!-- <li><a href="#inreview"> In Review and Preparation</a></li> -->
-               <li><a href="#book_chapters"> Book Chapters</a></li>
-               <li><a class="subhead" href="#2019bc"> 2019 </a></li>
-               <li><a class="subhead" href="#2018bc"> 2018 </a></li>
-               <li><a class="subhead" href="#2017bc"> 2017 </a></li>
-               <li><a class="subhead" href="#2015bc"> 2015 </a></li>
-               <li><a class="subhead" href="#2014bc"> 2014 </a></li>
-               <li><a class="subhead" href="#2012bc"> 2012 </a></li>
-               <li><a class="subhead" href="#2010bc"> 2010 </a></li>
-               <li><a class="subhead" href="#2009bc"> 2009 </a></li>
-               <li><a class="subhead" href="#2006bc"> 2006 </a></li>
-               <li><a class="subhead" href="#2005bc"> 2005 </a></li>
-
-            </ul>
-         </div>
-         <div class="span8 offset1">
-            <section id="refereed">
-               <div class="page-header">
-                  <h3>Papers and Presentations in Refereed Conference Proceedings</h3>
-               </div>
-               <section id="2021c">
-                  <h3>2021</h3>
-                  <br />
-                  <ol>
-
-
-                     
-
-                     <li class="publication">Amit Roy, Kashob Kumar Roy, Amin Ahsan Ali, M Ashraful Amin and A K M
-                        Rahman, "Unified Spatio-Temporal Modeling for Traffic Forecasting using Graph Neural Network",
-                        The International Joint Conference on Neural Network, 2021, (Core Rank: A)</li>
-                     <li class="publication">Kashob Kumar Roy, Amit Roy, A K M M Rahman, M Ashraful Amin and Amin Ahsan
-                        Ali, "Structure-Aware Hierarchical Graph Pooling using Information Bottleneck", The
-                        International Joint Conference on Neural Network, 2021, (Core Rank: A)</li>
-                     <li class="publication">Kashob Kumar Roy, Amit Roy, A K M M Rahman, M Ashraful Amin and Amin Ahsan
-                        Ali, "Node Embedding using Mutual Information and Self-Supervision based Bi-level Aggregation",
-                        The International Joint Conference on Neural Network, 2021, (Core Rank: A)</li>
-                     <li class="publication">M.T.H. Tonmoy*, Saif Mahmud*, A K M M Rahman, M A. Amin, and A.A. Ali,,
-                        "Hierarchical Self Attention Based Autoencoder for Open-Set Human Activity Recognition", 25th
-                        Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2021), Springer, May 11-14,
-                        2021, Delhi, India. (Core Rank: A, acceptance rate: 20%)</li>
-                     <li class="publication">Amit Roy, Kashob Roy, M A. Amin, A.A. Ali, and A K M M Rahman, "SST-GNN:
-                        Simplified Spatio-temporal Traffic forecasting model using Graph Neural Network", 25th
-                        Pacific-Asia Conference on Knowledge Discovery and Data Mining, 2021 (Core Rank: A, acceptance
-                        rate: 20%)</li>
-                     <li class="publication">Md. A. Pramanik, Md M. Rahman, ASM I Anam, Amin A Ali, Md A Amin, and A K M
-                        M Rahman, " Modeling Traffic Congestion in Developing Countries using Google Map Data", Future
-                        of Information and Communication Conference (FICC) 2021, Springer, Vancouver, Canada, 2021</li>
-                     <li class="publication">Qianwei Cheng, A K M M Rahman, Anis Sarker, Abu Bakar Siddik Nayem, Ovi
-                        Paul, Amin Ahsan Ali, M Ashraful Amin, Ryosuke Shibasaki, Moinul Zaber, "Deep-learning coupled
-                        with novel categorization method to classify the urban environment of the developing world", 2nd
-                        International Conference on Signal Processing and Machine Learning (SIGML 2021), Switzerland,
-                        2021</li>
-                  </ol>
-               </section>
-               <section id="2020c">
-                  <br />
-                  <h3>2020</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">F.F. Niloy, Arif, A.B.S. Nayem, A Sarker, O Paul, M.A. Amin, A.A. Ali, M.I.
-                        Zaber, and A K M M Rahman, “A Novel Disaster Image Data-set and Characteristics Analysis using
-                        Attention Model”, 25th International Conference on Pattern Recognition (ICPR 2020) (Core Rank:
-                        B, acceptance rate: 43.4%)</li>
-                     <li class="publication">Arif, M.I. Zaber, M.A. Amin, A.A. Ali, AKMM Rahman, “Visual Attention Based Comparative
-                        Study on Disaster Detection from Social Media Images”, Innovations in Systems and Software
-                        Engineering (ISSE Journal), Springer, 2020.</li>
-                     <li class="publication">M H Tarek, M E Kadir, M Mahbub, P S Akash, A A Ali and M Shoyaib, "Mutual Information
-                        based Feature Selection for Nurse Care Activity Recognition", Joint 9th International
-                        Conference on Informatics, Electronics & Vision (ICIEV) and 4th International Conference on
-                        Imaging, Vision & Pattern Recognition (IVPR), Japan, 2020.</li>
-                     <li class="publication">Md. Saif Hassan Onim, Aiman Rafeed Ehtesham, Amreen Anbar, A. K. M. Nazrul
-                        Islam and A K M M Rahman, "LULC classification by semantic segmentation of satellite images
-                        using FastFCN", 2nd International Conference on Advanced Information and Communication
-                        Technology (ICAICT), IEEE Xplore, Dhaka, 2020</li>
-                     <li class="publication">S. Mahmud, M.T.H. Tonmoy, K.K. Bhaumik, A.K.M.M. Rahman, M A. Amin, M.
-                        Shoyaib, A.H Khan and A.A. Ali, “Human Activity Recognition from Wearable Sensor Data using
-                        Self-Attention”, ECAI, Spain, 2020</li>
-                     <li class="publication">P. Roy, S. Sharmin, A.A. Ali, M. Shoyaib, "Discretization and Feature
-                        Selection Based on Bias Corrected Mutual Information Considering High-Order Dependencies",
-                        PAKDD, Singapore, 2020</li>
-                     <li class="publication">M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "A Proximity
-                        Weighted Evidential k Nearest Neighbor Classifier for Imbalanced Data", PAKDD, Singapore, 2020.
-                     </li>
-                     <li class="publication">J. Anowar, A. A. Ali, M A. Amin, “A Low-Cost Wearable Rehabilitation
-                        Device”, ICCAE, Australia, 2020.</li>
-                     <li class="publication">M. Wahed, R. A. Rizvee, R. R. Haque, A. M. Ali, M. Zaber and A. A. Ali, "What Can
-                        Nighttime Lights Tell Us about Bangladesh?" in IEEE Region 10 Symposium (TENSYMP),
-                        Dhaka, 2020.</li>
-                     <li class="publication">S.B. Rabbani, A. A. Ali and M. Zaber, "Does Electric Prepaid Meters Decrease Payment
-                        Delinquency? Evidence from Data Centric Analysis of Electricity Consumption in Dhaka,
-                        Bangladesh," in IEEE Region 10 Symposium (TENSYMP), Dhaka, 2020.</li>
-                     <li class="publication">M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "A Proximity Weighted Evidential
-                        k Nearest Neighbor Classifier for Imbalanced Data", in the proceedings of in Pacific-Asia
-                        Conference on Knowledge Discovery and Data Mining (PAKDD), Singapore, 2020.</li>
-
-                     <li class="publication">P. Roy, S. Sharmin, A.A. Ali, M. Shoyaib, "Discretization and Feature Selection Based on Bias
-                        Corrected Mutual Information Considering High-Order Dependencies", in the proceedings of in
-                        Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Singapore,
-                        2020.</li>
-
-                     <li class="publication">S.B. Rabbani, A. A. Ali and M. Zaber, "Does Electric Prepaid Meters Decrease Payment
-                                 Delinquency? Evidence from Data Centric Analysis of Electricity Consumption in Dhaka,
-                                 Bangladesh," in IEEE Region 10 Symposium (TENSYMP), Dhaka, 2020..</li>
-
-
-
-                  </ol>
-               </section>
-               <section id="2019c">
-                  <br />
-                  <h3>2019</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        A.B.S. Nayeem, A. Sarkar, O. Paul, A. A. Ali, M.A. Amin, A.K.M Rahman, "LULC
-                        Segmentation of RGB Satellite Image using FCN-8", in the proceedings of 3rd SLAAI
-                        International Conference on Artificial Intelligence, 2019, Sri Lanka and in Communications in
-                        Computer and Information Science, Book Chapter, Springer, 2019.
-                     </li>
-                     <li class="publication">
-                        N. Sadman, A. Sadmanee, M.I. Tanveer, M.A. Amin, A.A. Ali, "Intrinsic Evaluation of Bangla
-                        Word Embeddings", in the proceedings of International Conference on Bangla Speech and
-                        Language Processing (ICBSLP), Sylhet, Bangladesh, 27-28 September 2019.
-                     </li>
-                     <li class="publication">
-                        A.K.M.M. Rahman, M.A. Amin, A.A. Ali, “A Comparative Study on Disaster Detection from
-                        Social Media Images using Deep Learning”, in the proceedings of Global AI Congress, 2019,
-                        Kolkata, India, and Advances in Intelligent Systems and Computing, Book chapter, Springer,
-                        2019.
-                     </li>
-                     <li class="publication">
-                        M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "Can a Simple Approach Identify
-                        Complex Nurse Care Activity?", in the proceedings of HASCA 2019: 7th International
-                        Workshop on Human Activity Sensing Corpus and Applications in conjunction with ACM
-                        UbiComp, London, UK, 2019.
-                     </li>
-                     <li class="publication">
-                        P.S. Akash, M.E. Kadir, A.A. Ali, M. Shoyaib, "Inter-node Hellinger Distance based Decision
-                        Tree", in the proceedings of 28th International Joint Conference on Artificial Intelligence,
-                        IJCAI 2019, Macao, China, August 10-16, 2019.
-                     </li>
-                     <li class="publication">
-                        M. E. Kadir, P. S. Akash, A. A. Ali, M. Shoyaib and Z. Begum, Evidential SVM for binary
-                        classification, 1st International Conference on Advances in Science, Engineering and Robotics
-                        Technology, in the proceedings of ICASERT 2019, Dhaka, Bangladesh, May 3-5, 2019.
-                     </li>
-                     <li class="publication">
-                        A. H. Chowdhury, A. A. Arabi, M. A. Amin, “n Search of a Low-Cost IoT
-                        System for Real-Time Environment Monitoring”, RAAICON, Bangladesh, 2019.
-                     </li>
-                     <li class="publication">
-                        M. S. Islam, M. S. Rahman, M. A. Amin, “Beat Based Realistic Dance Video
-                        Generation using Deep Learning”, RAAICON, Bangladesh, 2019
-                     </li>
-                     <li class="publication">
-                        N. Sadman, A. Sadmanee, M. I. Tanveer, M. A. Amin, A. A. Ali, “Intrinsic
-                        Evaluation of Bangla Word Embeddings”, ICBSLP, Bangladesh, 2019
-                     </li>
-                     <li class="publication">
-                        S. Islam, M. F. Khan, M. Z. Hossan, M A. Amin, “An Overview of Radio over
-                        Fiber (RoF) Technology”, ICICICT, India, 2019.
-                     </li>
-                     <li class="publication">
-                        M. Z. Hossan, S. Islam, M. F. Kha, S. Shammi, M A. Amin, “Boiler Explosion
-                        in Bangladesh: Causes, Consequences and Precautions”, MSIE, Thailand, 2019.
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3335550.3335592?download=true">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. S. Hossain, A. A. Ali, M A. Amin, “Eye-Gaze to Screen Location Mapping
-                        for UI Evaluation of Webpages”, ICGSP, Hong Kong, 2019.
-                        <a href="https://dl.acm.org/doi/10.1145/3338472.3338483">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        T. P. Proma, M. Z. Hossan, M A. Amin, “Medicine Recognition from Colors and
-                        Text”, ICGSP, Hong Kong, 2019.
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3338472.3338484">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        H. U. Sakib, J. Anowar, W. Hasan, M. A. Amin, “Mobile Based Electronic Home
-                        Appliance Remote Control and Power Consumption Monitoring Using Internet of Things”, ITEC-AP,
-                        Korea, 2019.
-                        <a href="https://ieeexplore.ieee.org/document/8903911">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. W. Hasan, W. F. Durdana, S. Chakraborty, and M. A. Amin, “Assessment of
-                        Ubiquitous Energy from Cow Urine”, ITEC-AP, Korea, 2019.
-                        <a href="https://ieeexplore.ieee.org/document/8903667">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. N. Haque, R. Alam, M. A. Amin, “Prediction of possible asthma attack
-                        from air pollutants: towards a high-density air pollution map for smart cities to improve
-                        living”, ECCE, Bangladesh, 2019.
-                        <a href="https://ieeexplore.ieee.org/document/8679335">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M.N. Hoque, M. Mahbub, M.H. Tarek, L.N. Lata, A.A. Ali, "Nurse Care
-                        Activity Recognition: A GRU-based approach with attention mechanism", HASCA, ACM UbiComp, London
-                        2019.
-                        <a
-                           href="https://www.semanticscholar.org/paper/Nurse-care-activity-recognition%3A-a-GRU-based-with-Haque-Mahbub/d676f4ea654e6df22f3ffe8dd9ea6542bd8cda02">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "Can a Simple
-                        Approach Identify Complex Nurse Care Activity?", HASCA, ACM UbiComp, UK, 2019.
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3341162.3344859">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M.N. Hoque, M. Mahbub, M.H. Tarek, L.N. Lata, A.A. Ali, "Nurse Care
-                        Activity Recognition: A GRU-based approach with attention mechanism", HASCA 2019: 7th
-                        International Workshop on Human Activity Sensing Corpus and Applications in conjunction with ACM
-                        UbiComp, London, UK, 2019.
-                        <a
-                           href="https://www.semanticscholar.org/paper/Nurse-care-activity-recognition%3A-a-GRU-based-with-Haque-Mahbub/d676f4ea654e6df22f3ffe8dd9ea6542bd8cda02">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "Can a Simple
-                        Approach Identify Complex Nurse Care Activity?", HASCA 2019: 7th International Workshop on Human
-                        Activity Sensing Corpus and Applications in conjunction with ACM UbiComp, London, UK, 2019.
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3341162.3344859">Pdf</a>
-
-                     </li>
-                     <li class="publication">
-                        P.S. Akash, M.E. Kadir, A.A. Ali, M. Shoyaib, "A New Splitting Criterion
-                        for Decision Tree using Hellinger Distance", IJCAI, China, 2019.
-                        <a href="https://www.ijcai.org/Proceedings/2019/0272.pdf">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. N. Haque, M.T.H. Tonmoy, S. Mahmud, A. A. Ali, M.A.H. Khan and M.
-                        Shoyaib, “GRU-based Attention Mechanism for Human Activity Recognition”, ICASERT, Bangladesh,
-                        2019.
-                        <a href="https://ieeexplore.ieee.org/document/8934659">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. E. Kadir, P. S. Akash, A. A. Ali, M. Shoyaib and Z. Begum, Evidential
-                        SVM for binary classification, ICASERT, Bangladesh, 2019.
-                        <a href="https://ieeexplore.ieee.org/document/8934772">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        P. Akash, M. Kadir, A. Ali, M. Tawhid, M. Shoyaib, "Introducing Confidence
-                        as a Weight in Random Forest", ICREST, Bangladesh, 2019.
-                        <a href="https://ieeexplore.ieee.org/document/8644396">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        P. Akash, M. Kadir, A. Ali, M. Tawhid, M. Shoyaib, "Introducing Confidence as a Weight in
-                        Random Forest", in the proceedings of International Conference on Robotics, Electrical and
-                        Signal Processing Techniques, ICREST, Dhaka, Bangladesh, 2019.
-                     </li>
-                  </ol>
-               </section>
-               <section id="2018c">
-                  <br />
-                  <h3>2018</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M. Rahman, M. Shuvo, M. Zaber, A. Ali, "Traffic Pattern Analysis from GPS
-                        Data: A Case Study of Dhaka City", IEEE CONECCT, India, 2018.
-                        <a href="https://ieeexplore.ieee.org/document/8482371">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. K Mutasim, M. R. Bashar, R. S. Tipu, M. K. Islam, M A. Amin, “Effect of
-                        Artefact Removal Techniques on EEG Signals for Video Category Classification” ICPR, China, 2018.
-                        <a
-                           href="https://www.researchgate.net/publication/327814632_Effect_of_Artefact_Removal_Techniques_on_EEG_Signals_for_Video_Category_Classification">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2017c">
-                  <br />
-                  <h3>2017</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        S. Sharmin, F. Aktar, A. Ali, M. Khan, M. Shoyaib, "BFSp: A feature selection method for bug
-                        severity classification", in the proceedings of IEEE Region 10 (Asia Pacific) Humanitarian
-                        Technology Conference (R10-HTC), Dhaka, Bangladesh, 2017.
-                     </li>
-                     <li class="publication">
-                        S. Sharmin, A. Ali, M. A. Hossain, M. Shoyaib, "Feature Selection and Discretization based on
-                        Mutual Information", ICIEV Bangladesh, 2017. [Best paper award]
-                        <a href="https://ieeexplore.ieee.org/document/7890885">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        D. Chaki, M. Zaber, A. Ali, "Understanding Complex Social Network of Government Officials in
-                        Decision Making". Communication Policy Research South, Myanmar, 2017.
-                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044296">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Sayed, M. Zaber, A. Ali, P. Mosharaf, "Enumerating the obstacles of accelerating the use of
-                        digital classroom: Lessons from Bangladesh", Communication Policy Research South, Myanmar, 2017.
-                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044296">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Sayed, M. Rahman, M. Zaber, A. Ali, "Understanding Dhaka City Traffic Intensity and Traffic
-                        Expansion Using Gravity Model", ICCIT, Bangladesh, 2017.
-                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044273">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Sharmin, F. Aktar, A. Ali, M. Khan, M. Shoyaib, "BFSp: A feature selection method for bug
-                        severity classification", R10-HTC, Bangladesh, 2017.
-                        <a href="https://ieeexplore.ieee.org/document/8289066">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Islam, A. Ali, M. Zaber, "A Smart Grid Prerequisite: Survey on Electricity Demand Forecasting
-                        Models and Scope Analysis of Demand Forecasting in Bangladesh", R10HTC, Bangladesh, 2017. [Best
-                        paper award].
-                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044273">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Banik , B. Poon, M. A. Amin, “Paper Form Digitization for Hand Written Text”, ICITA,
-                        Australia, 2017.
-                     </li>
-                     <li class="publication">
-                        B. Poon, M A. Amin, H. Yan, "PCA Based Human Face Recognition with Improved Method for Distorted
-                        Images due to Facial Makeup", IMECS, Hong Kong, 2017.
-                        <a href="http://www.iaeng.org/publication/IMECS2017/IMECS2017_pp375-380.pdf">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Pias, A. K Mutasim, and M. A. Amin, “Automatic Detection of Number Plate from Images of
-                        Bangladeshi Vehicles”, ICAAI, 2017, Thailand, 2017.
-                        <a
-                           href="https://www.researchgate.net/publication/316062891_Automatic_Detection_of_Number_Plate_from_Images_of_Bangladeshi_Vehicles">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. A. Arabi, P. Sarkar, F. Ahmed, W. R. Rafie, M. Hannan and M. A.l Amin, “2D Mapping and Vertex
-                        Finding Method for Path Planning in Autonomous Obstacle Avoidance Robotic System”, ICCRE,
-                        Thailand, 2017.
-                        <a href="https://ieeexplore.ieee.org/document/7935038">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        I. U. Haque, A. A. Arabi, S. Hossain, T. Proma, N. Uzzaman, and M. A. Amin, “Vision Based
-                        Trajectory Following Robot and Swarm”, ICCRE, Thailand, 2017.
-                        <a href="https://ieeexplore.ieee.org/document/7935037">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. R. Bashar, A. A. Arabi, R. S. Tipu, M. T. Alam, M. Z. I. Alam and M. A. Amin, “2D Surface
-                        Mapping for Mine Detection using Wireless Network”, ICCRE, Thailand, 2017.
-                        <a href="https://ieeexplore.ieee.org/document/7935066">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Pias, A. K Mutasim, M. A. Amin, "Bangladeshi Number Plate Detection: Cascade Learning vs.
-                        Deep Learning", ACM CBMI, Italy, 2017.
-                        <a
-                           href="https://www.researchgate.net/publication/318250244_Bangladeshi_Number_Plate_Detection_Cascade_Learning_vs_Deep_Learning">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        T. P. Proma, M. Z. Hossan, M. A. Amin, "Medicine Recognition Using Text in Pill Image and
-                        Intrinsic Geometric Property", ICIEV, Japan, 2017.
-                     </li>
-                     <li class="publication">
-                        M. R. Bashar, R. S. Tipu, A. K Mutasim, M. A. Amin, "Effect of EOG Artifacts on Video Category
-                        Classifcaiton from EEG", ICIEV, Japan, 2017.
-                        <a href="https://ieeexplore.ieee.org/document/8338603">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. A. Arabi, H. U. Sakib, P. Sarkar, T. P. Proma, J. Anowar, M A. Amin, "Autonomous Rover
-                        Navigation Using GPS Based Path Planning", AMS, Malaysia, 2017.
-                        <a href="https://ieeexplore.ieee.org/document/8424312">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. A. Arabi, R. S. Tipu, M. R. Bashar, B. Barman, S. A. Monicay, M. A. Amin, "Implementation of
-                        Low-Cost Stereo Humanoid Adaptive Vision for 3D positioning and Distance Measurement for
-                        Robotics Application with Self-calibration", AMS, Malaysia, 2017.
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8424311">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Sayed, M. Zaber, A. Ali, P. Mosharaf, "Enumerating the obstacles of accelerating the use of
-                        digital classroom: Lessons from Bangladesh", in Communication Policy Research South,
-                        Yangon, Myanmar, 2017.
-                     </li>
-                     <li class="publication">
-                        S. Sharmin, A. Ali, M. A. Hossain, M. Shoyaib, "Feature Selection and Discretization based on
-                        Mutual Information", in the proceedings of IEEE International Conference on Image, Vision
-                        and Pattern Recognition, Dhaka, Bangladesh, 2017. [Best paper award]
-                     </li>
-                  </ol>
-               </section>
-               <section id="2016c">
-                  <br />
-                  <h3>2016</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        E. Hossain, S. M. S. Islam, A. Ali, M. A. Amin, "Fish Activity Tracking and Species
-                        Identification in Underwater Video", in the proceedings of 5th International Conference on
-                        Information, Electronics and Vision, Dhaka, Bangladesh, 2016.
-                     </li>
-                     <li class="publication">
-                        S. Saha, A. Mahmud, A. Ali, M. A. Amin, "Classifying Digital X-ray images into Different
-                        Human Body Parts", in the proceedings of 5th International Conference on Information,
-                        Electronics and Vision, Dhaka, Bangladesh, 2016.
-                     </li>
-                     <li class="publication">
-                        S. Debnath, P. P. Roy, A. Ali, M. A. Amin, "Identification of Bird Species from their Singing",
-                        ICIEV, Bangladesh, 2016.
-                        <a href="https://ieeexplore.ieee.org/document/7759992">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Saha, A. Mahmud, A. Ali, M. A. Amin, "Classifying Digital X-ray images into Different Human
-                        Body Parts", ICIEV, Bangladesh, 2016.
-                        <a href="https://ieeexplore.ieee.org/document/7760190">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        R. Alam, M. N. Haque, M. A. Amin, “Possible Asthma Attack Prediction from Air Pollutants”,
-                        ICIEV, Bangladesh, 2016.
-                     </li>
-                     <li class="publication">
-                        S. Debnath, P. P. Roy, A. A. Ali, M. A. Amin, “Identification of Bird Species from Their
-                        Singing”, ICIEV, Bangladesh, 2016.
-                        <a href="https://ieeexplore.ieee.org/document/7759992">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        E. Hossain, S. M. S. Alam, A. A. Ali, M. A. Amin, “Fish Activity Tracking and Species
-                        Identification in Underwater Video”, ICIEV, Bangladesh, 2016.
-                        <a href="https://ieeexplore.ieee.org/document/7760189">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. K Mutasim, Ali Shihab Sabbir, M. Ashraful Amin, “Devising a Strategy for Playing Bangla
-                        Hangman (Jhulonto Manob) Based on Character Frequency Distribution”, ICIEV, Bangladesh, 2016.
-                        <a
-                           href="https://www.researchgate.net/publication/303604584_Devising_a_Strategy_for_Playing_Bangla_Hangman_Jhulonto_Manob_Based_on_Character_Frequency_Distribution">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Saha, A. Mahmud, A. A. Ali, M. A. Amin, “Classifying Digital X-Ray Images into Different
-                        Human Body Parts”, ICIEV, Bangladesh, 2016.
-                        <a href="https://ieeexplore.ieee.org/document/7760190">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        B. Poon, M. A. Amin and H. Yan, “Improved Methods on PCA Based Human Face Recognition for
-                        Distorted Images”, IMECS, Hong Kong, 2016.
-                        <a
-                           href="https://www.semanticscholar.org/paper/Improved-Methods-on-PCA-Based-Human-Face-for-Images-Poon-Amin/f2fd328f056bc1542efac4f57430b59327b5ad0a">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Z. Hossan, T. P. Proma, M. A. Amin, “Medicine Recognition Using Intrinsic Geometric Property
-                        from Pill Image”, PRICAI, Thailand, 2016.
-                     </li>
-                     <li class="publication">
-                        B. Poon, M. A. Amin and H. Yan, “Gabor phase representation on human face recognition for
-                        distorted images”, ICWAPR, China, 2016.
-                        <a href="https://ieeexplore.ieee.org/document/7731653">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2015c">
-                  <br />
-                  <h3>2015</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        N. Saleheen, A. Ali, S. Hossain, H. Sarker, S. Chaterjee, B. Marlin, E. Ertin, M. al'Absi, S.
-                        Kumar, "puffMarker: A Multi-Sensor Approach for Pinpointing the Timing of First Lapse in Smoking
-                        Cessation", ACM UbiComp, Osaka, Japan, 2015.
-                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631252">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. Saha, S. K. Paul, M. Hasan, M. A. Amin, “Android Based Autonomous Arduino Bot”, CEET,
-                        Malaysia, 2015.
-                        <a
-                           href="https://www.semanticscholar.org/paper/Android-Based-Autonomous-Arduino-Bot-Saha-Hasan/78ff0040bdc0028194bddd96a5bff2fb6abe09c7">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        N. Forhad, B. Poon, H. Yan and M. A. Amin, “Online Signature Verification For Multi-Modal
-                        Authentication Using Smart Phone”, IMECS, Hong Kong, 2015. Best Paper award.
-                        <a href="https://pdfs.semanticscholar.org/e844/4acfebe1476e10ff1ade36b64de6e9ae66d8.pdf">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M S S. Faruque, S. Banik, M K. Mohammed, M. Hasan, and M A. Amin, “Teaching & Learning System
-                        for Diagnostic Imaging- Phase I: X-Ray Image Analysis & Retrieval”, CSEDU, Portugal, 2015.
-                        <a
-                           href="https://www.researchgate.net/publication/282851829_Teaching_Learning_System_for_Diagnostic_Imaging_-_Phase_I_X-Ray_Image_Analysis_Retrieval">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. K Mutasim, R. Alam, B. Poon, M A. Amin, “User Feedback Based Mobile Camera Application
-                        Development”, ICITA, Australia, 2015.
-                        <a
-                           href="https://www.researchgate.net/publication/282851829_Teaching_Learning_System_for_Diagnostic_Imaging_-_Phase_I_X-Ray_Image_Analysis_Retrieval">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        R. Alam, A. K Mutasim, B. Poon, M A. Amin, “Data Collection for Local Government and
-                        Visualization for Efficient e-Governance”, ICITA, Australia, 2015.
-                        <a
-                           href="https://www.researchgate.net/publication/283089741_Data_Collection_for_Local_Government_and_Visualization_for_Efficient_e-Governance">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A. Kamal, M. M. L. Elahi, Bruce Poon, M. A. Amin “Fusion Based Approach to Discover Social
-                        Circles in Ego Networks”, ICMLC, China, 2015.
-                        <a href="https://ieeexplore.ieee.org/document/7340609">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. A. Islam, M. Rasheduzzaman, M. M. L. Elahi, B. Poon, M. A. Amin, H. Yan, “Feature Fusion for
-                        Robust Object Tracking” ICMLC, China, 2015.
-                        <a href="https://ieeexplore.ieee.org/abstract/document/7295940">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. A. Amin, M. K. Mohammed, “Overview of the ImageCLEF 2015 medical clustering task”, CLEF,
-                        France, 2015.
-                        <a href="http://ceur-ws.org/Vol-1391/inv-pap1-CR.pdf">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2014c">
-                  <br />
-                  <h3>2014</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        S. Vhaduri, A. Ali, M. Sharmin, K. Hovsepian, and S. Kumar, “Estimating Drivers’ Stress from GPS
-                        Traces,” Automotive UI, 2014.
-                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4390997/">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Rahman, R. Bari, A. Ali, M. Sharmin, A. Raij, K. Hovsepian, S. Hossain, E. Ertin, A. Kennedy,
-                        D. Epstein, K. Preston, M. Jobes, S. Kedia, K. Ward, M. al’Absi, and S. Kumar, “Are We There
-                        Yet? Feasibility of Continuous Stress Assessment via Wireless Physiological Sensors,” ACM BCB,
-                        2014.
-                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4374173/">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Hossain, A. Ali, M. Rahman, E. Ertin, D. Epstein, A. Kennedy, K. Preston, A. Umbricht, Y.
-                        Chen, and S. Kumar, "Identifying Drug (Cocaine) Intake Events from Acute Physiological Response
-                        in the Presence of Free-living Physical Activity," ACM IPSN, Germany, 2014.
-                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4269159/">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        H. Sarker, M. Sharmin, A. Ali, M. Rahman, R. Bari, M. Hossain, and S. Kumar, "Assessing the
-                        Availability of Users to Engage in Just-in-Time Intervention in the Natural Environment," ACM
-                        UbiComp, USA, 2014.
-                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4365928/">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Ridwan, E. Choudhury, B. Poon, M. A. Amin, H. Yan, “A Navigational Aid System for Visually
-                        Impaired Using Microsoft Kinect”, IMECS, Hong Kong, 2014. Best paper award.
-                        <a
-                           href="https://www.researchgate.net/publication/287187341_A_Navigational_Aid_System_for_Visually_Impaired_Using_Microsoft_Kinect">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. S. Q. Z. Nine, B. Poon, M. A. Amin, H. Yan, “Human Computer Interaction through Wireless
-                        Brain Computer Interfacing Device”, ICITA, Australia, 2014. [Invited Talk].
-                     </li>
-                     <li class="publication">
-                        M. M. Rahman, M. A. Amin, B. Poon, H. Yan, “Recognizing Bangladeshi Currency for visually
-                        impaired”, ICMLC, China, 2014.
-                        <a
-                           href="https://www.researchgate.net/publication/285397464_Recognizing_Bangladeshi_Currency_for_Visually_Impaired">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2013c">
-                  <br />
-                  <h3>2013</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        I. Nouyed, B. Poon, M. A. Amin, H. Yan, “Facial Authentication using Gabor Phase Feature
-                        Representations”, IMECS, Hong Kong, 2013. [Best paper award].
-                     </li>
-                     <li class="publication">
-                        M. R. Rahman, M. J. Islam, M. A. Amin, B. Poon, H. Yan “Real-time Human Detection and Tracking
-                        Using a Very Low-Resolution Camera”, ICITA, Australia, 2013.
-                     </li>
-                     <li class="publication">
-                        S. Rahman, M. A. Amin, B. Poon, H. Yan, “Script Identification from Handwriting Images Using
-                        Dimensionality Reduction and Feature Selection”, ICITA, Australia, 2013.
-                        <a
-                           href="https://docplayer.net/142863581-Script-identification-from-handwriting-images-using-dimensionality-reduction-and-feature-selection.html">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        N. Y. Song, J. Nicod, B. Min, R. C. C. Cheung, M. A. Amin, H. Yan, “Noise Filtering and
-                        Occurrence Identification of Mouse Ultrasonic Vocalization Call”, ICMLC, China, 2013.
-                        <a href="https://ieeexplore.ieee.org/document/6890775">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        K. M. Akram, M. M. L. Elahi, M. A. Amin, “Multiple Level Set Region Based Single Line Road
-                        Extraction”, ICMLC, China, 2013.
-                        <a href="https://ieeexplore.ieee.org/document/6890773">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. A. H. Monil, M. S. Q. Z. Nine, B. Poon, M. A. Amin, H. Yan, “Bangla Text Processing and
-                        Recounting Based on Fuzzy Unsupervised Feature Extraction and SVM”, ICMLC, China, 2013.
-                        <a
-                           href="https://www.semanticscholar.org/paper/Bangla-text-processing-and-recognition-based-on-and-Monil-Nine/2de0be05d407ef38f67ca85c4e6239a2e3e41ca4">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        A K M M. Rahman, ASM. I. Anam, M. I. Tanveer, and M. Yeasin, “EmoAssist: A Real-time Social
-                        Interaction Tool to assist the Visually Impaired", HCII, USA, 2013.
-                     </li>
-                  </ol>
-               </section>
-               <section id="2012c">
-                  <br />
-                  <h3>2012</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        A. Ali, S. Hossain, K. Hovsepian, M. Rahman, K. Plarre, and S. Kumar, "mPuff: Automated
-                        Detection of Cigarette Smoking Puffs from Respiration Measurements," IPSN, China, 2012.
-                        <a href="https://ieeexplore.ieee.org/abstract/document/6920942?section=abstract">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        E. Choudhury , S. Rahman , M. Ridwan , F. M. Sheikh, M. A. Amin, “Profound Impact of Artificial
-                        Neural Networks and Gaussian SVM Kernel on Distinctive Feature Set for Offline Signature
-                        Verification”, ICIEV, Bangladesh, 2012.
-                        <a href="https://ieeexplore.ieee.org/document/6317439">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. I. Tanveer, A.S.M. I. Anam, S. Ghosh, A K M M. Rahman, and M. Yeasin, “FEPS: A Sensory
-                        Substitution System for the Blind to Perceive Facial Expressions”, ASSETS, Colorado, 2012.
-                     </li>
-                     <li class="publication">
-                        R. Qasim, M. Akram, M. A. Amin, “Signature Recognition using Different Types of Neural
-                        Networks”, ICIEV, Bangladesh, 2012.
-                     </li>
-                     <li class="publication">
-                        M. I. Ahmed, M. A. Amin, “Biometric Authentication using Circular Segment around Optical Disc”,
-                        ICIEV, Bangladesh, 2012.
-                        <a href="https://ieeexplore.ieee.org/document/6317387">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. S. Arifin, M. G. Kibria, A. Firoze, M. A. Amin, H. Yan, “Dermatological Disease Diagnosis
-                        using Color Skin-Images”, ICMLC, China, 2012.
-                        <a href="https://ieeexplore.ieee.org/document/6359626">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. I. Ahmed, B. Poon, M. Jewel, M A. Amin, H. Yan, “Fundus Phase Congruency Based Biometrics
-                        System”, ICMLC, China, 2012.
-                        <a
-                           href="https://www.researchgate.net/publication/261448171_Fundus_phase_congruency_based_biometrics_system">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        J. Nicod, C. Hassett, N. Yu Song, M. A. Amin, B. B. Min , M. Goodson, B. Nell, R. Joynson, H.
-                        Page, C. Rowe, H. Yan, T. Weaver, R. C.C. Cheung, J. Flint, “1000 Voices Project: Deciphering
-                        the Genetic Basis of Adult Mouse Vocalization using a very Large Dataset”, SfN, USA, 2012.
-                     </li>
-                     <li class="publication">
-                        A K M M. Rahman, M. I. Tanveer, ASM. I. Anam, and M. Yeasin, "IMAPS: A Smart Phone Based
-                        Real-Time Framework For Prediction Of Affect In Natural Dyadic Conversation", VCIP, USA, 2012.
-                     </li>
-                  </ol>
-               </section>
-               <section id="2011c">
-                  <br />
-                  <h3>2011</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M. Rahman, A. Ali, Andrew Raij, Emre Ertin, Mustafa al’Absi, Santosh Kumar, "Online
-                        Detection of Speaking from Respiratory Measurement Collected in the Natural Environment",
-                        in the proceedings of the 10th ACM/IEEE International Conference on Information Processing
-                        in Sensor Networks, IPSN, Chicago, IL, 2011.
-                     </li>
-                     <li class="publication">
-                        A K M M. Rahman, M. I. Tanveer, and M. Yeasin. "A spatio-temporal probabilistic framework for
-                        dividing and predicting facial action units". ACII, USA, 2011.
-                     </li>
-                     <li class="publication">
-                        K. Plarre, A. Raij, S. Hossain, A. Ali, M. Nakajima, M. al'Absi, E. Ertin, et al., "Continuous
-                        Inference of Psychological Stress from Sensory Measurements Collected in the Natural
-                        Environment," ACM IPSN, USA, 2011. [Nominated for Best Paper Award].
-                        <a href="https://ieeexplore.ieee.org/document/5779068">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Rahman, A. Ali, A. Raij, E. Ertin, M. al’Absi, S. Kumar, "Online Detection of Speaking from
-                        Respiratory Measurement Collected in the Natural Environment", ACM/IEEE IPSN, USA, 2011.
-                        <a href="https://ieeexplore.ieee.org/document/5779083">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. I. Ahmed, M. A. Amin, B. Poon and H. Yan, “Biometric Authentication using Mean Intensity
-                        Spread of Optical Disc in Retinal Images”, ICITA, Australia, 2011.
-                        <a
-                           href="https://www.researchgate.net/publication/286805334_Biometric_authentication_using_mean_intensity_spread_of_optical_disc_in_retinal_images">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        I. N., M. A. Amin, B. Poon and H. Yan, “Human Face Recognition Using Weighted Vote of Gabor
-                        Magnitude Filters”, ICITA, Australia, 2011.
-                        <a
-                           href="https://www.semanticscholar.org/paper/Human-Face-Recognition-Using-Weighted-Vote-of-Gabor-Nouyed-Amin/3199a528e5e68f48827544abee7fd6b47678dba5">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M I. Ahmed, M. A. Amin, “A Fast Method for Optical Disc Detection in Retinal Images”, ICCIT,
-                        Bangladesh, 2011.
-                     </li>
-                     <li class="publication">
-                        M. T. Imam, S. F. Miskhat, M. R. Rahman, M. A. Amin, “Neural Network and Regression Based
-                        Processor Load Prediction for Efficient Scaling of Grid and Cloud Resources”, ICCIT, Bangladesh,
-                        2011.
-                        <a href="https://ieeexplore.ieee.org/document/6164809">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        I. Hasan, M. Fatema, M. A. Amin, “Dual Iris Based Human Identification”, ICCIT, Bangladesh,
-                        2011.
-                        <a href="https://ieeexplore.ieee.org/document/6164878">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. Z. Hossain, M. A. Amin, H. Yan, “Rapid Feature Extraction for Bangla Handwritten Digit
-                        Recognition”, ICMLC, China, 2011.
-                        <a
-                           href="https://www.researchgate.net/publication/221544868_Rapid_feature_extraction_for_Bangla_handwritten_digit_recognition">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        I. Nouyed, B. Poon, M. A. Amin, H. Yan, “Face Recognition Accuracy of Gabor Phase
-                        Representations at Different Scales and Orientations”, ICMLC, China, 2011.
-                        <a
-                           href="https://www.researchgate.net/publication/270882901_Face_Recognition_Accuracy_of_Gabor_Phase_Representations_at_Different_Scales_and_Orientations">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2010c">
-                  <br />
-                  <h3>2010</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        J. Hosain and M. A. Amin, "Leaf Identification Based Plant Classification", ICCIT, 2010.
-                     </li>
-                     <li class="publication">
-                        A. Raij, P. Blitz, A. Ali, S. Fisk, "mstress: Supporting continuous collection of objective and
-                        subjective measures of psychosocial stress on mobile devices", Univ. of Memphis, 2010.
-                     </li>
-                  </ol>
-               </section>
-               <section id="2009c">
-                  <br />
-                  <h3>2009</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M. A. Amin and H. Yan, “Phase Congruency Based Retinal Vessel Segmentation”, ICMLC, China, 2009.
-                        [Best student paper award].
-                        <a href="https://ieeexplore.ieee.org/document/5212201">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        B. Poon, M. A. Amin and Hong Yan, “PCA Based Face Recognition and Testing Criteria”, ICMLC,
-                        China, 2009.
-                        <a
-                           href="https://www.researchgate.net/publication/224581492_PCA_based_face_recognition_and_testing_criteria">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2008c">
-                  <br />
-                  <h3>2008</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M. A. Amin and H. Yan, “Expression Intensity Measurement from Facial Images by Self Organizing
-                        Maps”, ICMLC, China, 2008.
-                        <a href="https://ieeexplore.ieee.org/document/4621008">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. A. Amin and H. Yan, “Gabor Filter Representation for Face Recognition by Probabilistic Neural
-                        Networks”, ECVP, Denmark, 2008.
-                     </li>
-                     <li class="publication">
-                        M. S. Sorower, A K M M. Rahman and M. Yeasin, “A Survey on Machine Learning-based Approach for
-                        Testing Large Scale Software”, Workshop on advances and innovations in System Testing, Fedex
-                        Institute of Technology, The University of Memphis, 2008.
-                     </li>
-                  </ol>
-               </section>
-               <section id="2007c">
-                  <br />
-                  <h3>2007</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M. A. Amin and H. Yan, “Sign Language Finger Alphabet Recognition from Gabor-PCA Representation
-                        of Hand Gestures”, ICMLC, Hong Kong, 2007.
-                        <a href="https://ieeexplore.ieee.org/document/4370514">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2006c">
-                  <br />
-                  <h3>2006</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        S. Masum, A. Ali, “Distributed Allocation of Identical Resources in Mobile Ad Hoc Networks”,
-                        in the proceeding of IEEE international Symposium on Modeling and Optimization in Mobile,
-                        Ad Hoc and Wireless Networks, April 03-06, 2006.
-                     </li>
-                     <li class="publication">
-                        S. Masum, A. Ali, “Maintaining a Binary Tree Structure for Mobile Ad Hoc Networks”, ISCC, Italy,
-                        2006.
-                        <a
-                           href="https://www.researchgate.net/publication/224646921_Maintaining_a_Binary_Tree_Structure_For_Mobile_Ad_Hoc_Computing">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Masum, A. Ali, “Asynchronous l-Exclusion in Mobile Ad Hoc Networks”, AINA, Austria, 2006.
-                        <a
-                           href="https://www.researchgate.net/publication/224632911_Asynchronous_l-exclusion_in_mobile_ad_hoc_networks">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        S. Masum, A. Ali, “Asynchronous Leader Election in Mobile Ad Hoc Networks”, AINA, Austria, 2006.
-                        <a
-                           href="https://www.researchgate.net/publication/224632911_Asynchronous_l-exclusion_in_mobile_ad_hoc_networks">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        H. Babu, A. Ali, A. Chowdhury, “Realization of Digital Fuzzy Operations using Multi-Valued
-                        Fredkin Gates”, CDES, a part of WORLDCOMP, USA, 2006.
-                        <a
-                           href="https://www.researchgate.net/publication/220863169_Realization_of_Digital_Fuzzy_Operations_Using_Multi-Valued_Fredkin_Gates">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. R. Amin, A. A. Ali and M. L. Rahman, “Web-Enabled Exam Preparation and Evaluation Services
-                        for Secondary Level Objective Tests with Bangla Language Interface”, ICCPB, 2006.
-                     </li>
-                  </ol>
-               </section>
-               <section id="2005c">
-                  <br />
-                  <h3>2005</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        S. Masum, A. Ali, M. Akbar, “A Fault-Resilient l–Exclusion Algorithm for Mobile AD HOC
-                        Networks”, in the proceedings of IEEE Pacific Rim Conference on Communications,
-                        Computers and Signal Processing, PacRim 2005, Victoria, B.C., Canada, August 24–26, 2005.
-                     </li>
-                     <li class="publication">
-                        M. A. Amin, M. N. Dailey, N. V. Afzulpurkar, D. N. Batanov, V. Esichaikul, “A Fuzzy Clustering
-                        Approach to Estimate the Degree of Facial Expression Using Gabor-PCA Features”, RIUPEEE, Hong
-                        Kong, 2005.
-                     </li>
-                     <li class="publication">
-                        S. Masum, A. Ali, M. Akbar, “A Fault-Resilient l–Exclusion Algorithm for Mobile AD HOC
-                        Networks”, PacRim, Canada, 2005.
-                        <a
-                           href="https://www.researchgate.net/publication/4179217_A_fault-resilient_l-exclusion_algorithm_for_mobile_ad_hoc_networks">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2004c">
-                  <br />
-                  <h3>2004</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M. A. Amin, N. V. Afzolpurkar, S. Akter, “An Algorithm to Find the Area and Area based Feature
-                        of Image Objects and its Application in Image Matching”, ICIG, Thailand, 2004.
-                        <a href="https://ieeexplore.ieee.org/document/1410501?section=abstract">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. A. Awal, M. A. Amin, K. Kanchanasut “A Framework of Business Generation for BTTB”, ICCIT,
-                        Bangladesh, 2004.
-                     </li>
-                  </ol>
-               </section>
-               <section id="2003c">
-                  <br />
-                  <h3>2003</h3>
-                  <br />
-                  <ol>
-                     
-                     <li class="publication">
-                        M. A. Amin, P. P. Dey “Using Common Neural Processing Units for Face-Recognition and
-                        Voice-Recognition”, ICCIT, Bangladesh, 2003.
-                     </li>
-                     <li class="publication">
-                        M. A. Amin, A. L. Haque. “A Problem Specific Real-time Image Recognition for Detecting Error in
-                        Tiles Image”, CISST, United States, 2003.
-                        <a
-                           href="https://www.researchgate.net/publication/221296955_A_Problem_Specific_Real-Time_Image_Recognition_for_Detecting_Error_on_Tiles_Image">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        M. A. Amin, P. P. Dey “The (7, 4, 1)-hamming code and Non-Euclidian Geometry”, IKE, United
-                        States, 2003.
-                        <a
-                           href="https://www.researchgate.net/publication/221057587_The_7_4_1-Hamming_Code_and_a_Non_Euclidean_Geometry">Pdf</a>
-                     </li>
-                     <li class="publication">
-                        H. Babu, M. Islam, A. Ali, M. Akon, M. Rahaman, M. Islam, “A Technique for Logic Design of
-                        Voltage-Mode Pass Transistor Based Multi-Valued Multiple-Output Logic Circuits”, ISMVL, Japan,
-                        2003.
-                        <a
-                           href="https://www.researchgate.net/publication/221107292_A_Technique_for_Logic_Design_of_Voltage-Mode_Pass_Transistor_Based_Multi-Valued_Multiple-Output_Logic_Circuits">Pdf</a>
-                     </li>
-                  </ol>
-               </section>
-               <section id="2002c">
-                  <br />
-                  <h3>2002</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M A. Amin, A H F M S. Kabir, P. Rana, M A.l Awal. “Construction of Disease Diagnostic Sub-system
-                        – Special Methods of Converting Continuous Attributes to Discrete”, ICCIT, Bangladesh, 2002.
-                     </li>
-                     <li class="publication">
-                        M. A. Amin. “Fuzzy Conversion from Higher Bit Colors to Lower Bit Colors”, ICCIT, Bangladesh,
-                        2002.
-                     </li>
-                  </ol>
-               </section>
+        <div class="span3 bs-docs-sidebar" id="navparent">
+          <ul class="nav nav-list bs-docs-sidenav">
+            <li><a href="#refereed"> Conference Papers</a></li>
+            <li><a class="subhead" href="#2021c"> 2021 </a></li>
+            <li><a class="subhead" href="#2020c"> 2020 </a></li>
+            <li><a class="subhead" href="#2019c"> 2019 </a></li>
+            <li><a class="subhead" href="#2018c"> 2018 </a></li>
+            <li><a class="subhead" href="#2017c"> 2017 </a></li>
+            <li><a class="subhead" href="#2016c"> 2016 </a></li>
+            <li><a class="subhead" href="#2015c"> 2015 </a></li>
+            <li><a class="subhead" href="#2014c"> 2014 </a></li>
+            <li><a class="subhead" href="#2013c"> 2013 </a></li>
+            <li><a class="subhead" href="#2012c"> 2012 </a></li>
+            <li><a class="subhead" href="#2011c"> 2011 </a></li>
+            <li><a class="subhead" href="#2010c"> 2010 </a></li>
+            <li><a class="subhead" href="#2009c"> 2009 </a></li>
+            <li><a class="subhead" href="#2008c"> 2008 </a></li>
+            <li><a class="subhead" href="#2007c"> 2007 </a></li>
+            <li><a class="subhead" href="#2006c"> 2006 </a></li>
+            <li><a class="subhead" href="#2005c"> 2005 </a></li>
+            <li><a class="subhead" href="#2004c"> 2004 </a></li>
+            <li><a class="subhead" href="#2003c"> 2003 </a></li>
+            <li><a class="subhead" href="#2002c"> 2002 </a></li>
+            <li><a href="#published"> Journal Publications</a></li>
+            <li><a class="subhead" href="#2020"> 2020 </a></li>
+            <li><a class="subhead" href="#2016"> 2016 </a></li>
+            <li><a class="subhead" href="#2015"> 2015 </a></li>
+            <li><a class="subhead" href="#2014"> 2014 </a></li>
+            <li><a class="subhead" href="#2013"> 2013 </a></li>
+            <li><a class="subhead" href="#2011"> 2011 </a></li>
+            <li><a class="subhead" href="#2010"> 2010 </a></li>
+            <li><a class="subhead" href="#2009"> 2009 </a></li>
+            <li><a class="subhead" href="#2006"> 2006 </a></li>
+            <!-- <li><a href="#inreview"> In Review and Preparation</a></li> -->
+            <li><a href="#book_chapters"> Book Chapters</a></li>
+            <li><a class="subhead" href="#2019bc"> 2019 </a></li>
+            <li><a class="subhead" href="#2018bc"> 2018 </a></li>
+            <li><a class="subhead" href="#2017bc"> 2017 </a></li>
+            <li><a class="subhead" href="#2015bc"> 2015 </a></li>
+            <li><a class="subhead" href="#2014bc"> 2014 </a></li>
+            <li><a class="subhead" href="#2012bc"> 2012 </a></li>
+            <li><a class="subhead" href="#2010bc"> 2010 </a></li>
+            <li><a class="subhead" href="#2009bc"> 2009 </a></li>
+            <li><a class="subhead" href="#2006bc"> 2006 </a></li>
+            <li><a class="subhead" href="#2005bc"> 2005 </a></li>
+          </ul>
+        </div>
+        <div class="span8 offset1">
+          <section id="refereed">
+            <div class="page-header">
+              <h3>
+                Papers and Presentations in Refereed Conference Proceedings
+              </h3>
+            </div>
+            <section id="2021c">
+              <h3>2021</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  Amit Roy, Kashob Kumar Roy, Amin Ahsan Ali, M Ashraful Amin
+                  and A K M Rahman, "Unified Spatio-Temporal Modeling for
+                  Traffic Forecasting using Graph Neural Network", The
+                  International Joint Conference on Neural Network, 2021, (Core
+                  Rank: A)
+                </li>
+                <li class="publication">
+                  Kashob Kumar Roy, Amit Roy, A K M M Rahman, M Ashraful Amin
+                  and Amin Ahsan Ali, "Structure-Aware Hierarchical Graph
+                  Pooling using Information Bottleneck", The International Joint
+                  Conference on Neural Network, 2021, (Core Rank: A)
+                </li>
+                <li class="publication">
+                  Kashob Kumar Roy, Amit Roy, A K M M Rahman, M Ashraful Amin
+                  and Amin Ahsan Ali, "Node Embedding using Mutual Information
+                  and Self-Supervision based Bi-level Aggregation", The
+                  International Joint Conference on Neural Network, 2021, (Core
+                  Rank: A)
+                </li>
+                <li class="publication">
+                  M.T.H. Tonmoy*, Saif Mahmud*, A K M M Rahman, M A. Amin, and
+                  A.A. Ali,, "Hierarchical Self Attention Based Autoencoder for
+                  Open-Set Human Activity Recognition", 25th Pacific-Asia
+                  Conference on Knowledge Discovery and Data Mining
+                  (PAKDD-2021), Springer, May 11-14, 2021, Delhi, India. (Core
+                  Rank: A, acceptance rate: 20%)
+                </li>
+                <li class="publication">
+                  Amit Roy, Kashob Roy, M A. Amin, A.A. Ali, and A K M M Rahman,
+                  "SST-GNN: Simplified Spatio-temporal Traffic forecasting model
+                  using Graph Neural Network", 25th Pacific-Asia Conference on
+                  Knowledge Discovery and Data Mining, 2021 (Core Rank: A,
+                  acceptance rate: 20%)
+                </li>
+                <li class="publication">
+                  Md. A. Pramanik, Md M. Rahman, ASM I Anam, Amin A Ali, Md A
+                  Amin, and A K M M Rahman, " Modeling Traffic Congestion in
+                  Developing Countries using Google Map Data", Future of
+                  Information and Communication Conference (FICC) 2021,
+                  Springer, Vancouver, Canada, 2021
+                </li>
+                <li class="publication">
+                  Qianwei Cheng, A K M M Rahman, Anis Sarker, Abu Bakar Siddik
+                  Nayem, Ovi Paul, Amin Ahsan Ali, M Ashraful Amin, Ryosuke
+                  Shibasaki, Moinul Zaber, "Deep-learning coupled with novel
+                  categorization method to classify the urban environment of the
+                  developing world", 2nd International Conference on Signal
+                  Processing and Machine Learning (SIGML 2021), Switzerland,
+                  2021
+                </li>
+              </ol>
             </section>
+            <section id="2020c">
+              <br />
+              <h3>2020</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  F.F. Niloy, Arif, A.B.S. Nayem, A Sarker, O Paul, M.A. Amin,
+                  A.A. Ali, M.I. Zaber, and A K M M Rahman, “A Novel Disaster
+                  Image Data-set and Characteristics Analysis using Attention
+                  Model”, 25th International Conference on Pattern Recognition
+                  (ICPR 2020) (Core Rank: B, acceptance rate: 43.4%)
+                </li>
+                <li class="publication">
+                  Arif, M.I. Zaber, M.A. Amin, A.A. Ali, AKMM Rahman, “Visual
+                  Attention Based Comparative Study on Disaster Detection from
+                  Social Media Images”, Innovations in Systems and Software
+                  Engineering (ISSE Journal), Springer, 2020.
+                </li>
+                <li class="publication">
+                  M H Tarek, M E Kadir, M Mahbub, P S Akash, A A Ali and M
+                  Shoyaib, "Mutual Information based Feature Selection for Nurse
+                  Care Activity Recognition", Joint 9th International Conference
+                  on Informatics, Electronics & Vision (ICIEV) and 4th
+                  International Conference on Imaging, Vision & Pattern
+                  Recognition (IVPR), Japan, 2020.
+                </li>
+                <li class="publication">
+                  Md. Saif Hassan Onim, Aiman Rafeed Ehtesham, Amreen Anbar, A.
+                  K. M. Nazrul Islam and A K M M Rahman, "LULC classification by
+                  semantic segmentation of satellite images using FastFCN", 2nd
+                  International Conference on Advanced Information and
+                  Communication Technology (ICAICT), IEEE Xplore, Dhaka, 2020
+                </li>
+                <li class="publication">
+                  S. Mahmud, M.T.H. Tonmoy, K.K. Bhaumik, A.K.M.M. Rahman, M A.
+                  Amin, M. Shoyaib, A.H Khan and A.A. Ali, “Human Activity
+                  Recognition from Wearable Sensor Data using Self-Attention”,
+                  ECAI, Spain, 2020
+                </li>
+                <li class="publication">
+                  P. Roy, S. Sharmin, A.A. Ali, M. Shoyaib, "Discretization and
+                  Feature Selection Based on Bias Corrected Mutual Information
+                  Considering High-Order Dependencies", PAKDD, Singapore, 2020
+                </li>
+                <li class="publication">
+                  M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "A
+                  Proximity Weighted Evidential k Nearest Neighbor Classifier
+                  for Imbalanced Data", PAKDD, Singapore, 2020.
+                </li>
+                <li class="publication">
+                  J. Anowar, A. A. Ali, M A. Amin, “A Low-Cost Wearable
+                  Rehabilitation Device”, ICCAE, Australia, 2020.
+                </li>
+                <li class="publication">
+                  M. Wahed, R. A. Rizvee, R. R. Haque, A. M. Ali, M. Zaber and
+                  A. A. Ali, "What Can Nighttime Lights Tell Us about
+                  Bangladesh?" in IEEE Region 10 Symposium (TENSYMP), Dhaka,
+                  2020.
+                </li>
+                <li class="publication">
+                  S.B. Rabbani, A. A. Ali and M. Zaber, "Does Electric Prepaid
+                  Meters Decrease Payment Delinquency? Evidence from Data
+                  Centric Analysis of Electricity Consumption in Dhaka,
+                  Bangladesh," in IEEE Region 10 Symposium (TENSYMP), Dhaka,
+                  2020.
+                </li>
+                <li class="publication">
+                  M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "A
+                  Proximity Weighted Evidential k Nearest Neighbor Classifier
+                  for Imbalanced Data", in the proceedings of in Pacific-Asia
+                  Conference on Knowledge Discovery and Data Mining (PAKDD),
+                  Singapore, 2020.
+                </li>
 
+                <li class="publication">
+                  P. Roy, S. Sharmin, A.A. Ali, M. Shoyaib, "Discretization and
+                  Feature Selection Based on Bias Corrected Mutual Information
+                  Considering High-Order Dependencies", in the proceedings of in
+                  Pacific-Asia Conference on Knowledge Discovery and Data Mining
+                  (PAKDD), Singapore, 2020.
+                </li>
 
+                <li class="publication">
+                  S.B. Rabbani, A. A. Ali and M. Zaber, "Does Electric Prepaid
+                  Meters Decrease Payment Delinquency? Evidence from Data
+                  Centric Analysis of Electricity Consumption in Dhaka,
+                  Bangladesh," in IEEE Region 10 Symposium (TENSYMP), Dhaka,
+                  2020..
+                </li>
+              </ol>
+            </section>
+            <section id="2019c">
+              <br />
+              <h3>2019</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A.B.S. Nayeem, A. Sarkar, O. Paul, A. A. Ali, M.A. Amin, A.K.M
+                  Rahman, "LULC Segmentation of RGB Satellite Image using
+                  FCN-8", in the proceedings of 3rd SLAAI International
+                  Conference on Artificial Intelligence, 2019, Sri Lanka and in
+                  Communications in Computer and Information Science, Book
+                  Chapter, Springer, 2019.
+                </li>
+                <li class="publication">
+                  N. Sadman, A. Sadmanee, M.I. Tanveer, M.A. Amin, A.A. Ali,
+                  "Intrinsic Evaluation of Bangla Word Embeddings", in the
+                  proceedings of International Conference on Bangla Speech and
+                  Language Processing (ICBSLP), Sylhet, Bangladesh, 27-28
+                  September 2019.
+                </li>
+                <li class="publication">
+                  A.K.M.M. Rahman, M.A. Amin, A.A. Ali, “A Comparative Study on
+                  Disaster Detection from Social Media Images using Deep
+                  Learning”, in the proceedings of Global AI Congress, 2019,
+                  Kolkata, India, and Advances in Intelligent Systems and
+                  Computing, Book chapter, Springer, 2019.
+                </li>
+                <li class="publication">
+                  M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "Can
+                  a Simple Approach Identify Complex Nurse Care Activity?", in
+                  the proceedings of HASCA 2019: 7th International Workshop on
+                  Human Activity Sensing Corpus and Applications in conjunction
+                  with ACM UbiComp, London, UK, 2019.
+                </li>
+                <li class="publication">
+                  P.S. Akash, M.E. Kadir, A.A. Ali, M. Shoyaib, "Inter-node
+                  Hellinger Distance based Decision Tree", in the proceedings of
+                  28th International Joint Conference on Artificial
+                  Intelligence, IJCAI 2019, Macao, China, August 10-16, 2019.
+                </li>
+                <li class="publication">
+                  M. E. Kadir, P. S. Akash, A. A. Ali, M. Shoyaib and Z. Begum,
+                  Evidential SVM for binary classification, 1st International
+                  Conference on Advances in Science, Engineering and Robotics
+                  Technology, in the proceedings of ICASERT 2019, Dhaka,
+                  Bangladesh, May 3-5, 2019.
+                </li>
+                <li class="publication">
+                  A. H. Chowdhury, A. A. Arabi, M. A. Amin, “n Search of a
+                  Low-Cost IoT System for Real-Time Environment Monitoring”,
+                  RAAICON, Bangladesh, 2019.
+                </li>
+                <li class="publication">
+                  M. S. Islam, M. S. Rahman, M. A. Amin, “Beat Based Realistic
+                  Dance Video Generation using Deep Learning”, RAAICON,
+                  Bangladesh, 2019
+                </li>
+                <li class="publication">
+                  N. Sadman, A. Sadmanee, M. I. Tanveer, M. A. Amin, A. A. Ali,
+                  “Intrinsic Evaluation of Bangla Word Embeddings”, ICBSLP,
+                  Bangladesh, 2019
+                </li>
+                <li class="publication">
+                  S. Islam, M. F. Khan, M. Z. Hossan, M A. Amin, “An Overview of
+                  Radio over Fiber (RoF) Technology”, ICICICT, India, 2019.
+                </li>
+                <li class="publication">
+                  M. Z. Hossan, S. Islam, M. F. Kha, S. Shammi, M A. Amin,
+                  “Boiler Explosion in Bangladesh: Causes, Consequences and
+                  Precautions”, MSIE, Thailand, 2019.
+                  <a
+                    href="https://dl.acm.org/doi/pdf/10.1145/3335550.3335592?download=true"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. S. Hossain, A. A. Ali, M A. Amin, “Eye-Gaze to Screen
+                  Location Mapping for UI Evaluation of Webpages”, ICGSP, Hong
+                  Kong, 2019.
+                  <a href="https://dl.acm.org/doi/10.1145/3338472.3338483"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  T. P. Proma, M. Z. Hossan, M A. Amin, “Medicine Recognition
+                  from Colors and Text”, ICGSP, Hong Kong, 2019.
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3338472.3338484"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  H. U. Sakib, J. Anowar, W. Hasan, M. A. Amin, “Mobile Based
+                  Electronic Home Appliance Remote Control and Power Consumption
+                  Monitoring Using Internet of Things”, ITEC-AP, Korea, 2019.
+                  <a href="https://ieeexplore.ieee.org/document/8903911">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. W. Hasan, W. F. Durdana, S. Chakraborty, and M. A. Amin,
+                  “Assessment of Ubiquitous Energy from Cow Urine”, ITEC-AP,
+                  Korea, 2019.
+                  <a href="https://ieeexplore.ieee.org/document/8903667">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. N. Haque, R. Alam, M. A. Amin, “Prediction of possible
+                  asthma attack from air pollutants: towards a high-density air
+                  pollution map for smart cities to improve living”, ECCE,
+                  Bangladesh, 2019.
+                  <a href="https://ieeexplore.ieee.org/document/8679335">Pdf</a>
+                </li>
+                <li class="publication">
+                  M.N. Hoque, M. Mahbub, M.H. Tarek, L.N. Lata, A.A. Ali, "Nurse
+                  Care Activity Recognition: A GRU-based approach with attention
+                  mechanism", HASCA, ACM UbiComp, London 2019.
+                  <a
+                    href="https://www.semanticscholar.org/paper/Nurse-care-activity-recognition%3A-a-GRU-based-with-Haque-Mahbub/d676f4ea654e6df22f3ffe8dd9ea6542bd8cda02"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "Can
+                  a Simple Approach Identify Complex Nurse Care Activity?",
+                  HASCA, ACM UbiComp, UK, 2019.
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3341162.3344859"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M.N. Hoque, M. Mahbub, M.H. Tarek, L.N. Lata, A.A. Ali, "Nurse
+                  Care Activity Recognition: A GRU-based approach with attention
+                  mechanism", HASCA 2019: 7th International Workshop on Human
+                  Activity Sensing Corpus and Applications in conjunction with
+                  ACM UbiComp, London, UK, 2019.
+                  <a
+                    href="https://www.semanticscholar.org/paper/Nurse-care-activity-recognition%3A-a-GRU-based-with-Haque-Mahbub/d676f4ea654e6df22f3ffe8dd9ea6542bd8cda02"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M.E. Kadir, P.S. Akash, S. Sharmin, A.A. Ali, M. Shoyaib, "Can
+                  a Simple Approach Identify Complex Nurse Care Activity?",
+                  HASCA 2019: 7th International Workshop on Human Activity
+                  Sensing Corpus and Applications in conjunction with ACM
+                  UbiComp, London, UK, 2019.
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3341162.3344859"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  P.S. Akash, M.E. Kadir, A.A. Ali, M. Shoyaib, "A New Splitting
+                  Criterion for Decision Tree using Hellinger Distance", IJCAI,
+                  China, 2019.
+                  <a href="https://www.ijcai.org/Proceedings/2019/0272.pdf"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. N. Haque, M.T.H. Tonmoy, S. Mahmud, A. A. Ali, M.A.H. Khan
+                  and M. Shoyaib, “GRU-based Attention Mechanism for Human
+                  Activity Recognition”, ICASERT, Bangladesh, 2019.
+                  <a href="https://ieeexplore.ieee.org/document/8934659">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. E. Kadir, P. S. Akash, A. A. Ali, M. Shoyaib and Z. Begum,
+                  Evidential SVM for binary classification, ICASERT, Bangladesh,
+                  2019.
+                  <a href="https://ieeexplore.ieee.org/document/8934772">Pdf</a>
+                </li>
+                <li class="publication">
+                  P. Akash, M. Kadir, A. Ali, M. Tawhid, M. Shoyaib,
+                  "Introducing Confidence as a Weight in Random Forest", ICREST,
+                  Bangladesh, 2019.
+                  <a href="https://ieeexplore.ieee.org/document/8644396">Pdf</a>
+                </li>
+                <li class="publication">
+                  P. Akash, M. Kadir, A. Ali, M. Tawhid, M. Shoyaib,
+                  "Introducing Confidence as a Weight in Random Forest", in the
+                  proceedings of International Conference on Robotics,
+                  Electrical and Signal Processing Techniques, ICREST, Dhaka,
+                  Bangladesh, 2019.
+                </li>
+              </ol>
+            </section>
+            <section id="2018c">
+              <br />
+              <h3>2018</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. Rahman, M. Shuvo, M. Zaber, A. Ali, "Traffic Pattern
+                  Analysis from GPS Data: A Case Study of Dhaka City", IEEE
+                  CONECCT, India, 2018.
+                  <a href="https://ieeexplore.ieee.org/document/8482371">Pdf</a>
+                </li>
+                <li class="publication">
+                  A. K Mutasim, M. R. Bashar, R. S. Tipu, M. K. Islam, M A.
+                  Amin, “Effect of Artefact Removal Techniques on EEG Signals
+                  for Video Category Classification” ICPR, China, 2018.
+                  <a
+                    href="https://www.researchgate.net/publication/327814632_Effect_of_Artefact_Removal_Techniques_on_EEG_Signals_for_Video_Category_Classification"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2017c">
+              <br />
+              <h3>2017</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  S. Sharmin, F. Aktar, A. Ali, M. Khan, M. Shoyaib, "BFSp: A
+                  feature selection method for bug severity classification", in
+                  the proceedings of IEEE Region 10 (Asia Pacific) Humanitarian
+                  Technology Conference (R10-HTC), Dhaka, Bangladesh, 2017.
+                </li>
+                <li class="publication">
+                  S. Sharmin, A. Ali, M. A. Hossain, M. Shoyaib, "Feature
+                  Selection and Discretization based on Mutual Information",
+                  ICIEV Bangladesh, 2017. [Best paper award]
+                  <a href="https://ieeexplore.ieee.org/document/7890885">Pdf</a>
+                </li>
+                <li class="publication">
+                  D. Chaki, M. Zaber, A. Ali, "Understanding Complex Social
+                  Network of Government Officials in Decision Making".
+                  Communication Policy Research South, Myanmar, 2017.
+                  <a
+                    href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044296"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Sayed, M. Zaber, A. Ali, P. Mosharaf, "Enumerating the
+                  obstacles of accelerating the use of digital classroom:
+                  Lessons from Bangladesh", Communication Policy Research South,
+                  Myanmar, 2017.
+                  <a
+                    href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044296"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Sayed, M. Rahman, M. Zaber, A. Ali, "Understanding Dhaka
+                  City Traffic Intensity and Traffic Expansion Using Gravity
+                  Model", ICCIT, Bangladesh, 2017.
+                  <a
+                    href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044273"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  S. Sharmin, F. Aktar, A. Ali, M. Khan, M. Shoyaib, "BFSp: A
+                  feature selection method for bug severity classification",
+                  R10-HTC, Bangladesh, 2017.
+                  <a href="https://ieeexplore.ieee.org/document/8289066">Pdf</a>
+                </li>
+                <li class="publication">
+                  S. Islam, A. Ali, M. Zaber, "A Smart Grid Prerequisite: Survey
+                  on Electricity Demand Forecasting Models and Scope Analysis of
+                  Demand Forecasting in Bangladesh", R10HTC, Bangladesh, 2017.
+                  [Best paper award].
+                  <a
+                    href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044273"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  S. Banik , B. Poon, M. A. Amin, “Paper Form Digitization for
+                  Hand Written Text”, ICITA, Australia, 2017.
+                </li>
+                <li class="publication">
+                  B. Poon, M A. Amin, H. Yan, "PCA Based Human Face Recognition
+                  with Improved Method for Distorted Images due to Facial
+                  Makeup", IMECS, Hong Kong, 2017.
+                  <a
+                    href="http://www.iaeng.org/publication/IMECS2017/IMECS2017_pp375-380.pdf"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Pias, A. K Mutasim, and M. A. Amin, “Automatic Detection of
+                  Number Plate from Images of Bangladeshi Vehicles”, ICAAI,
+                  2017, Thailand, 2017.
+                  <a
+                    href="https://www.researchgate.net/publication/316062891_Automatic_Detection_of_Number_Plate_from_Images_of_Bangladeshi_Vehicles"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  A. A. Arabi, P. Sarkar, F. Ahmed, W. R. Rafie, M. Hannan and
+                  M. A.l Amin, “2D Mapping and Vertex Finding Method for Path
+                  Planning in Autonomous Obstacle Avoidance Robotic System”,
+                  ICCRE, Thailand, 2017.
+                  <a href="https://ieeexplore.ieee.org/document/7935038">Pdf</a>
+                </li>
+                <li class="publication">
+                  I. U. Haque, A. A. Arabi, S. Hossain, T. Proma, N. Uzzaman,
+                  and M. A. Amin, “Vision Based Trajectory Following Robot and
+                  Swarm”, ICCRE, Thailand, 2017.
+                  <a href="https://ieeexplore.ieee.org/document/7935037">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. R. Bashar, A. A. Arabi, R. S. Tipu, M. T. Alam, M. Z. I.
+                  Alam and M. A. Amin, “2D Surface Mapping for Mine Detection
+                  using Wireless Network”, ICCRE, Thailand, 2017.
+                  <a href="https://ieeexplore.ieee.org/document/7935066">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. Pias, A. K Mutasim, M. A. Amin, "Bangladeshi Number Plate
+                  Detection: Cascade Learning vs. Deep Learning", ACM CBMI,
+                  Italy, 2017.
+                  <a
+                    href="https://www.researchgate.net/publication/318250244_Bangladeshi_Number_Plate_Detection_Cascade_Learning_vs_Deep_Learning"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  T. P. Proma, M. Z. Hossan, M. A. Amin, "Medicine Recognition
+                  Using Text in Pill Image and Intrinsic Geometric Property",
+                  ICIEV, Japan, 2017.
+                </li>
+                <li class="publication">
+                  M. R. Bashar, R. S. Tipu, A. K Mutasim, M. A. Amin, "Effect of
+                  EOG Artifacts on Video Category Classifcaiton from EEG",
+                  ICIEV, Japan, 2017.
+                  <a href="https://ieeexplore.ieee.org/document/8338603">Pdf</a>
+                </li>
+                <li class="publication">
+                  A. A. Arabi, H. U. Sakib, P. Sarkar, T. P. Proma, J. Anowar, M
+                  A. Amin, "Autonomous Rover Navigation Using GPS Based Path
+                  Planning", AMS, Malaysia, 2017.
+                  <a href="https://ieeexplore.ieee.org/document/8424312">Pdf</a>
+                </li>
+                <li class="publication">
+                  A. A. Arabi, R. S. Tipu, M. R. Bashar, B. Barman, S. A.
+                  Monicay, M. A. Amin, "Implementation of Low-Cost Stereo
+                  Humanoid Adaptive Vision for 3D positioning and Distance
+                  Measurement for Robotics Application with Self-calibration",
+                  AMS, Malaysia, 2017.
+                  <a
+                    href="https://ieeexplore.ieee.org/abstract/document/8424311"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Sayed, M. Zaber, A. Ali, P. Mosharaf, "Enumerating the
+                  obstacles of accelerating the use of digital classroom:
+                  Lessons from Bangladesh", in Communication Policy Research
+                  South, Yangon, Myanmar, 2017.
+                </li>
+                <li class="publication">
+                  S. Sharmin, A. Ali, M. A. Hossain, M. Shoyaib, "Feature
+                  Selection and Discretization based on Mutual Information", in
+                  the proceedings of IEEE International Conference on Image,
+                  Vision and Pattern Recognition, Dhaka, Bangladesh, 2017. [Best
+                  paper award]
+                </li>
+              </ol>
+            </section>
+            <section id="2016c">
+              <br />
+              <h3>2016</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  E. Hossain, S. M. S. Islam, A. Ali, M. A. Amin, "Fish Activity
+                  Tracking and Species Identification in Underwater Video", in
+                  the proceedings of 5th International Conference on
+                  Information, Electronics and Vision, Dhaka, Bangladesh, 2016.
+                </li>
+                <li class="publication">
+                  S. Saha, A. Mahmud, A. Ali, M. A. Amin, "Classifying Digital
+                  X-ray images into Different Human Body Parts", in the
+                  proceedings of 5th International Conference on Information,
+                  Electronics and Vision, Dhaka, Bangladesh, 2016.
+                </li>
+                <li class="publication">
+                  S. Debnath, P. P. Roy, A. Ali, M. A. Amin, "Identification of
+                  Bird Species from their Singing", ICIEV, Bangladesh, 2016.
+                  <a href="https://ieeexplore.ieee.org/document/7759992">Pdf</a>
+                </li>
+                <li class="publication">
+                  S. Saha, A. Mahmud, A. Ali, M. A. Amin, "Classifying Digital
+                  X-ray images into Different Human Body Parts", ICIEV,
+                  Bangladesh, 2016.
+                  <a href="https://ieeexplore.ieee.org/document/7760190">Pdf</a>
+                </li>
+                <li class="publication">
+                  R. Alam, M. N. Haque, M. A. Amin, “Possible Asthma Attack
+                  Prediction from Air Pollutants”, ICIEV, Bangladesh, 2016.
+                </li>
+                <li class="publication">
+                  S. Debnath, P. P. Roy, A. A. Ali, M. A. Amin, “Identification
+                  of Bird Species from Their Singing”, ICIEV, Bangladesh, 2016.
+                  <a href="https://ieeexplore.ieee.org/document/7759992">Pdf</a>
+                </li>
+                <li class="publication">
+                  E. Hossain, S. M. S. Alam, A. A. Ali, M. A. Amin, “Fish
+                  Activity Tracking and Species Identification in Underwater
+                  Video”, ICIEV, Bangladesh, 2016.
+                  <a href="https://ieeexplore.ieee.org/document/7760189">Pdf</a>
+                </li>
+                <li class="publication">
+                  A. K Mutasim, Ali Shihab Sabbir, M. Ashraful Amin, “Devising a
+                  Strategy for Playing Bangla Hangman (Jhulonto Manob) Based on
+                  Character Frequency Distribution”, ICIEV, Bangladesh, 2016.
+                  <a
+                    href="https://www.researchgate.net/publication/303604584_Devising_a_Strategy_for_Playing_Bangla_Hangman_Jhulonto_Manob_Based_on_Character_Frequency_Distribution"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  S. Saha, A. Mahmud, A. A. Ali, M. A. Amin, “Classifying
+                  Digital X-Ray Images into Different Human Body Parts”, ICIEV,
+                  Bangladesh, 2016.
+                  <a href="https://ieeexplore.ieee.org/document/7760190">Pdf</a>
+                </li>
+                <li class="publication">
+                  B. Poon, M. A. Amin and H. Yan, “Improved Methods on PCA Based
+                  Human Face Recognition for Distorted Images”, IMECS, Hong
+                  Kong, 2016.
+                  <a
+                    href="https://www.semanticscholar.org/paper/Improved-Methods-on-PCA-Based-Human-Face-for-Images-Poon-Amin/f2fd328f056bc1542efac4f57430b59327b5ad0a"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Z. Hossan, T. P. Proma, M. A. Amin, “Medicine Recognition
+                  Using Intrinsic Geometric Property from Pill Image”, PRICAI,
+                  Thailand, 2016.
+                </li>
+                <li class="publication">
+                  B. Poon, M. A. Amin and H. Yan, “Gabor phase representation on
+                  human face recognition for distorted images”, ICWAPR, China,
+                  2016.
+                  <a href="https://ieeexplore.ieee.org/document/7731653">Pdf</a>
+                </li>
+              </ol>
+            </section>
+            <section id="2015c">
+              <br />
+              <h3>2015</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  N. Saleheen, A. Ali, S. Hossain, H. Sarker, S. Chaterjee, B.
+                  Marlin, E. Ertin, M. al'Absi, S. Kumar, "puffMarker: A
+                  Multi-Sensor Approach for Pinpointing the Timing of First
+                  Lapse in Smoking Cessation", ACM UbiComp, Osaka, Japan, 2015.
+                  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631252"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  A. Saha, S. K. Paul, M. Hasan, M. A. Amin, “Android Based
+                  Autonomous Arduino Bot”, CEET, Malaysia, 2015.
+                  <a
+                    href="https://www.semanticscholar.org/paper/Android-Based-Autonomous-Arduino-Bot-Saha-Hasan/78ff0040bdc0028194bddd96a5bff2fb6abe09c7"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  N. Forhad, B. Poon, H. Yan and M. A. Amin, “Online Signature
+                  Verification For Multi-Modal Authentication Using Smart
+                  Phone”, IMECS, Hong Kong, 2015. Best Paper award.
+                  <a
+                    href="https://pdfs.semanticscholar.org/e844/4acfebe1476e10ff1ade36b64de6e9ae66d8.pdf"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M S S. Faruque, S. Banik, M K. Mohammed, M. Hasan, and M A.
+                  Amin, “Teaching & Learning System for Diagnostic Imaging-
+                  Phase I: X-Ray Image Analysis & Retrieval”, CSEDU, Portugal,
+                  2015.
+                  <a
+                    href="https://www.researchgate.net/publication/282851829_Teaching_Learning_System_for_Diagnostic_Imaging_-_Phase_I_X-Ray_Image_Analysis_Retrieval"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  A. K Mutasim, R. Alam, B. Poon, M A. Amin, “User Feedback
+                  Based Mobile Camera Application Development”, ICITA,
+                  Australia, 2015.
+                  <a
+                    href="https://www.researchgate.net/publication/282851829_Teaching_Learning_System_for_Diagnostic_Imaging_-_Phase_I_X-Ray_Image_Analysis_Retrieval"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  R. Alam, A. K Mutasim, B. Poon, M A. Amin, “Data Collection
+                  for Local Government and Visualization for Efficient
+                  e-Governance”, ICITA, Australia, 2015.
+                  <a
+                    href="https://www.researchgate.net/publication/283089741_Data_Collection_for_Local_Government_and_Visualization_for_Efficient_e-Governance"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  A. Kamal, M. M. L. Elahi, Bruce Poon, M. A. Amin “Fusion Based
+                  Approach to Discover Social Circles in Ego Networks”, ICMLC,
+                  China, 2015.
+                  <a href="https://ieeexplore.ieee.org/document/7340609">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. A. Islam, M. Rasheduzzaman, M. M. L. Elahi, B. Poon, M. A.
+                  Amin, H. Yan, “Feature Fusion for Robust Object Tracking”
+                  ICMLC, China, 2015.
+                  <a
+                    href="https://ieeexplore.ieee.org/abstract/document/7295940"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. A. Amin, M. K. Mohammed, “Overview of the ImageCLEF 2015
+                  medical clustering task”, CLEF, France, 2015.
+                  <a href="http://ceur-ws.org/Vol-1391/inv-pap1-CR.pdf">Pdf</a>
+                </li>
+              </ol>
+            </section>
+            <section id="2014c">
+              <br />
+              <h3>2014</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  S. Vhaduri, A. Ali, M. Sharmin, K. Hovsepian, and S. Kumar,
+                  “Estimating Drivers’ Stress from GPS Traces,” Automotive UI,
+                  2014.
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4390997/"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Rahman, R. Bari, A. Ali, M. Sharmin, A. Raij, K. Hovsepian,
+                  S. Hossain, E. Ertin, A. Kennedy, D. Epstein, K. Preston, M.
+                  Jobes, S. Kedia, K. Ward, M. al’Absi, and S. Kumar, “Are We
+                  There Yet? Feasibility of Continuous Stress Assessment via
+                  Wireless Physiological Sensors,” ACM BCB, 2014.
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4374173/"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  S. Hossain, A. Ali, M. Rahman, E. Ertin, D. Epstein, A.
+                  Kennedy, K. Preston, A. Umbricht, Y. Chen, and S. Kumar,
+                  "Identifying Drug (Cocaine) Intake Events from Acute
+                  Physiological Response in the Presence of Free-living Physical
+                  Activity," ACM IPSN, Germany, 2014.
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4269159/"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  H. Sarker, M. Sharmin, A. Ali, M. Rahman, R. Bari, M. Hossain,
+                  and S. Kumar, "Assessing the Availability of Users to Engage
+                  in Just-in-Time Intervention in the Natural Environment," ACM
+                  UbiComp, USA, 2014.
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4365928/"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Ridwan, E. Choudhury, B. Poon, M. A. Amin, H. Yan, “A
+                  Navigational Aid System for Visually Impaired Using Microsoft
+                  Kinect”, IMECS, Hong Kong, 2014. Best paper award.
+                  <a
+                    href="https://www.researchgate.net/publication/287187341_A_Navigational_Aid_System_for_Visually_Impaired_Using_Microsoft_Kinect"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. S. Q. Z. Nine, B. Poon, M. A. Amin, H. Yan, “Human Computer
+                  Interaction through Wireless Brain Computer Interfacing
+                  Device”, ICITA, Australia, 2014. [Invited Talk].
+                </li>
+                <li class="publication">
+                  M. M. Rahman, M. A. Amin, B. Poon, H. Yan, “Recognizing
+                  Bangladeshi Currency for visually impaired”, ICMLC, China,
+                  2014.
+                  <a
+                    href="https://www.researchgate.net/publication/285397464_Recognizing_Bangladeshi_Currency_for_Visually_Impaired"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2013c">
+              <br />
+              <h3>2013</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  I. Nouyed, B. Poon, M. A. Amin, H. Yan, “Facial Authentication
+                  using Gabor Phase Feature Representations”, IMECS, Hong Kong,
+                  2013. [Best paper award].
+                </li>
+                <li class="publication">
+                  M. R. Rahman, M. J. Islam, M. A. Amin, B. Poon, H. Yan
+                  “Real-time Human Detection and Tracking Using a Very
+                  Low-Resolution Camera”, ICITA, Australia, 2013.
+                </li>
+                <li class="publication">
+                  S. Rahman, M. A. Amin, B. Poon, H. Yan, “Script Identification
+                  from Handwriting Images Using Dimensionality Reduction and
+                  Feature Selection”, ICITA, Australia, 2013.
+                  <a
+                    href="https://docplayer.net/142863581-Script-identification-from-handwriting-images-using-dimensionality-reduction-and-feature-selection.html"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  N. Y. Song, J. Nicod, B. Min, R. C. C. Cheung, M. A. Amin, H.
+                  Yan, “Noise Filtering and Occurrence Identification of Mouse
+                  Ultrasonic Vocalization Call”, ICMLC, China, 2013.
+                  <a href="https://ieeexplore.ieee.org/document/6890775">Pdf</a>
+                </li>
+                <li class="publication">
+                  K. M. Akram, M. M. L. Elahi, M. A. Amin, “Multiple Level Set
+                  Region Based Single Line Road Extraction”, ICMLC, China, 2013.
+                  <a href="https://ieeexplore.ieee.org/document/6890773">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. A. H. Monil, M. S. Q. Z. Nine, B. Poon, M. A. Amin, H. Yan,
+                  “Bangla Text Processing and Recounting Based on Fuzzy
+                  Unsupervised Feature Extraction and SVM”, ICMLC, China, 2013.
+                  <a
+                    href="https://www.semanticscholar.org/paper/Bangla-text-processing-and-recognition-based-on-and-Monil-Nine/2de0be05d407ef38f67ca85c4e6239a2e3e41ca4"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  A K M M. Rahman, ASM. I. Anam, M. I. Tanveer, and M. Yeasin,
+                  “EmoAssist: A Real-time Social Interaction Tool to assist the
+                  Visually Impaired", HCII, USA, 2013.
+                </li>
+              </ol>
+            </section>
+            <section id="2012c">
+              <br />
+              <h3>2012</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A. Ali, S. Hossain, K. Hovsepian, M. Rahman, K. Plarre, and S.
+                  Kumar, "mPuff: Automated Detection of Cigarette Smoking Puffs
+                  from Respiration Measurements," IPSN, China, 2012.
+                  <a
+                    href="https://ieeexplore.ieee.org/abstract/document/6920942?section=abstract"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  E. Choudhury , S. Rahman , M. Ridwan , F. M. Sheikh, M. A.
+                  Amin, “Profound Impact of Artificial Neural Networks and
+                  Gaussian SVM Kernel on Distinctive Feature Set for Offline
+                  Signature Verification”, ICIEV, Bangladesh, 2012.
+                  <a href="https://ieeexplore.ieee.org/document/6317439">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. I. Tanveer, A.S.M. I. Anam, S. Ghosh, A K M M. Rahman, and
+                  M. Yeasin, “FEPS: A Sensory Substitution System for the Blind
+                  to Perceive Facial Expressions”, ASSETS, Colorado, 2012.
+                </li>
+                <li class="publication">
+                  R. Qasim, M. Akram, M. A. Amin, “Signature Recognition using
+                  Different Types of Neural Networks”, ICIEV, Bangladesh, 2012.
+                </li>
+                <li class="publication">
+                  M. I. Ahmed, M. A. Amin, “Biometric Authentication using
+                  Circular Segment around Optical Disc”, ICIEV, Bangladesh,
+                  2012.
+                  <a href="https://ieeexplore.ieee.org/document/6317387">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. S. Arifin, M. G. Kibria, A. Firoze, M. A. Amin, H. Yan,
+                  “Dermatological Disease Diagnosis using Color Skin-Images”,
+                  ICMLC, China, 2012.
+                  <a href="https://ieeexplore.ieee.org/document/6359626">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. I. Ahmed, B. Poon, M. Jewel, M A. Amin, H. Yan, “Fundus
+                  Phase Congruency Based Biometrics System”, ICMLC, China, 2012.
+                  <a
+                    href="https://www.researchgate.net/publication/261448171_Fundus_phase_congruency_based_biometrics_system"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  J. Nicod, C. Hassett, N. Yu Song, M. A. Amin, B. B. Min , M.
+                  Goodson, B. Nell, R. Joynson, H. Page, C. Rowe, H. Yan, T.
+                  Weaver, R. C.C. Cheung, J. Flint, “1000 Voices Project:
+                  Deciphering the Genetic Basis of Adult Mouse Vocalization
+                  using a very Large Dataset”, SfN, USA, 2012.
+                </li>
+                <li class="publication">
+                  A K M M. Rahman, M. I. Tanveer, ASM. I. Anam, and M. Yeasin,
+                  "IMAPS: A Smart Phone Based Real-Time Framework For Prediction
+                  Of Affect In Natural Dyadic Conversation", VCIP, USA, 2012.
+                </li>
+              </ol>
+            </section>
+            <section id="2011c">
+              <br />
+              <h3>2011</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. Rahman, A. Ali, Andrew Raij, Emre Ertin, Mustafa al’Absi,
+                  Santosh Kumar, "Online Detection of Speaking from Respiratory
+                  Measurement Collected in the Natural Environment", in the
+                  proceedings of the 10th ACM/IEEE International Conference on
+                  Information Processing in Sensor Networks, IPSN, Chicago, IL,
+                  2011.
+                </li>
+                <li class="publication">
+                  A K M M. Rahman, M. I. Tanveer, and M. Yeasin. "A
+                  spatio-temporal probabilistic framework for dividing and
+                  predicting facial action units". ACII, USA, 2011.
+                </li>
+                <li class="publication">
+                  K. Plarre, A. Raij, S. Hossain, A. Ali, M. Nakajima, M.
+                  al'Absi, E. Ertin, et al., "Continuous Inference of
+                  Psychological Stress from Sensory Measurements Collected in
+                  the Natural Environment," ACM IPSN, USA, 2011. [Nominated for
+                  Best Paper Award].
+                  <a href="https://ieeexplore.ieee.org/document/5779068">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. Rahman, A. Ali, A. Raij, E. Ertin, M. al’Absi, S. Kumar,
+                  "Online Detection of Speaking from Respiratory Measurement
+                  Collected in the Natural Environment", ACM/IEEE IPSN, USA,
+                  2011.
+                  <a href="https://ieeexplore.ieee.org/document/5779083">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. I. Ahmed, M. A. Amin, B. Poon and H. Yan, “Biometric
+                  Authentication using Mean Intensity Spread of Optical Disc in
+                  Retinal Images”, ICITA, Australia, 2011.
+                  <a
+                    href="https://www.researchgate.net/publication/286805334_Biometric_authentication_using_mean_intensity_spread_of_optical_disc_in_retinal_images"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  I. N., M. A. Amin, B. Poon and H. Yan, “Human Face Recognition
+                  Using Weighted Vote of Gabor Magnitude Filters”, ICITA,
+                  Australia, 2011.
+                  <a
+                    href="https://www.semanticscholar.org/paper/Human-Face-Recognition-Using-Weighted-Vote-of-Gabor-Nouyed-Amin/3199a528e5e68f48827544abee7fd6b47678dba5"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M I. Ahmed, M. A. Amin, “A Fast Method for Optical Disc
+                  Detection in Retinal Images”, ICCIT, Bangladesh, 2011.
+                </li>
+                <li class="publication">
+                  M. T. Imam, S. F. Miskhat, M. R. Rahman, M. A. Amin, “Neural
+                  Network and Regression Based Processor Load Prediction for
+                  Efficient Scaling of Grid and Cloud Resources”, ICCIT,
+                  Bangladesh, 2011.
+                  <a href="https://ieeexplore.ieee.org/document/6164809">Pdf</a>
+                </li>
+                <li class="publication">
+                  I. Hasan, M. Fatema, M. A. Amin, “Dual Iris Based Human
+                  Identification”, ICCIT, Bangladesh, 2011.
+                  <a href="https://ieeexplore.ieee.org/document/6164878">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. Z. Hossain, M. A. Amin, H. Yan, “Rapid Feature Extraction
+                  for Bangla Handwritten Digit Recognition”, ICMLC, China, 2011.
+                  <a
+                    href="https://www.researchgate.net/publication/221544868_Rapid_feature_extraction_for_Bangla_handwritten_digit_recognition"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  I. Nouyed, B. Poon, M. A. Amin, H. Yan, “Face Recognition
+                  Accuracy of Gabor Phase Representations at Different Scales
+                  and Orientations”, ICMLC, China, 2011.
+                  <a
+                    href="https://www.researchgate.net/publication/270882901_Face_Recognition_Accuracy_of_Gabor_Phase_Representations_at_Different_Scales_and_Orientations"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2010c">
+              <br />
+              <h3>2010</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  J. Hosain and M. A. Amin, "Leaf Identification Based Plant
+                  Classification", ICCIT, 2010.
+                </li>
+                <li class="publication">
+                  A. Raij, P. Blitz, A. Ali, S. Fisk, "mstress: Supporting
+                  continuous collection of objective and subjective measures of
+                  psychosocial stress on mobile devices", Univ. of Memphis,
+                  2010.
+                </li>
+              </ol>
+            </section>
+            <section id="2009c">
+              <br />
+              <h3>2009</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin and H. Yan, “Phase Congruency Based Retinal Vessel
+                  Segmentation”, ICMLC, China, 2009. [Best student paper award].
+                  <a href="https://ieeexplore.ieee.org/document/5212201">Pdf</a>
+                </li>
+                <li class="publication">
+                  B. Poon, M. A. Amin and Hong Yan, “PCA Based Face Recognition
+                  and Testing Criteria”, ICMLC, China, 2009.
+                  <a
+                    href="https://www.researchgate.net/publication/224581492_PCA_based_face_recognition_and_testing_criteria"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2008c">
+              <br />
+              <h3>2008</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin and H. Yan, “Expression Intensity Measurement from
+                  Facial Images by Self Organizing Maps”, ICMLC, China, 2008.
+                  <a href="https://ieeexplore.ieee.org/document/4621008">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. A. Amin and H. Yan, “Gabor Filter Representation for Face
+                  Recognition by Probabilistic Neural Networks”, ECVP, Denmark,
+                  2008.
+                </li>
+                <li class="publication">
+                  M. S. Sorower, A K M M. Rahman and M. Yeasin, “A Survey on
+                  Machine Learning-based Approach for Testing Large Scale
+                  Software”, Workshop on advances and innovations in System
+                  Testing, Fedex Institute of Technology, The University of
+                  Memphis, 2008.
+                </li>
+              </ol>
+            </section>
+            <section id="2007c">
+              <br />
+              <h3>2007</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin and H. Yan, “Sign Language Finger Alphabet
+                  Recognition from Gabor-PCA Representation of Hand Gestures”,
+                  ICMLC, Hong Kong, 2007.
+                  <a href="https://ieeexplore.ieee.org/document/4370514">Pdf</a>
+                </li>
+              </ol>
+            </section>
+            <section id="2006c">
+              <br />
+              <h3>2006</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  S. Masum, A. Ali, “Distributed Allocation of Identical
+                  Resources in Mobile Ad Hoc Networks”, in the proceeding of
+                  IEEE international Symposium on Modeling and Optimization in
+                  Mobile, Ad Hoc and Wireless Networks, April 03-06, 2006.
+                </li>
+                <li class="publication">
+                  S. Masum, A. Ali, “Maintaining a Binary Tree Structure for
+                  Mobile Ad Hoc Networks”, ISCC, Italy, 2006.
+                  <a
+                    href="https://www.researchgate.net/publication/224646921_Maintaining_a_Binary_Tree_Structure_For_Mobile_Ad_Hoc_Computing"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  S. Masum, A. Ali, “Asynchronous l-Exclusion in Mobile Ad Hoc
+                  Networks”, AINA, Austria, 2006.
+                  <a
+                    href="https://www.researchgate.net/publication/224632911_Asynchronous_l-exclusion_in_mobile_ad_hoc_networks"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  S. Masum, A. Ali, “Asynchronous Leader Election in Mobile Ad
+                  Hoc Networks”, AINA, Austria, 2006.
+                  <a
+                    href="https://www.researchgate.net/publication/224632911_Asynchronous_l-exclusion_in_mobile_ad_hoc_networks"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  H. Babu, A. Ali, A. Chowdhury, “Realization of Digital Fuzzy
+                  Operations using Multi-Valued Fredkin Gates”, CDES, a part of
+                  WORLDCOMP, USA, 2006.
+                  <a
+                    href="https://www.researchgate.net/publication/220863169_Realization_of_Digital_Fuzzy_Operations_Using_Multi-Valued_Fredkin_Gates"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. R. Amin, A. A. Ali and M. L. Rahman, “Web-Enabled Exam
+                  Preparation and Evaluation Services for Secondary Level
+                  Objective Tests with Bangla Language Interface”, ICCPB, 2006.
+                </li>
+              </ol>
+            </section>
+            <section id="2005c">
+              <br />
+              <h3>2005</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  S. Masum, A. Ali, M. Akbar, “A Fault-Resilient l–Exclusion
+                  Algorithm for Mobile AD HOC Networks”, in the proceedings of
+                  IEEE Pacific Rim Conference on Communications, Computers and
+                  Signal Processing, PacRim 2005, Victoria, B.C., Canada, August
+                  24–26, 2005.
+                </li>
+                <li class="publication">
+                  M. A. Amin, M. N. Dailey, N. V. Afzulpurkar, D. N. Batanov, V.
+                  Esichaikul, “A Fuzzy Clustering Approach to Estimate the
+                  Degree of Facial Expression Using Gabor-PCA Features”,
+                  RIUPEEE, Hong Kong, 2005.
+                </li>
+                <li class="publication">
+                  S. Masum, A. Ali, M. Akbar, “A Fault-Resilient l–Exclusion
+                  Algorithm for Mobile AD HOC Networks”, PacRim, Canada, 2005.
+                  <a
+                    href="https://www.researchgate.net/publication/4179217_A_fault-resilient_l-exclusion_algorithm_for_mobile_ad_hoc_networks"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2004c">
+              <br />
+              <h3>2004</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin, N. V. Afzolpurkar, S. Akter, “An Algorithm to Find
+                  the Area and Area based Feature of Image Objects and its
+                  Application in Image Matching”, ICIG, Thailand, 2004.
+                  <a
+                    href="https://ieeexplore.ieee.org/document/1410501?section=abstract"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. A. Awal, M. A. Amin, K. Kanchanasut “A Framework of
+                  Business Generation for BTTB”, ICCIT, Bangladesh, 2004.
+                </li>
+              </ol>
+            </section>
+            <section id="2003c">
+              <br />
+              <h3>2003</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin, P. P. Dey “Using Common Neural Processing Units
+                  for Face-Recognition and Voice-Recognition”, ICCIT,
+                  Bangladesh, 2003.
+                </li>
+                <li class="publication">
+                  M. A. Amin, A. L. Haque. “A Problem Specific Real-time Image
+                  Recognition for Detecting Error in Tiles Image”, CISST, United
+                  States, 2003.
+                  <a
+                    href="https://www.researchgate.net/publication/221296955_A_Problem_Specific_Real-Time_Image_Recognition_for_Detecting_Error_on_Tiles_Image"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. A. Amin, P. P. Dey “The (7, 4, 1)-hamming code and
+                  Non-Euclidian Geometry”, IKE, United States, 2003.
+                  <a
+                    href="https://www.researchgate.net/publication/221057587_The_7_4_1-Hamming_Code_and_a_Non_Euclidean_Geometry"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  H. Babu, M. Islam, A. Ali, M. Akon, M. Rahaman, M. Islam, “A
+                  Technique for Logic Design of Voltage-Mode Pass Transistor
+                  Based Multi-Valued Multiple-Output Logic Circuits”, ISMVL,
+                  Japan, 2003.
+                  <a
+                    href="https://www.researchgate.net/publication/221107292_A_Technique_for_Logic_Design_of_Voltage-Mode_Pass_Transistor_Based_Multi-Valued_Multiple-Output_Logic_Circuits"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2002c">
+              <br />
+              <h3>2002</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M A. Amin, A H F M S. Kabir, P. Rana, M A.l Awal.
+                  “Construction of Disease Diagnostic Sub-system – Special
+                  Methods of Converting Continuous Attributes to Discrete”,
+                  ICCIT, Bangladesh, 2002.
+                </li>
+                <li class="publication">
+                  M. A. Amin. “Fuzzy Conversion from Higher Bit Colors to Lower
+                  Bit Colors”, ICCIT, Bangladesh, 2002.
+                </li>
+              </ol>
+            </section>
+          </section>
 
-            <section id="published">
-               <div class="page-header">
-                  <h3>Journal Publications</h3>
-               </div>
+          <section id="published">
+            <div class="page-header">
+              <h3>Journal Publications</h3>
+            </div>
 
-               <section id="2020">
-                  <h3>2020</h3>
-                  <br />
+            <section id="2020">
+              <h3>2020</h3>
+              <br />
 
-                  <ol>
-                     <li class="publication">
-                        Robust Modeling of Epistemic Mental States, A K M M. Rahman, ASM. I. Anam, and M. Yeasin,
-                        Special Issue: Socio-Affective Technology, JMTA (Accepted) IF: 2.10, 2020
-                     </li>
-                  </ol>
-               </section>
+              <ol>
+                <li class="publication">
+                  Robust Modeling of Epistemic Mental States, A K M M. Rahman,
+                  ASM. I. Anam, and M. Yeasin, Special Issue: Socio-Affective
+                  Technology, JMTA (Accepted) IF: 2.10, 2020
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2018">
+              <h3>2018</h3>
+              <br />
 
+              <ol>
+                <li class="publication">
+                  M. Kamal, A. A. Ali, M. A. H. Khan, and M. Shoyaib, "Braille
+                  to Text Translation for Bengali Language: A Geometric
+                  Approach, Jahangirnagar University Journal of IT, Vol. 7, June
+                  2018, pp. 93-111.
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2016">
+              <h3>2016</h3>
+              <br />
 
-               <hr>
-               <section id="2018">
-                  <h3>2018</h3>
-                  <br />
+              <ol>
+                <li class="publication">
+                  PCA Based Human Face Recognition with Improved Methods for
+                  Distorted Images due to Illumination and Color Background, B.
+                  Poon, M A. Amin, H. Yan,
+                  <a
+                    href="https://scholars.cityu.edu.hk/en/publications/pca-based-human-face-recognition-with-improved-methods-for-distorted-images-due-to-illumination-and-color-background(a8417a54-d54d-4f78-b0bd-2cdc3bcc7140).html"
+                    >IAENG International Journal of Computer Science, 2016</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2015">
+              <h3>2015</h3>
+              <br />
 
-                  <ol>
-                     <li class="publication">
-                        M. Kamal, A. A. Ali, M. A. H. Khan, and M. Shoyaib, "Braille to Text Translation for Bengali
-                        Language: A Geometric Approach, Jahangirnagar University Journal of IT, Vol. 7, June 2018,
-                        pp. 93-111.
-                     </li>
-                  </ol>
-               </section>
-               <hr>
+              <ol>
+                <li class="publication">
+                  A Kennedy, D Epstein, M Jobes, K Phillips, D Agage, M
+                  Tyburski, A. Ali, R Bari, S Hossain, K Hovsepian, M Rahman, E
+                  Ertin, S Kumar, K Preston, “Continuous In-The-Field
+                  Measurement of Heart Rate: Correlates of Drug Use, Craving,
+                  Stress, and Mood in Polydrug Users”, in Drug and Alcohol
+                  Dependence, vol. 151, Elsevier, 2015. (IF: 3.322, 5yr IF:
+                  3.72)
+                </li>
+                <li class="publication">
+                  High Speed Detection of Optical Disc in Retinal Fundus Image,
+                  M. I. Ahmed, M. A. Amin,
+                  <a
+                    href="https://link.springer.com/article/10.1007/s11760-012-0412-3"
+                    >Journal of Signal, Image and Video Processing, Springer,
+                    2015</a
+                  >
+                </li>
 
+                <li class="publication">
+                  A study on the discriminating characteristics of Gabor
+                  phase-face and an improved method for face recognition, I.
+                  Nouyed, B. Poon, M. A. Amin, H. Yan,
+                  <a
+                    href="https://www.researchgate.net/publication/283307440_A_study_on_the_discriminating_characteristics_of_Gabor_phase-face_and_an_improved_method_for_face_recognition"
+                    >IJMLC, Springer, 2015</a
+                  >
+                </li>
 
-               <hr>
-               <section id="2016">
-                  <h3>2016</h3>
-                  <br />
+                <li class="publication">
+                  EmoAssist: A Social Interaction Tool to assist the Visually
+                  Impaired in real world environment, A K M M. Rahman, ASM. I.
+                  Anam, and M. Yeasin, JMTA, IEEE Xplore, 2015
+                </li>
 
-                  <ol>
-                     <li class="publication">
-                        PCA Based Human Face Recognition with Improved Methods for Distorted Images due to
-                        Illumination and Color Background, B. Poon, M A. Amin, H. Yan, <a
-                           href="https://scholars.cityu.edu.hk/en/publications/pca-based-human-face-recognition-with-improved-methods-for-distorted-images-due-to-illumination-and-color-background(a8417a54-d54d-4f78-b0bd-2cdc3bcc7140).html">IAENG
-                           International Journal of Computer Science, 2016</a>
-                     </li>
-                  </ol>
-               </section>
-               <hr>
+                <li class="publication">
+                  A Unified Framework for Dividing and Predicting a Large Set of
+                  Action Units environment, A K M M. Rahman, ASM. I. Anam, and
+                  M. Yeasin, IEEE Transaction of Affective Computing, 2015
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2014">
+              <h3>2014</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. Rahman, R. Bari, A. Ali, M. Sharmin, A. Raij, K. Hovsepian,
+                  S. Hossain, E. Ertin, A. Kennedy, D. Epstein, K. Preston, M.
+                  Jobes, S. Kedia, K. Ward, M. al’Absi, and S. Kumar, “Are We
+                  There Yet? Feasibility of Continuous Stress Assessment via
+                  Wireless Physiological Sensors,” in the proceedings of ACM
+                  BCB, 2014.
+                </li>
+                <li class="publication">
+                  Annotating Retina Fundus Images for Teaching and Learning
+                  Diabetic Retinopathy Software, R. Alam, B. Poon, M. K.
+                  Mohammed, M. A. Amin, H. Yan,
+                  <a
+                    href="https://www.semanticscholar.org/paper/Annotating-Retina-Fundus-Images-for-Teaching-and-Alam-Poon/8306687d9f3b5d359e29d5929b020fd7a399f325"
+                    >Information Technology in Industry, 2014</a
+                  >
+                </li>
 
+                <li class="publication">
+                  Retina Based Biometric Authentication using Phase Congruency,
+                  M. I. Ahmed, M. A. Amin, B. Poon, and H. Yan,
+                  <a
+                    href="https://link.springer.com/article/10.1007/s13042-013-0179-z"
+                    >IJMLC, Springer, 2014</a
+                  >
+                </li>
 
-               <section id="2015">
-                  <h3>2015</h3>
-                  <br />
+                <li class="publication">
+                  Dual Iris Based Human Identification, I. Hasan and M. A. Amin,
+                  <a
+                    href="https://www.researchgate.net/publication/254019810_Dual_iris_based_human_identification"
+                    >Journal of Signal, Image and Video Processing, Springer,
+                    2014</a
+                  >
+                </li>
+              </ol>
+              <hr />
+            </section>
+            <hr />
+            <section id="2013">
+              <h3>2013</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  On Constructing Approximate Convex Hull, M. Z. Hossain, M. A.
+                  Amin,
+                  <a
+                    href="https://www.researchgate.net/publication/271299854_On_Constructing_Approximate_Convex_Hull"
+                    >AJCM (Special Issue-Computational Geometry), Scientific
+                    Research, 2013</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2012">
+              <h3>2012</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A. Ali, S. Hossain, K. Hovsepian, M. Rahman, K. Plarre, and S.
+                  Kumar, "mPuff: Automated Detection of Cigarette Smoking Puffs
+                  from Respiration Measurements," in the proceedings of ACM
+                  IPSN, Beijing, China, 2012.
+                </li>
+              </ol>
+            </section>
+            <hr />
 
-                  <ol>
-                     <li class="publication">
-                        A Kennedy, D Epstein, M Jobes, K Phillips, D Agage, M Tyburski, A. Ali, R Bari, S Hossain,
-                        K Hovsepian, M Rahman, E Ertin, S Kumar, K Preston, “Continuous In-The-Field
-                        Measurement of Heart Rate: Correlates of Drug Use, Craving, Stress, and Mood in Polydrug
-                        Users”, in Drug and Alcohol Dependence, vol. 151, Elsevier, 2015. (IF: 3.322, 5yr IF: 3.72)
-                     </li>
-                     <li class="publication">
-                        High Speed Detection of Optical Disc in Retinal Fundus Image, M. I. Ahmed, M. A. Amin, <a
-                           href="https://link.springer.com/article/10.1007/s11760-012-0412-3">Journal of Signal, Image
-                           and Video Processing, Springer, 2015</a>
-                     </li>
+            <section id="2011">
+              <h3>2011</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. Rahman, A. Ali, K. Plarre, M. al'Absi, E. Ertin, and S.
+                  Kumar, "mConverse: Inferring Conversation Episodes from
+                  Respiratory Measurements Collected in the Field," in the
+                  proceedings of ACM Wireless Health, San Diego, CA. 2011.
+                  (Nominated for Best Paper Award)
+                </li>
+                <li class="publication">
+                  High Speed Detection of Blood Vessels in a Retinal Fundus
+                  Image using Phase Congruency, M. A. Amin and H. Yan,
+                  <a
+                    href="https://www.researchgate.net/publication/220176738_High_speed_detection_of_retinal_blood_vessels_in_fundus_image_using_phase_congruency"
+                    >Soft Computing, Springer, 2011</a
+                  >
+                </li>
 
-                     <li class="publication">
-                        A study on the discriminating characteristics of Gabor phase-face and an improved method for
-                        face recognition, I. Nouyed, B. Poon, M. A. Amin, H. Yan, <a
-                           href="https://www.researchgate.net/publication/283307440_A_study_on_the_discriminating_characteristics_of_Gabor_phase-face_and_an_improved_method_for_face_recognition">IJMLC,
-                           Springer, 2015</a>
-                     </li>
+                <li class="publication">
+                  Performance Evaluation and Comparison of PCA Based Human Face
+                  Recognition Methods for Distorted Images, B. Poon, M. A. Amin
+                  and H. Yan,
+                  <a
+                    href="https://www.researchgate.net/publication/226973571_Performance_evaluation_and_comparison_of_PCA_Based_human_face_recognition_methods_for_distorted_images"
+                    >IJMLC, Springer, 2011</a
+                  >
+                </li>
+              </ol>
 
+              <hr />
+            </section>
+            <hr />
+            <section id="2010">
+              <h3>2010</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A Consensus based ℓ-Exclusion Algorithm for Mobile Ad Hoc
+                  Networks, S. Masum, M. Akbar, A. Ali, M. Rahman, Ad Hoc
+                  Networks, Elsevier, 2010
+                </li>
 
-                     <li class="publication">
-                        EmoAssist: A Social Interaction Tool to assist the Visually Impaired in real world
-                        environment,
-                        A K M M. Rahman, ASM. I. Anam, and M. Yeasin,
-                        JMTA, IEEE Xplore, 2015
-                     </li>
+                <li class="publication">
+                  Tracking Facial behavior from Video, A K M M. Rahman, Sidney
+                  D’Mello, IIS, May, 2010
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2009">
+              <h3>2009</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  An Empirical Study on the Characteristics of Gabor
+                  Representations for Face Recognition, M. A. Amin and H. Yan,
+                  IJPRAI, World Scientific, 2009
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2006">
+              <h3>2006</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A Method for Designing Decoded PLAs using Genetic Algorithms
+                  H. Babu, A. Wadud, A. Ali, Accepted for publication in the
+                  Dhaka University Journal of Science, 2006
+                </li>
 
-                     <li class="publication">
-                        A Unified Framework for Dividing and Predicting a Large Set of Action Units
-                        environment,
-                        A K M M. Rahman, ASM. I. Anam, and M. Yeasin,
-                        IEEE Transaction of Affective Computing, 2015
-                     </li>
+                <li class="publication">
+                  Analysis and Investigation of a High-Performance Intelligent
+                  Network using a UNIX-based tool, A K M F. Haque, A. A. Ali, M.
+                  S. Kaiser, Journal of the Bangladesh Electronics Society, 2006
+                </li>
+              </ol>
+            </section>
+            <hr />
+            <section id="2003">
+              <h3>2003</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  H. Babu, M. Islam, A. Ali, M. Akon, M. Rahaman, M. Islam, “A
+                  Technique for Logic Design of Voltage-Mode Pass Transistor
+                  Based Multi-Valued Multiple-Output Logic Circuits”, in the
+                  proceedings of IEEE International Symposium of Multi-valued
+                  Logic, ISMVL, Japan, 2003.
+                </li>
+              </ol>
+            </section>
+          </section>
+          <hr />
 
-
-
-                  </ol>
-               </section>
-               <hr />
-
-
-               <section id="2014">
-                  <h3>2014</h3>
-                  <br />
-                  <ol>
-                     <li class="publication">
-                        M. Rahman, R. Bari, A. Ali, M. Sharmin, A. Raij, K. Hovsepian, S. Hossain, E. Ertin, A.
-                        Kennedy, D. Epstein, K. Preston, M. Jobes, S. Kedia, K. Ward, M. al’Absi, and S. Kumar, “Are
-                        We There Yet? Feasibility of Continuous Stress Assessment via Wireless Physiological
-                        Sensors,” in the proceedings of ACM BCB, 2014.
-                     </li>
-                     <li class="publication">
-                        Annotating Retina Fundus Images for Teaching and Learning Diabetic Retinopathy Software,
-                        R. Alam, B. Poon, M. K. Mohammed, M. A. Amin, H. Yan,
-                        <a
-                           href="https://www.semanticscholar.org/paper/Annotating-Retina-Fundus-Images-for-Teaching-and-Alam-Poon/8306687d9f3b5d359e29d5929b020fd7a399f325">Information
-                           Technology in Industry, 2014</a>
-                     </li>
-
-                     <li class="publication">
-                        Retina Based Biometric Authentication using Phase Congruency,
-                        M. I. Ahmed, M. A. Amin, B. Poon, and H. Yan,
-                        <a href="https://link.springer.com/article/10.1007/s13042-013-0179-z">IJMLC, Springer, 2014</a>
-                     </li>
-
-                     <li class="publication">
-                        Dual Iris Based Human Identification,
-                        I. Hasan and M. A. Amin,
-                        <a
-                           href="https://www.researchgate.net/publication/254019810_Dual_iris_based_human_identification">Journal
-                           of Signal, Image and Video Processing, Springer, 2014</a>
-                     </li>
-
-
-
-                  </ol>
-                  <hr />
-
-                  <section id="2013">
-                     <h3>2013</h3>
-                     <br />
-                     <ol>
-                        <li class="publication">
-                           On Constructing Approximate Convex Hull,
-                           M. Z. Hossain, M. A. Amin,
-                           <a
-                              href="https://www.researchgate.net/publication/271299854_On_Constructing_Approximate_Convex_Hull">AJCM
-                              (Special Issue-Computational Geometry), Scientific Research, 2013</a>
-                        </li>
-                     </ol>
-
-                  </section>
-                  <hr />
-
-                  <section id="2012">
-                     <h3>2012</h3>
-                     <br />
-                     <ol>
-                        <li class="publication">
-                           A. Ali, S. Hossain, K. Hovsepian, M. Rahman, K. Plarre, and S. Kumar, "mPuff: Automated
-                           Detection of Cigarette Smoking Puffs from Respiration Measurements," in the proceedings of
-                           ACM IPSN, Beijing, China, 2012.
-                        </li>
-                     </ol>
-
-                  </section>
-                  <hr />
-
-
-                  <section id="2011">
-                     <h3>2011</h3>
-                     <br />
-                     <ol>
-                        <li class="publication">
-                           M. Rahman, A. Ali, K. Plarre, M. al'Absi, E. Ertin, and S. Kumar, "mConverse: Inferring
-                           Conversation Episodes from Respiratory Measurements Collected in the Field," in the
-                           proceedings of ACM Wireless Health, San Diego, CA. 2011. (Nominated for Best Paper
-                           Award)
-                        </li>
-                        <li class="publication">
-                           High Speed Detection of Blood Vessels in a Retinal Fundus Image using Phase Congruency,
-                           M. A. Amin and H. Yan,
-                           <a
-                              href="https://www.researchgate.net/publication/220176738_High_speed_detection_of_retinal_blood_vessels_in_fundus_image_using_phase_congruency">Soft
-                              Computing, Springer, 2011</a>
-                        </li>
-
-                        <li class="publication">
-                           Performance Evaluation and Comparison of PCA Based Human Face Recognition Methods for
-                           Distorted Images,
-                           B. Poon, M. A. Amin and H. Yan,
-                           <a
-                              href="https://www.researchgate.net/publication/226973571_Performance_evaluation_and_comparison_of_PCA_Based_human_face_recognition_methods_for_distorted_images">IJMLC,
-                              Springer, 2011</a>
-                        </li>
-
-                     </ol>
-
-
-                     <hr />
-                  </section>
-                  <hr />
-                  <section id="2010">
-                     <h3>2010</h3>
-                     <br />
-                     <ol>
-                        <li class="publication">
-                           A Consensus based ℓ-Exclusion Algorithm for Mobile Ad Hoc Networks,
-                           S. Masum, M. Akbar, A. Ali, M. Rahman,
-                           Ad Hoc Networks, Elsevier, 2010
-                        </li>
-
-                        <li class="publication">
-                           Tracking Facial behavior from Video,
-                           A K M M. Rahman, Sidney D’Mello,
-                           IIS, May, 2010
-                        </li>
-
-                     </ol>
-
-
-
-
-                     <hr />
-                     <section id="2009">
-                        <h3>2009</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              An Empirical Study on the Characteristics of Gabor Representations for Face Recognition,
-                              M. A. Amin and H. Yan,
-                              IJPRAI, World Scientific, 2009
-                           </li>
-
-
-                        </ol>
-
-
-                     </section>
-                     <hr />
-                     <section id="2006">
-                        <h3>2006</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              A Method for Designing Decoded PLAs using Genetic Algorithms
-                              H. Babu, A. Wadud, A. Ali,
-                              Accepted for publication in the Dhaka University Journal of Science, 2006
-                           </li>
-
-                           <li class="publication">
-                              Analysis and Investigation of a High-Performance Intelligent Network using a UNIX-based
-                              tool,
-                              A K M F. Haque, A. A. Ali, M. S. Kaiser,
-                              Journal of the Bangladesh Electronics Society, 2006
-                           </li>
-
-                        </ol>
-
-
-                        <hr />
-                        <section id="2003">
-                           <h3>2003</h3>
-                           <br />
-                           <ol>
-                              <li class="publication">
-                                 H. Babu, M. Islam, A. Ali, M. Akon, M. Rahaman, M. Islam, “A Technique for Logic Design
-                                 of Voltage-Mode Pass Transistor Based Multi-Valued Multiple-Output Logic Circuits”, in the
-                                 proceedings of IEEE International Symposium of Multi-valued Logic, ISMVL, Japan, 2003.
-                              </li>
-   
-   
-                           </ol>
-
-                     </section>
-                  </section>
-                  <hr>
-
-                  <!-- <section id="inreview">
+          <!-- <section id="inreview">
                <div class="page-header">
                   <h3>In Review and Preperation</h3>
                </div>
@@ -1247,219 +1531,251 @@
                </ol>
             </section> -->
 
-                  <hr>
-                  <section id="book_chapters">
-                     <div class="page-header">
-                        <h3>Book Chapters</h3>
-                     </div>
-                     <section id="2019bc">
-                        <h3>2019</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              ABS Nayem, A. Sarker, O. Paul, A. Ali, M. A Amin, and A.K.M.M. Rahman, “LULC Segmentation
-                              of RGB
-                              Satellite Image Using FCN-8”, CCIS, Springer, 2019
-                           </li>
-                           <li class="publication">
-                              M. W. Hasan, A. H. Chowdhury, M. M. Hasan, A. R. Datta, A.K.M.M. Rahman, M A. Amin, “IoT
-                              Based
-                              Smart Application System to Prevent Sexual Harassment in Public Transport”, AISC,
-                              Springer,
-                              2019.
-                           </li>
-                           <li class="publication">
-                              Arif, A. Omar, S. Ashraf, A.K.M.M. Rahman, M A. Amin, A. A. Ali, “A Comparative Study on
-                              Disaster Detection from Social Media Images using Deep Learning”, AISC, Springer, 2019.
-                           </li>
-                           <li class="publication">
-                              S. Sharmin, M. Shoyaib, A. Ali, M. Khan, O. Chae, "Simultaneous Feature Selection and
-                              Discretization based on Mutual Information", Pattern Recognition, Elsevier, 2019.
-                              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320319300809">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2018bc">
-                        <br />
-                        <h3>2018</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              A. K Mutasim, M. R. Bashar, R. S. Tipu, M. K. Islam, M A. Amin, “Computational
-                              Intelligence for
-                              Pattern Recognition in EEG Signals” Computational Intelligence for Pattern Recognition,
-                              Springer, 2018.
-                              <a href="https://link.springer.com/chapter/10.1007/978-3-319-89629-8_11">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2017bc">
-                        <br />
-                        <h3>2017</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              A. K Mutasim, R. S. Tipu, M R. Bashar, M A. Amin, "Video Category Classification Using
-                              Wireless
-                              EEG", Springer, BI, 2017.
-                              <a href="https://link.springer.com/chapter/10.1007/978-3-319-70772-3_4">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2015bc">
-                        <br />
-                        <h3>2015</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              A Kennedy, D Epstein, M Jobes, K Phillips, D Agage, M Tyburski, A. Ali, R Bari, S Hossain,
-                              K
-                              Hovsepian, M Rahman, E Ertin, S Kumar, K Preston, “Continuous In-The-Field Measurement of
-                              Heart
-                              Rate: Correlates of Drug Use, Craving, Stress, and Mood in Polydrug Users”, in Drug and
-                              Alcohol
-                              Dependence, Elsevier, 2015.
-                              <a href="https://www.ncbi.nlm.nih.gov/pubmed/25920802">Pdf</a>
-                           </li>
-                           <li class="publication">
-                              M. M. Rahman, B. Poon, M. A. Amin and H. Yan, “Support System using Microsoft Kinect and
-                              Mobile
-                              Phone for Daily Activity of Visually Impaired”, Transactions on Engineering Technologies,
-                              Springer, 2015.
-                              <a href="https://link.springer.com/chapter/10.1007/978-94-017-9588-3_32">Pdf</a>
-                           </li>
-                           <li class="publication">
-                              M. Z. Hossain, M. Hasan, M. A. Amin, “Analysis of Efficient Construction for UV-Diagram”,
-                              Springer, ICSI-CCI, 2015.
-                              <a href="https://link.springer.com/chapter/10.1007/978-3-319-20469-7_35">Pdf</a>
-                           </li>
-                           <li class="publication">
-                              M. Z. Hossain, M. A. Wahid, M. Hasan, M. A. Amin, “Analysis of Spatial Subdivision on
-                              Gabriel
-                              Graph”, Springer, ICSI-CCI, 2015.
-                              <a href="https://link.springer.com/chapter/10.1007/978-3-319-20469-7_34">Pdf</a>
-                           </li>
-                           <li class="publication">
-                              M. Villegas, H. Muller, A. Gilbert, L. Piras, J. Wang, K. Mikolajczyk, A. G. S. de
-                              Herrera, S.
-                              Bromuri, M. A. Amin, M. K. Mohammed, B. Acar, S. Uskudarli, N. B. Marvasti, J. F. Aldana,
-                              M. del
-                              M. R. Garcia, “General Overview of ImageCLEF at the CLEF 2015 Labs”, Springer, CLEF, 2015.
-                              <a href="https://link.springer.com/chapter/10.1007/978-3-319-24027-5_45">Pdf</a>
-                           </li>
-                           <li class="publication">
-                              S. K. Paul, M. S. Q. Z. Nine, M. Hasan, M. A. Amin, “Cognitive Task Classification from
-                              Wireless
-                              EEG”, Springer, BIH 2015.
-                              <a
-                                 href="https://www.researchgate.net/publication/282851742_Cognitive_Task_Classificaiton_from_Wireless_EEG">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2014bc">
-                        <br />
-                        <h3>2014</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              M. M. Rahman, M. A. Amin, B. Poon, H. Yan, “Recognizing Bangladeshi Currency for visually
-                              impaired”, CCIS, Springer, ICMLC 2014.
-                              <a href="https://link.springer.com/chapter/10.1007/978-3-662-45652-1_14">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2012bc">
-                        <br />
-                        <h3>2012</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              R. Azevedo, R. Landis, R. F. Behnagh, M. Duffy, G. Trev., J. Harley, F. Bouchet, J.
-                              Burlison, M.
-                              Taub, N. Pacam., M. Yeasin, A K M M. Rahman, M. I. Tanveer, and G. Hossain, “The
-                              Effectiveness
-                              of Pedagogical Agents’ Prompting and Feedback in Facilitating Co-Adapted Learning with
-                              MetaTutor”, Intelligent Tutoring Systems (ITS), 2012.
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2010bc">
-                        <br />
-                        <h3>2010</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              M. A. Amin and H. Yan, “Gabor and Log-Gabor Wavelet for Face Recognition,” Advances in
-                              Face
-                              Image Analysis: Techniques and Technologies, IGI Global, 2010.
-                              <a href="https://www.igi-global.com/chapter/gabor-log-gabor-wavelet-face/43821">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2009bc">
-                        <br />
-                        <h3>2009</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              M. A. Amin and H. Yan, “Gabor Wavelet in Behavioral Biometrics,” Behavioral Biometrics for
-                              Human
-                              Identification: Intelligent Applications, IGI Global, 2009.
-                              <a
-                                 href="https://www.researchgate.net/publication/287296376_Gabor_wavelets_in_behavioral_biometrics">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2006bc">
-                        <br />
-                        <h3>2006</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              M. A. Islam, S. Akhter, T. E. Mursalin, and M. A. Amin,”A Suitable Neural Network to
-                              Detect
-                              Textile Defects,” LNCS, Springer, 2006.
-                              <a
-                                 href="https://www.researchgate.net/publication/221138613_A_Suitable_Neural_Network_to_Detect_Textile_Defects">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                     <section id="2005bc">
-                        <br />
-                        <h3>2005</h3>
-                        <br />
-                        <ol>
-                           <li class="publication">
-                              M. A. Amin, N. V. Afzulpurkar, M. N. Dailey, D. N. Batanov, V. Esichaikul, “Fuzzy-C-Mean
-                              Determines the Principle Component Pairs to Estimate the Degree of Emotion from Facial
-                              Expressions,” LNCS, Springer, 2005.
-                              <a
-                                 href="https://www.researchgate.net/publication/221087417_Fuzzy-C-Mean_Determines_the_Principle_Component_Pairs_to_Estimate_the_Degree_of_Emotion_from_Facial_Expressions">Pdf</a>
-                           </li>
-                        </ol>
-                     </section>
-                  </section>
-                  <hr>
-
-
-         </div>
+          <hr />
+          <section id="book_chapters">
+            <div class="page-header">
+              <h3>Book Chapters</h3>
+            </div>
+            <section id="2019bc">
+              <h3>2019</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  ABS Nayem, A. Sarker, O. Paul, A. Ali, M. A Amin, and A.K.M.M.
+                  Rahman, “LULC Segmentation of RGB Satellite Image Using
+                  FCN-8”, CCIS, Springer, 2019
+                </li>
+                <li class="publication">
+                  M. W. Hasan, A. H. Chowdhury, M. M. Hasan, A. R. Datta,
+                  A.K.M.M. Rahman, M A. Amin, “IoT Based Smart Application
+                  System to Prevent Sexual Harassment in Public Transport”,
+                  AISC, Springer, 2019.
+                </li>
+                <li class="publication">
+                  Arif, A. Omar, S. Ashraf, A.K.M.M. Rahman, M A. Amin, A. A.
+                  Ali, “A Comparative Study on Disaster Detection from Social
+                  Media Images using Deep Learning”, AISC, Springer, 2019.
+                </li>
+                <li class="publication">
+                  S. Sharmin, M. Shoyaib, A. Ali, M. Khan, O. Chae,
+                  "Simultaneous Feature Selection and Discretization based on
+                  Mutual Information", Pattern Recognition, Elsevier, 2019.
+                  <a
+                    href="https://www.sciencedirect.com/science/article/abs/pii/S0031320319300809"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2018bc">
+              <br />
+              <h3>2018</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A. K Mutasim, M. R. Bashar, R. S. Tipu, M. K. Islam, M A.
+                  Amin, “Computational Intelligence for Pattern Recognition in
+                  EEG Signals” Computational Intelligence for Pattern
+                  Recognition, Springer, 2018.
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-319-89629-8_11"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2017bc">
+              <br />
+              <h3>2017</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A. K Mutasim, R. S. Tipu, M R. Bashar, M A. Amin, "Video
+                  Category Classification Using Wireless EEG", Springer, BI,
+                  2017.
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-319-70772-3_4"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2015bc">
+              <br />
+              <h3>2015</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  A Kennedy, D Epstein, M Jobes, K Phillips, D Agage, M
+                  Tyburski, A. Ali, R Bari, S Hossain, K Hovsepian, M Rahman, E
+                  Ertin, S Kumar, K Preston, “Continuous In-The-Field
+                  Measurement of Heart Rate: Correlates of Drug Use, Craving,
+                  Stress, and Mood in Polydrug Users”, in Drug and Alcohol
+                  Dependence, Elsevier, 2015.
+                  <a href="https://www.ncbi.nlm.nih.gov/pubmed/25920802">Pdf</a>
+                </li>
+                <li class="publication">
+                  M. M. Rahman, B. Poon, M. A. Amin and H. Yan, “Support System
+                  using Microsoft Kinect and Mobile Phone for Daily Activity of
+                  Visually Impaired”, Transactions on Engineering Technologies,
+                  Springer, 2015.
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-94-017-9588-3_32"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Z. Hossain, M. Hasan, M. A. Amin, “Analysis of Efficient
+                  Construction for UV-Diagram”, Springer, ICSI-CCI, 2015.
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-319-20469-7_35"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Z. Hossain, M. A. Wahid, M. Hasan, M. A. Amin, “Analysis of
+                  Spatial Subdivision on Gabriel Graph”, Springer, ICSI-CCI,
+                  2015.
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-319-20469-7_34"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  M. Villegas, H. Muller, A. Gilbert, L. Piras, J. Wang, K.
+                  Mikolajczyk, A. G. S. de Herrera, S. Bromuri, M. A. Amin, M.
+                  K. Mohammed, B. Acar, S. Uskudarli, N. B. Marvasti, J. F.
+                  Aldana, M. del M. R. Garcia, “General Overview of ImageCLEF at
+                  the CLEF 2015 Labs”, Springer, CLEF, 2015.
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-319-24027-5_45"
+                    >Pdf</a
+                  >
+                </li>
+                <li class="publication">
+                  S. K. Paul, M. S. Q. Z. Nine, M. Hasan, M. A. Amin, “Cognitive
+                  Task Classification from Wireless EEG”, Springer, BIH 2015.
+                  <a
+                    href="https://www.researchgate.net/publication/282851742_Cognitive_Task_Classificaiton_from_Wireless_EEG"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2014bc">
+              <br />
+              <h3>2014</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. M. Rahman, M. A. Amin, B. Poon, H. Yan, “Recognizing
+                  Bangladeshi Currency for visually impaired”, CCIS, Springer,
+                  ICMLC 2014.
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-662-45652-1_14"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2012bc">
+              <br />
+              <h3>2012</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  R. Azevedo, R. Landis, R. F. Behnagh, M. Duffy, G. Trev., J.
+                  Harley, F. Bouchet, J. Burlison, M. Taub, N. Pacam., M.
+                  Yeasin, A K M M. Rahman, M. I. Tanveer, and G. Hossain, “The
+                  Effectiveness of Pedagogical Agents’ Prompting and Feedback in
+                  Facilitating Co-Adapted Learning with MetaTutor”, Intelligent
+                  Tutoring Systems (ITS), 2012.
+                </li>
+              </ol>
+            </section>
+            <section id="2010bc">
+              <br />
+              <h3>2010</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin and H. Yan, “Gabor and Log-Gabor Wavelet for Face
+                  Recognition,” Advances in Face Image Analysis: Techniques and
+                  Technologies, IGI Global, 2010.
+                  <a
+                    href="https://www.igi-global.com/chapter/gabor-log-gabor-wavelet-face/43821"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2009bc">
+              <br />
+              <h3>2009</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin and H. Yan, “Gabor Wavelet in Behavioral
+                  Biometrics,” Behavioral Biometrics for Human Identification:
+                  Intelligent Applications, IGI Global, 2009.
+                  <a
+                    href="https://www.researchgate.net/publication/287296376_Gabor_wavelets_in_behavioral_biometrics"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2006bc">
+              <br />
+              <h3>2006</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Islam, S. Akhter, T. E. Mursalin, and M. A. Amin,”A
+                  Suitable Neural Network to Detect Textile Defects,” LNCS,
+                  Springer, 2006.
+                  <a
+                    href="https://www.researchgate.net/publication/221138613_A_Suitable_Neural_Network_to_Detect_Textile_Defects"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+            <section id="2005bc">
+              <br />
+              <h3>2005</h3>
+              <br />
+              <ol>
+                <li class="publication">
+                  M. A. Amin, N. V. Afzulpurkar, M. N. Dailey, D. N. Batanov, V.
+                  Esichaikul, “Fuzzy-C-Mean Determines the Principle Component
+                  Pairs to Estimate the Degree of Emotion from Facial
+                  Expressions,” LNCS, Springer, 2005.
+                  <a
+                    href="https://www.researchgate.net/publication/221087417_Fuzzy-C-Mean_Determines_the_Principle_Component_Pairs_to_Estimate_the_Degree_of_Emotion_from_Facial_Expressions"
+                    >Pdf</a
+                  >
+                </li>
+              </ol>
+            </section>
+          </section>
+          <hr />
+        </div>
       </div>
-   </div>
-   <div id="footer"></div>
+    </div>
+    <div id="footer"></div>
 
-   <!-- Le javascript
+    <!-- Le javascript
          ================================================== -->
-   <!-- Placed at the end of the document so the pages load faster -->
-   <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
-   <script src="js/bootstrap.min.js"></script>
-   <script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
       $(document).ready(function () {
-         $(document.body).scrollspy({
-            target: "#navparent"
-         });
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
       });
-
-   </script>
-</body>
-
+    </script>
+  </body>
 </html>
