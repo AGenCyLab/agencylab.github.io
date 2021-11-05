@@ -29,22 +29,26 @@ ol.alpha > li:before {
   counter-increment: list;
 }
 
-.pdf_link_container {
-  margin-top: 50px;
+.author_date_pdf {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.pdf_link_text {
-  font-size: large;
-  color: #666;
+.pdf_link {
+  background: #009966;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 5px 20px;
+  margin-top: -22px;
+  margin-left: 50px;
+  cursor: pointer;
 }
 
-.pdf_link_text > a {
+.pdf_link:hover {
   text-decoration: none;
-  color: #888;
-}
-
-.pdf_link_text > a:hover {
-  color: #000;
+  background: #009988;
+  color: #ffffff;
 }
 
 .post-date {
@@ -80,30 +84,10 @@ ol.alpha > li:before {
   color: "#666";
   margin-bottom: 2px;
 }
+
 .presentation-date {
   font-size: small;
   color: "#666";
-}
-
-.c22 {
-  font-style: italic;
-}
-
-span.c13.c6 {
-  font-weight: 600;
-}
-
-h3.c12.c8 {
-  font-size: 17.5px;
-}
-
-@media screen and (min-width: 1200px) {
-}
-
-@media screen and (max-width: 1199px) {
-}
-
-@media screen and (max-width: 979px) {
 }
 
 @media screen and (max-width: 767px) {
