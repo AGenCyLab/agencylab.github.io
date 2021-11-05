@@ -13,6 +13,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/blog_style.css" />
+    <link rel="stylesheet" href="css/video_style.css" />
     <link href="css/blueimp-gallery.min.css" rel="stylesheet" />
     <link href="css/blueimp-gallery-video.css" rel="stylesheet" />
     <script src="js/jquery-1.9.1.min.js"></script>
@@ -26,6 +28,7 @@
 
   <body>
     <script src="js/web-components/NavBar.js"></script>
+    <script src="js/web-components/Video.js"></script>
     <div id="header"></div>
     <nav-bar></nav-bar>
 
@@ -51,12 +54,98 @@
             data-offset-top="200"
             data-offset-bottom="260"
           >
+            <li><a href="#paper_presentation">Paper Presentations</a></li>
             <li><a href="#root_workshop"> Root System Workshop </a></li>
             <li><a href="#segmentation"> Semantic Segmentation </a></li>
             <li><a href="#rehab"> Rehabilitation </a></li>
           </ul>
         </div>
+
         <div class="span8 offset1">
+          <section id="paper_presentation">
+            <div class="page-header">
+              <h3>Paper Presentations</h3>
+            </div>
+            <div class="row-fluid post-container">
+              <div class="span4 video-root">
+                <video-element
+                  video_title="Graph Spectral methods"
+                  video_description="Video presentation 'Graph Spectral methods'"
+                  video_link="https://drive.google.com/file/d/1SslaRXzwyx_JoH_F5LoM7aQrLg3fp19i/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="VAE to estimate Multidimensional Item Response Theory model parameters"
+                  video_description="Video presentation on a research paper named 'VAE to estimate Multidimensional Item Response Theory model parameters'"
+                  video_link="https://drive.google.com/file/d/1tZZF6Pr341tSol9cBDKEvRZWv5O6kltS/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="Self-supervised learning - non-contrastive"
+                  video_description="Video presentation 'Self-supervised learning - non-contrastive'"
+                  video_link="https://drive.google.com/file/d/1PvMm_EqSOC1PamBJWG-uWR0ltb1EFj88/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="Self-supervised learning - contrastive loss"
+                  video_description="Video presentation 'Self-supervised learning - contrastive loss'"
+                  video_link="https://drive.google.com/file/d/1fO3hA0easLsqh-NdkqVi8_GWOyP2IX_k/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="Transformer and extensions"
+                  video_description="Video presentation 'Transformer and extensions'"
+                  video_link="https://drive.google.com/file/d/1SK-tXX_vD6ihfb6RVahMTzr9EthDLgCP/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="GP Regression"
+                  video_description="Video presentation 'GP Regression'"
+                  video_link="https://drive.google.com/file/d/1hMwiajxGJprIiU7xPCBFVbSJ5Fy4WzzZ/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="MRFs"
+                  video_description="Video presentation 'MRFs'"
+                  video_link="https://drive.google.com/file/d/1hWN3MYwaiQBrz-nCq1WHQc6dQlpycGw8/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="NCP-VAE: Variational Autoencoders with Noise Contrastive Priors"
+                  video_description="Video presentation on paper 'NCP-VAE: Variational Autoencoders with Noise Contrastive Priors'"
+                  video_link="https://drive.google.com/file/d/1VZUVyxvqP3HsEihS8q4MgwVPsD6qFBAg/preview"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="SST-GNN: Simplified Spatio temporal Traffic forecasting model using Graph Neural Network"
+                  video_description="Video presentation of our paper 'SST-GNN: Simplified Spatio temporal Traffic forecasting model using Graph Neural Network' which is accepted as a conference paper in PAKDD 2021"
+                  video_link="https://www.youtube.com/embed/Vl4P5IfbuE4"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="Hierarchical Graph Pooling using Information Bottleneck"
+                  video_description="Video presentation on a research paper named 'Structure Structure Aware Hierarchical Graph Pooling using Information Bottleneck' which is accepted as a conference paper in IJCNN 2021"
+                  video_link="https://www.youtube.com/embed/L3amRKyaCsw"
+                ></video-element>
+              </div>
+              <div class="span4 video-root">
+                <video-element
+                  video_title="USTGCN:Unified Spatio Temporal Modeling for Traffic Forecasting using Graph Neural Network"
+                  video_description="Video presentation of our paper 'Unified Spatio Temporal Modeling for Traffic Forecasting using Graph Neural Network' which is accepted as a conference paper in IJCNN 2021. "
+                  video_link="https://www.youtube.com/embed/95EJAFOsUmY"
+                ></video-element>
+              </div>
+            </div>
+          </section>
           <section id="root_workshop">
             <div class="page-header">
               <h3>Root System Workshop</h3>
