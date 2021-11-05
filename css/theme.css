@@ -246,6 +246,18 @@ body > .navbar {
   }
 }
 
+/* doc sidebar */
+#navparent {
+  position: sticky;
+  top: 0;
+}
+
+#doc-sidebar-ul {
+  max-height: 75vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 /* responsive images */
 /* 
   a particular bootstrap 2.3.1 css selector has a bug:
