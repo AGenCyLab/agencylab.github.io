@@ -25,7 +25,7 @@ template.innerHTML = `
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/news.html">News</a></li>
                 <li><a href="/teaching.html">Teaching</a></li>
-                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/resources.html">Resources</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
           </div>

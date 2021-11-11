@@ -25,6 +25,18 @@ body {
   padding-bottom: 24px !important;
 }
 
+/* doc sidebar */
+#navparent {
+  position: sticky;
+  top: 0;
+}
+
+#doc-sidebar-ul {
+  max-height: 75vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 /* Customize the navbar links to be fill the entire space of the .navbar */
 
 .navbar .navbar-inner {
