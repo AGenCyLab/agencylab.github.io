@@ -920,3 +920,11 @@ ul.sponsors {
     padding: 0px;
   }
 }
+
+.resource-parent-container {
+  margin: 48px 0;
+}
+
+.resource-parent-container h4 {
+  margin: 32px 0;
+}
