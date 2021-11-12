@@ -51,7 +51,27 @@ function renderVideoData(videoData) {
   });
 }
 
-function renderBlogPost(blogPostData) {}
+function renderBlogPost(blogPostData) {
+  // blogPostData is simply an array of objects, with no semester information,
+  // so they should ideally just be rendered one after the another
+  const blogPostTargetDiv = document.querySelector("#resource-contents");
+  renderHeading("h2", "Blog Posts", blogPostTargetDiv);
+
+  blogPostData.forEach(({ date, title, link, author, image }) => {
+    const html = `
+        <resource-post
+          context="blog"
+          title="${title}"
+          date="${formatDate(date)}"
+          link="${link}"
+          author="${author}"
+          image="${image}"
+        ></resource-post>
+      `;
+
+    blogPostTargetDiv.insertAdjacentHTML("beforeend", html);
+  });
+}
 
 fetch("/data/resources.json")
   .then((response) => response.json())

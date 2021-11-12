@@ -18,15 +18,15 @@ resourcePostTemplate.innerHTML = `
         <h3><a href="" class="resource-title"></a></h3>
 
         <div class="media">
-          <p class="resource-date-container">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <span class="resource-date"></span>
-          </p>
+          <div class="resource-date-container">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            <p class="resource-date"></p>
+          </div>
 
-          <p class="resource-author-container">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <span class="resource-author">Posted by <strong class="author-names"></strong></span>
-          </p>
+          <div class="resource-author-container">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <p class="author-names"></p>
+          </div>
         </div>
 
         <p class="resource-preview"></p>
@@ -72,6 +72,12 @@ class ResourcePost extends HTMLElement {
     if (link) {
       this.shadowRoot.querySelector(".resource-title").href = link;
       this.shadowRoot.querySelector(".read-more-btn").href = link;
+    }
+  }
+
+  setAuthor(author) {
+    if (author) {
+      this.shadowRoot.querySelector(".author-names").innerHTML = author;
     }
   }
 
@@ -124,6 +130,16 @@ class ResourcePost extends HTMLElement {
       "Open Video in New Tab";
     this.shadowRoot.querySelector(".resource-author-container").remove();
     this.shadowRoot.querySelector(".resource-date-container").remove();
+  }
+
+  renderBlogPost({ date, title, link, author, image }) {
+    this.setDate(date);
+    this.setTitle(title);
+    this.setLink(link);
+    this.setImage(image, title);
+    this.setAuthor(author);
+
+    this.shadowRoot.querySelector(".read-more-btn").innerHTML = "Read Post";
   }
 
   renderContent(context, data) {
