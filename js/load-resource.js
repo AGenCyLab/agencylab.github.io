@@ -59,15 +59,15 @@ function renderBlogPost(blogPostData) {
 
   blogPostData.forEach(({ date, title, link, author, image }) => {
     const html = `
-        <resource-post
-          context="blog"
-          title="${title}"
-          date="${formatDate(date)}"
-          link="${link}"
-          author="${author}"
-          image="${image}"
-        ></resource-post>
-      `;
+      <resource-post
+        context="blog"
+        title="${title}"
+        date="${formatDate(date)}"
+        link="${link}"
+        author="${author}"
+        image="${image}"
+      ></resource-post>
+    `;
 
     blogPostTargetDiv.insertAdjacentHTML("beforeend", html);
   });
