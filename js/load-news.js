@@ -34,15 +34,17 @@ function loadNews() {
         featuredNewsTargetDiv.insertAdjacentHTML("beforeend", html);
       });
 
-      otherNews.forEach(({ date, description }) => {
-        const html = `<other-news
-                      date="${formatDate(date)}"
-                      description="${description}"
-                    >
-                    </other-news>
-      `;
-        otherNewsTargetDiv.insertAdjacentHTML("beforeend", html);
-      });
+      if (otherNewsTargetDiv) {
+        otherNews.forEach(({ date, description }) => {
+          const html = `<other-news
+                        date="${formatDate(date)}"
+                        description="${description}"
+                      >
+                      </other-news>
+        `;
+          otherNewsTargetDiv.insertAdjacentHTML("beforeend", html);
+        });
+      }
     })
     .catch((error) => console.error(error));
 }
