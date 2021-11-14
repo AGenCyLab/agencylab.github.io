@@ -1,6 +1,7 @@
-function renderHeading(elementTag, text, targetParentNode) {
+function renderHeading(elementTag, elementId, text, targetParentNode) {
   const heading = document.createElement(elementTag);
   heading.innerHTML = text;
+  heading.id = elementId;
   targetParentNode.appendChild(heading);
 }
 
@@ -8,10 +9,26 @@ function renderSlideData(slideData) {
   // slideData is an array of objects, each object representing a semester worth
   // of slide data
   const slideTargetDiv = document.querySelector("#slide-contents");
-  renderHeading("h2", "Reading Group Presentation Slides", slideTargetDiv);
+  const sidebarTarget = document.querySelector(".nav-list");
+
+  let id = "slides";
+  renderHeading("h2", id, "Reading Group Presentation Slides", slideTargetDiv);
+  let navigation = `
+    <li>
+      <a href="#${id}">Presentation Slides</a>
+    </li>
+  `;
+  sidebarTarget.insertAdjacentHTML("beforeend", navigation);
 
   slideData.forEach(({ semester, slides }) => {
-    renderHeading("h4", semester, slideTargetDiv);
+    id = `slides-${semester.toLowerCase().replace(/\s/g, "-")}`;
+    renderHeading("h4", id, semester, slideTargetDiv);
+    navigation = `
+      <li>
+        <a class="subhead" href="#${id}">${semester}</a>
+      </li>
+    `;
+    sidebarTarget.insertAdjacentHTML("beforeend", navigation);
 
     slides.forEach(({ date, image, link, title }) => {
       const html = `
@@ -31,10 +48,26 @@ function renderSlideData(slideData) {
 
 function renderVideoData(videoData) {
   const videoTargetDiv = document.querySelector("#video-contents");
-  renderHeading("h2", "Presentation Videos", videoTargetDiv);
+  const sidebarTarget = document.querySelector(".nav-list");
+
+  let id = "videos";
+  renderHeading("h2", id, "Presentation Videos", videoTargetDiv);
+  let navigation = `
+    <li>
+      <a href="#${id}">Presentation Videos</a>
+    </li>
+  `;
+  sidebarTarget.insertAdjacentHTML("beforeend", navigation);
 
   videoData.forEach(({ semester, videos }) => {
-    renderHeading("h4", semester, videoTargetDiv);
+    id = `videos-${semester.toLowerCase().replace(/\s/g, "-")}`;
+    renderHeading("h4", id, semester, videoTargetDiv);
+    let navigation = `
+      <li>
+        <a class="subhead" href="#${id}">${semester}</a>
+      </li>
+    `;
+    sidebarTarget.insertAdjacentHTML("beforeend", navigation);
 
     videos.forEach(({ description, link, title }) => {
       const html = `
@@ -55,7 +88,16 @@ function renderBlogPost(blogPostData) {
   // blogPostData is simply an array of objects, with no semester information,
   // so they should ideally just be rendered one after the another
   const blogPostTargetDiv = document.querySelector("#resource-contents");
-  renderHeading("h2", "Blog Posts", blogPostTargetDiv);
+  const sidebarTarget = document.querySelector(".nav-list");
+
+  let id = "blogs";
+  renderHeading("h2", "blogs", "Blog Posts", blogPostTargetDiv);
+  let navigation = `
+    <li>
+      <a href="#${id}">Blog Posts</a>
+    </li>
+  `;
+  sidebarTarget.insertAdjacentHTML("beforeend", navigation);
 
   blogPostData.forEach(({ date, title, link, author, image }) => {
     const html = `

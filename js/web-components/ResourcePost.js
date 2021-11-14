@@ -177,8 +177,4 @@ class ResourcePost extends HTMLElement {
   }
 }
 
-window.addEventListener(
-  "DOMContentLoaded",
-  () => customElements.define("resource-post", ResourcePost),
-  true
-);
+window.customElements.define("resource-post", ResourcePost);

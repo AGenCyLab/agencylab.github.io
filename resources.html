@@ -13,7 +13,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="css/theme.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/video_style.css" />
     <link rel="stylesheet" href="css/blog_style.css" />
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- MathJAX -->
@@ -50,6 +49,10 @@
 
     <div class="container">
       <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar" id="navparent">
+          <ul class="nav nav-list bs-docs-sidenav" id="doc-sidebar-ul"></ul>
+        </div>
+
         <div class="span9">
           <!-- slides section -->
           <div class="resource-parent-container" id="slide-contents"></div>
@@ -59,46 +62,11 @@
 
           <!-- blog posts -->
           <div class="resource-parent-container" id="resource-contents"></div>
-
-          <!-- <div class="pagination">
-            <ul>
-              <li><a href="#">Prev</a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </div> -->
         </div>
-        <!-- <div class="span3">
-          <h3>Categories</h3>
-          <ul class="nav nav-list">
-            <li><a href="#">Variational Auto-encoder</a></li>
-            <li><a href="#">Energy-based Model</a></li>
-          </ul>
-          <h3>Authors</h3>
-          <ul class="nav nav-list">
-            <li>
-              <a href="resource-contents/1_vae.html">Fahim Faisal Niloy</a>
-              <a href="resource-contents/2_group_theory.html"
-                >Mir Sazzat Hossain</a
-              >
-              <a href="resource-contents/3_linear_algebra_topics.html"
-                >Sugandha Roy</a
-              >
-              <a href="resource-contents/3_linear_algebra_topics.html"
-                >Hasnain Hossain</a
-              >
-            </li>
-          </ul>
-        </div> -->
       </div>
     </div>
     <div id="footer"></div>
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.min.js"></script>
 
     <!-- for date time parsing  -->
     <script
@@ -111,5 +79,14 @@
 
     <!-- loading resources -->
     <script src="js/load-resource.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
   </body>
 </html>
