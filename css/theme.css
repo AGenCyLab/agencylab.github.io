@@ -916,16 +916,28 @@ ul.sponsors {
   font-size: 11px;
 }
 
-#iub-logo-footer {
+.iub-logo {
   padding: 24px;
   height: 200px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 979px) {
-  #iub-logo-footer {
-    height: 200px;
-    margin-top: 16px;
-    padding: 0px;
+.iub-logo-banner {
+  padding: 16px;
+  height: 150px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .iub-logo-banner {
+    height: 100px;
+    padding: 0px 0px 16px 0px;
+  }
+
+  .banner-link {
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    padding: 16px 8px;
   }
 }
 
@@ -935,4 +947,9 @@ ul.sponsors {
 
 .resource-parent-container h4 {
   margin: 32px 0;
+}
+
+.banner-link {
+  display: flex;
+  align-items: center;
 }
