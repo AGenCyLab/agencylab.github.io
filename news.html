@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="utf-8">
-   <title>News</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="AGenCy Lab, Independent University Bangladesh">
-   <meta name="author" content="">
-   <!-- Le styles -->
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-   <link href="css/theme.css" rel="stylesheet">
-   <script src="js/jquery-1.9.1.min.js"></script>
-   <script>
+  <head>
+    <meta charset="utf-8" />
+    <title>News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
       $(function () {
-         $("#header").load("header.html");
-         $("#footer").load("footer.html");
-         $("#recent_news_content").load("news_content_recent.html");
-         $("#other_news_content").load("news_content_other.html");
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
       });
-   </script>
-</head>
+    </script>
+  </head>
 
-<body>
-   <script src="js/web-components/NavBar.js"></script>
-   <div id="header"></div>
-   <nav-bar></nav-bar>
+  <body>
+    <script src="js/web-components/NavBar.js"></script>
+    <script src="js/web-components/FeaturedNews.js"></script>
+    <script src="js/web-components/OtherNews.js"></script>
 
-   <div class="container">
-      <hr>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
 
+    <div class="container">
       <div id="container-fluid">
-         <div class="row-fluid post_row">
-            <div id="recent_news_content"></div>
-            <!-- <div id="media">
-               <div id="news_content"></div>
-            </div> -->
-         </div>
-         <div class="row-fluid post_row">
-            <div id="other_news_content"></div>
-         </div>
+        <h3>Recent News</h3>
+        <div class="row-fluid post_row">
+          <div id="recent_news_content"></div>
+        </div>
+        <br />
+        <br />
+        <h3>Older News</h3>
+        <div class="row-fluid post_row">
+          <div id="other_news_content"></div>
+        </div>
       </div>
+    </div>
+    <div id="footer"></div>
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
 
-   </div>
-   </div>
-   <div id="footer"></div>
+    <!-- for date time parsing -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"
+      integrity="sha512-R3qVfQx4LUWixeZgtptH0NDb+/FB8qVflpPQUKzDQlz1zKE3BiN4wG3aBUwzabgMo/45MXHucjcC2/BWBxMJwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-   <!-- Le javascript
-         ================================================== -->
-   <!-- Placed at the end of the document so the pages load faster -->
-   <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
-   <script src="js/bootstrap.min.js"></script>
-   <script>
-      $(document).ready(function () {
-         $(document.body).scrollspy({
-            target: "#navparent"
-         });
-      });
-   </script>
-</body>
-
+    <!-- for loading news -->
+    <script src="js/load-news.js"></script>
+  </body>
 </html>

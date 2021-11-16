@@ -1,0 +1,246 @@
+{
+  "news": [
+    {
+      "date": "25/05/2021",
+      "title": "Rehab team visits CRP",
+      "description": "Our Rehab team has a successful meeting with the CRP physiotherapy team at Savar, Dhaka. Rehab team has shown demonstration for wearable sensors and  Kinect sensors to track limb movements",
+      "image": "images/news/crp.png",
+      "link": "news.html"
+    },
+    {
+      "date": "20/05/2021",
+      "title": "Paper accepted at IEEE ICIP 2021",
+      "description": "Our paper 'Attention Toward Neighbors: A Context Aware Framework for High Resolution Image Segmentation', has been accepted in IEEE ICIP 2021. Congratulations to Niloy.",
+      "image": "images/news/icip2021.png",
+      "link": "news.html"
+    },
+    {
+      "date": "17/04/2021",
+      "title": "Presentation on semi-supervised variational interface",
+      "description": "We have an online presentation and discussion on semi-supervised variational inference at 22:30 through Google Meet platform.",
+      "image": "images/news/semi-vae.png",
+      "link": "news.html"
+    },
+    {
+      "date": "10/04/2021",
+      "title": "Paper accepted at IJCNN 2021",
+      "description": "Our paper 'Structure-Aware Hierarchical Graph Pooling using Information Bottleneck', has been accepted in IJCNN 2021 (Core Rank: A). Congratulations to Kashob and Amit.",
+      "image": "images/news/ijcnn2021.png",
+      "link": "news.html"
+    },
+    {
+      "date": "10/04/2021",
+      "title": "Paper accepted at IJCNN 2021",
+      "description": "Our paper 'Node Embedding using Mutual Information and Self-Supervision based Bi-level Aggregation', has been accepted in IJCNN 2021 (Core Rank: A). Congratulations to Kashob and Amit.",
+      "image": "images/news/ijcnn2021.png",
+      "link": "news.html"
+    },
+    {
+      "date": "09/02/2021",
+      "title": "Paper accepted at PAKDD 2021",
+      "description": "Our Human Activity Recognition paper 'Hierarchical Self Attention Based Autoencoder for Open-Set Human Activity Recognition', has been accepted in PAKDD 2021 (Core Rank: A). Congratulations to Saif and Tanjid.",
+      "image": "images/news/pakdd2021.png",
+      "link": "news.html"
+    },
+    {
+      "date": "10/04/2021",
+      "description": "We have an online presentation and discussion on variational inference at 22:30 through Google Meet platform.We have an online presentation and discussion on variational inference at 22:30 through Google Meet platform."
+    },
+    {
+      "date": "09/02/2021",
+      "description": "Our Traffic Forecasting paper 'SST-GNN: Simplified Spatio-temporal Traffic forecasting model using Graph Neural Network', has been accepted in 25th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-2021)(Core Rank: A). Congratulations to Amit and Kashob."
+    },
+    {
+      "date": "24/11/2020",
+      "description": "Our paper 'Deep-learning coupled with novel categorization method to classify the urban environment of the developing world' using deep learning method on satellite images has been accepted in 2nd International Conference on Signal Processing and Machine Learning (SIGML 2021). This paper has been written in collaboration with Data and Design Lab, Bangladesh and Center for Spatial Information Science, University of Tokyo, Japan."
+    },
+    {
+      "date": "11/10/2020",
+      "description": "Our Disaster Image paper 'A Novel Disaster Image Data-set and Characteristics Analysis using Attention Model' has been accepted in 25th International Conference on Pattern Recognition, 2020 (Core ranking: B). Congratulations to Fahim and Arif."
+    },
+    {
+      "date": "31/08/2020",
+      "description": "Our Traffic Modeling paper 'Modeling Traffic Congestion in Developing Countries using Google Map Data', has been accepted in Future of Information and Communication Conference (FICC) 2021, Springer. Congratulations to Akhtaruzzaman and Mahbub."
+    },
+    {
+      "date": "06/07/2020",
+      "description": "A journal paper 'Visual Attention Based Comparative Study on Disaster Detection from Social Media Images', has been accepted in Innovations in Systems and Software Engineering, 2020 (Q3 journal). Congratulations to Arif."
+    },
+    {
+      "date": "15/09/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "14/09/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "12/09/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on NLP Cloud Project and related papers."
+    },
+    {
+      "date": "07/09/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "05/09/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on NLP Cloud Project and related papers."
+    },
+    {
+      "date": "31/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "27/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "24/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "22/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on NLP Cloud Project and related papers."
+    },
+    {
+      "date": "17/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "15/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "13/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on NLP Cloud Project and related papers."
+    },
+    {
+      "date": "10/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "08/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "06/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on NLP Cloud Project and related papers."
+    },
+    {
+      "date": "03/08/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "30/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "27/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "25/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on Video Captioning Project and related papers."
+    },
+    {
+      "date": "23/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on NLP Cloud Project and related papers."
+    },
+    {
+      "date": "16/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts on NLP Cloud Project and related papers."
+    },
+    {
+      "date": "13/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Tonmoay will present on Video Captioning Project and related papers."
+    },
+    {
+      "date": "11/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Tonmoay will present on Video Captioning Project and related papers."
+    },
+    {
+      "date": "09/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Akib will present on Bangla NLP Cloud-based Project and related papers."
+    },
+    {
+      "date": "06/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Tonmoay will present on Video Captioning Project and related papers."
+    },
+    {
+      "date": "04/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Tonmoay will present on Video Captioning Project and related papers."
+    },
+    {
+      "date": "01/07/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Akib will present on Bangla NLP Cloud-based Project and related papers."
+    },
+    {
+      "date": "27/06/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Tonmoay will present on Video Captioning Project and related papers."
+    },
+    {
+      "date": "20/06/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Akib will present on Bangla NLP Cloud-based Project and related papers."
+    },
+    {
+      "date": "13/06/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Akib will present on Bangla NLP Cloud-based Project and related papers."
+    },
+    {
+      "date": "06/06/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Akib will present on Bangla NLP Cloud-based Project and related papers."
+    },
+    {
+      "date": "30/05/2020",
+      "description": "We have a online meeting at 11:00 PM via Google Hangouts. Akib will present on Bangla NLP Cloud-based Project and related papers."
+    },
+    {
+      "date": "26/05/2020",
+      "description": "Our paper 'Robust Modeling of Epistemic Mental States' has been accepted in special Issue: Socio-Affective Technology, Journal of Multimedia Tools and Applications, 2020 (Q1 journal )."
+    },
+    {
+      "date": "24/05/2020",
+      "description": "EID Mubarak to all. Please stay home be safe."
+    },
+    {
+      "date": "15/05/2020",
+      "description": "As per the Government directives; the University will remain closed until 30th May 2020. Please stay home be safe."
+    },
+    {
+      "date": "14/05/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Saif and Tanjid will present on 'T-CVAE: Transformer-Based Conditioned Variational Autoencoder for Story Completion' and related papers"
+    },
+    {
+      "date": "12/05/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Amit and Kashob will present on 'Hierarchical Graph Convolutional Networks: DiffPool, SAGPool, GSSNN' and related papers."
+    },
+    {
+      "date": "10/05/2020",
+      "description": "Three papers on data scientific work on Bangladesh (complex network analysis of waterway networks, and examining the correlation between socioeconomic indicators and night-time light data from satellites) have been accepted in IEEE Region 10 Symposium (TENSYMP), Dhaka, 2020."
+    },
+    {
+      "date": "07/05/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Niloy will present on 'Sharpen Focus' and related papers."
+    },
+    {
+      "date": "02/05/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Tonmoay Deb will present on 'Non-Local Neural Networks, Video Captioning' and related papers."
+    },
+    {
+      "date": "29/04/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Tanjid and Saif will present on 'LSTM variants (Mogrifier LSTM, AWD-LSTM)' and related papers."
+    },
+    {
+      "date": "23/04/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Tonmoay Deb will present on '3D ResNets, I3D, SlowFast Networks' and related papers."
+    },
+    {
+      "date": "30/03/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Akib will present on 'Exploring the Limits of Language Modeling - 2016 (Google Brain)' and related papers."
+    },
+    {
+      "date": "29/03/2020",
+      "description": "We have a online paper presentation session at 11:00 PM via Google Hangouts. Kashob will present on Astrophysics paper (Fast Galaxy)"
+    }
+  ]
+}
