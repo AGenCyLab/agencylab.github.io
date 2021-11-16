@@ -67,6 +67,14 @@
     </div>
     <div id="footer"></div>
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
 
     <!-- for date time parsing  -->
     <script
@@ -79,14 +87,5 @@
 
     <!-- loading resources -->
     <script src="js/load-resource.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(document.body).scrollspy({
-          target: "#navparent",
-        });
-      });
-    </script>
   </body>
 </html>

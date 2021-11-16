@@ -121,5 +121,8 @@ fetch("/data/resources.json")
     renderSlideData(slideData);
     renderVideoData(videoData);
     renderBlogPost(blogPostData);
+
+    // refresh scroll spy since we finished adding sidebar elements dynamically
+    $(document.body).scrollspy("refresh");
   })
   .catch((error) => console.log(error));
