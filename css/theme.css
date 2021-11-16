@@ -922,14 +922,16 @@ ul.sponsors {
 }
 
 .iub-logo-banner {
-  padding: 16px;
-  height: 150px;
+  padding: 0 16px;
+  height: 60px;
+  margin-top: -16px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .iub-logo-banner {
-    height: 100px;
+    height: 60px;
     padding: 0px 0px 16px 0px;
+    margin-top: unset;
   }
 
   .banner-link {
