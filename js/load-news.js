@@ -16,8 +16,6 @@ function loadNews() {
       const featuredNews = news.slice(0, 6);
       const otherNews = news.slice(6);
 
-      console.log(news);
-
       const featuredNewsTargetDiv = document.querySelector(
         "#recent_news_content"
       );

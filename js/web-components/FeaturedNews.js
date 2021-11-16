@@ -32,15 +32,6 @@ class FeaturedNews extends HTMLElement {
     const featureImage = this.getAttribute("image");
     const featureLink = this.getAttribute("link");
 
-    console.log("Inside component: ");
-    console.table({
-      featureDate,
-      featureTitle,
-      featureDescription,
-      featureLink,
-      featureImage,
-    });
-
     // will be used to make the news shareable
     if (featureTitle && featureDate) {
       this.shadowRoot.querySelector(".feature-container").id =
