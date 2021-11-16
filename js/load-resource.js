@@ -118,8 +118,11 @@ function renderBlogPost(blogPostData) {
 fetch("/data/resources.json")
   .then((response) => response.json())
   .then(({ slideData, videoData, blogPostData }) => {
+    renderBlogPost(blogPostData);
     renderSlideData(slideData);
     renderVideoData(videoData);
-    renderBlogPost(blogPostData);
+
+    // refresh scroll spy since we finished adding sidebar elements dynamically
+    $(document.body).scrollspy("refresh");
   })
   .catch((error) => console.log(error));

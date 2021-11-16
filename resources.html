@@ -54,19 +54,27 @@
         </div>
 
         <div class="span9">
+          <!-- blog posts -->
+          <div class="resource-parent-container" id="resource-contents"></div>
+
           <!-- slides section -->
           <div class="resource-parent-container" id="slide-contents"></div>
 
           <!-- videos -->
           <div class="resource-parent-container" id="video-contents"></div>
-
-          <!-- blog posts -->
-          <div class="resource-parent-container" id="resource-contents"></div>
         </div>
       </div>
     </div>
     <div id="footer"></div>
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
 
     <!-- for date time parsing  -->
     <script
@@ -79,14 +87,5 @@
 
     <!-- loading resources -->
     <script src="js/load-resource.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(document.body).scrollspy({
-          target: "#navparent",
-        });
-      });
-    </script>
   </body>
 </html>

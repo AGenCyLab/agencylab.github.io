@@ -56,51 +56,6 @@
   ],
   "videoData": [
     {
-      "semester": "Fall 2021",
-      "videos": [
-        {
-          "title": "Graph Spectral methods",
-          "description": "In this video, Kashob talks about 'Graph Spectral Methods'",
-          "link": "https://drive.google.com/file/d/1SslaRXzwyx_JoH_F5LoM7aQrLg3fp19i/preview"
-        },
-        {
-          "title": "VAE to estimate Multidimensional Item Response Theory model parameters",
-          "description": "Video presentation on a research paper titled 'VAE to Estimate Multidimensional Item Response Theory Model Parameters'",
-          "link": "https://drive.google.com/file/d/1tZZF6Pr341tSol9cBDKEvRZWv5O6kltS/preview"
-        },
-        {
-          "title": "Self-supervised learning - non-contrastive",
-          "description": "Video presentation 'Self-supervised learning - non-contrastive'",
-          "link": "https://drive.google.com/file/d/1PvMm_EqSOC1PamBJWG-uWR0ltb1EFj88/preview"
-        },
-        {
-          "title": "Self-supervised learning - contrastive loss",
-          "description": "Video presentation 'Self-supervised learning - contrastive loss'",
-          "link": "https://drive.google.com/file/d/1fO3hA0easLsqh-NdkqVi8_GWOyP2IX_k/preview"
-        },
-        {
-          "title": "Transformer and extensions",
-          "description": "Video presentation 'Transformer and extensions'",
-          "link": "https://drive.google.com/file/d/1SK-tXX_vD6ihfb6RVahMTzr9EthDLgCP/preview"
-        },
-        {
-          "title": "Gaussian Process Regression",
-          "description": "Video presentation 'Gaussian Process Regression'",
-          "link": "https://drive.google.com/file/d/1hMwiajxGJprIiU7xPCBFVbSJ5Fy4WzzZ/preview"
-        },
-        {
-          "title": "Markov Random Fields",
-          "description": "Video presentation 'Markov Random Fields'",
-          "link": "https://drive.google.com/file/d/1hWN3MYwaiQBrz-nCq1WHQc6dQlpycGw8/preview"
-        },
-        {
-          "title": "NCP-VAE: Variational Autoencoders with Noise Contrastive Priors",
-          "description": "Video presentation on paper 'NCP-VAE: Variational Autoencoders with Noise Contrastive Priors'",
-          "link": "https://drive.google.com/file/d/1VZUVyxvqP3HsEihS8q4MgwVPsD6qFBAg/preview"
-        }
-      ]
-    },
-    {
       "semester": "Spring 2021",
       "videos": [
         {
@@ -126,7 +81,7 @@
       "date": "05/11/2021",
       "title": "Mathematics and Statistics for Undergraduate Computer Science and Engineering Students",
       "link": "resource-contents/4_cse_math_booklist.html",
-      "author": "Anonymous",
+      "author": "Dr. Amin Ahsan Ali",
       "image": "images/blog/books-unsplash.jpg"
     },
     {
