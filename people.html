@@ -1,394 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="utf-8">
-   <title>People</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="AGenCy Lab, Independent University Bangladesh">
-   <meta name="author" content="">
-   <!-- Le styles -->
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-   <link href="css/theme.css" rel="stylesheet">
-   <script src="js/jquery-1.9.1.min.js"></script>
-   <script>
+  <head>
+    <meta charset="utf-8" />
+    <title>People</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
       $(function () {
-         $("#header").load("header.html");
-         $("#footer").load("footer.html");
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
       });
-   </script>
-</head>
+    </script>
+  </head>
 
-<body>
-   <script src="js/web-components/NavBar.js"></script>
-   <div id="header"></div>
-   <nav-bar></nav-bar>
+  <body>
+    <script src="js/web-components/NavBar.js"></script>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
 
-   <div class="container">
-      <hr>
+    <div class="container">
+      <hr />
       <div class="row-fluid">
-         <div class="span3 bs-docs-sidebar" id="navparent">
-            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
-               <li><a href="#principalinvestigator"> Principal Investigators </a></li>
-               <li><a href="#researhers">Researchers</a></li>
-               <li><a href="#collaborators"> Collaborators </a></li>
-               <li><a href="#undergraduate">Undergraduate Students</a></li>
-               <li><a href="#past">Past Researchers & Collaborators</a></li>
-            </ul>
-         </div>
-         <div class="span8 offset1">
-            <section id="principalinvestigator">
-               <div class="page-header">
-                  <h3>Principal Investigators</h3>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="http://www.cse.iub.edu.bd/faculties/25" class="thumbnail">
-
-                        <img class="people-image" src="images/people/ashraful-amin.jpg" alt="ashraful-amin" />
-                     </a>
-
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="http://www.cse.iub.edu.bd/faculties/25">Professor M. Ashraful Amin, PhD</a></h4>
-                     <b>Co-ordinator</b>
-                     <p>Research Area: Cybernetics</p>
-                     <p><b>Email: </b><a href="mailto:aminmdashraful@iub.edu.bd">aminmdashraful@iub.edu.bd</a></p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="http://www.cse.iub.edu.bd/faculties/53" class="thumbnail">
-
-                        <img class="people-image" src="images/people/ali.jpg" alt="ali" />
-                     </a>
-
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="http://www.cse.iub.edu.bd/faculties/53">Amin Ahsan Ali, PhD</a></h4>
-                     <b>Supervisor</b>
-                     <p>Research Area: Machine Learning, mHealth & Data Science</p>
-                     <p><b>Email: </b><a href="mailto:aminali@iub.edu.bd">aminali@iub.edu.bd</a></p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="http://www.cse.iub.edu.bd/faculties/56" class="thumbnail">
-
-                        <img class="people-image" src="images/people/mahbubpic.jpg" alt="mahbubpic" />
-                     </a>
-
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="http://www.cse.iub.edu.bd/faculties/56">AKM Mahbubur Rahman, PhD</a></h4>
-                     <b>Supervisor</b>
-                     <p>Research Area: Machine Learning & Computer Vision</p>
-                     <p><b>Email: </b><a href="mailto:akmmrahman@iub.edu.bd">akmmrahman@iub.edu.bd</a></p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="http://www.phy.iub.edu.bd/people/momen" class="thumbnail">
-                        <img class="people-image" src="images/people/Arshad-sir.jpg" alt="Arshad-sir" />
-
-                     </a>
-
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="http://www.phy.iub.edu.bd/people/momen">Professor Arshad Momen, PhD</a></h4>
-                     <b>Supervisor</b>
-                     <p>Research Area: Particle Physics</p>
-                     <p><b>Email: </b><a href="mailto:arshad@iub.edu.bd">arshad@iub.edu.bd</a></p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="http://www.phy.iub.edu.bd/people/begum" class="thumbnail">
-
-                        <img class="people-image" src="images/people/Asma-maam.jpg" alt="Asma-maam" />
-                     </a>
-
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="http://www.phy.iub.edu.bd/people/begum">Asma Begum, PhD</a></h4>
-                     <b>Supervisor</b>
-                     <p>Research Area: Plasma Physics</p>
-                     <p><b>Email: </b><a href="mailto:ablipi@iub.edu.bd">ablipi@iub.edu.bd</a></p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="http://www.phy.iub.edu.bd/people/asad" class="thumbnail">
-                        <img class="people-image" src="images/people/khan_asad_profile.jpg" alt="khan_asad_profile" />
-
-                     </a>
-
-
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="http://www.phy.iub.edu.bd/people/asad">Khan Muhammad Bin Asad, PhD</a></h4>
-                     <b>Supervisor</b>
-                     <p>Research Area: Astrophysics</p>
-                     <p><b>Email: </b><a href="mailto:kasad@iub.edu.bd">kasad@iub.edu.bd</a></p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="http://www.cse.iub.edu.bd/faculties/42" class="thumbnail">
-
-                        <img class="people-image" src="images/people/Faisal.jpg" alt="Faisal" />
-                     </a>
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="http://www.cse.iub.edu.bd/faculties/42">Faisal Uddin, PhD</a></h4>
-                     <b>Supervisor</b>
-                     <p>Research Area: Multivariate Optimization</p>
-                     <p><b>Email: </b><a href="mailto:faisal@iub.edu.bd">faisal@iub.edu.bd</a></p>
-                  </div>
-               </div>
-
-
-
-            </section>
-            <hr>
-            <section id="researhers">
-               <div class="page-header">
-                  <h3>Researchers</h3>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="https://sites.google.com/view/fahimfaisalniloy" class="thumbnail">
-                        <img class="people-image" src="images/people/FF_Niloy.jpg" alt="Fahim Faisal Niloy" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://sites.google.com/view/fahimfaisalniloy">Fahim Faisal Niloy</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="https://saif-mahmud.github.io/" class="thumbnail">
-                        <img class="people-image" src="images/people/saif.jpg" alt="saif" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://saif-mahmud.github.io/">Saif Mahmud</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="https://thtonmoy.github.io/" class="thumbnail">
-                        <img class="people-image" src="images/people/tanjid.jpg" alt="tanjidy" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://thtonmoy.github.io/">Tanjid Hasan Tonmoy</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="https://www.linkedin.com/in/forkkr/" class="thumbnail">
-                        <img class="people-image" src="images/people/Kashob_Roy.jpg" alt="Kashob_Roy" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://www.linkedin.com/in/forkkr/">Kashob Kumar Roy</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="https://amitroy7781.github.io/" class="thumbnail">
-                        <img class="people-image" src="images/people/Amit_Roy.jpg" alt="Amit_Roy" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://amitroy7781.github.io/">Amit Roy</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/hashnain.jpg" alt="hashnain" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="">Hasnain Hossain</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Sugandha_photo.jpeg" alt="Sugandha_photo" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="">Sugandha Roy</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="https://ovipaul.github.io/" class="thumbnail">
-                        <img class="people-image" src="images/people/Paul-Image.png" alt="Ovi Paul" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://ovipaul.github.io/">Ovi Paul</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/absnayem.jpg" alt="absnayem" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="">Abu Bakar Siddik Nayem</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="https://ansarker.github.io/" class="thumbnail">
-                        <img class="people-image" src="images/people/anis-sarker.jpg" alt="anis-sarker" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://ansarker.github.io/">Anis Sarker</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/akil.jpg" alt="akil" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="">Akil Hamid Chowdhury</a></h4>
-                     <b>Research Assistant</b>
-                  </div>
-               </div>
-
-
-
-
-
-
-
-
-
-
-            </section>
-
-            </section>
-            <hr>
-            <section id="collaborators">
-               <div class="page-header">
-                  <h3>Collaborators</h3>
-               </div>
-
-
-               <!-- <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar" id="navparent">
+          <ul
+            class="nav nav-list bs-docs-sidenav"
+            data-spy="affix"
+            data-offset-top="200"
+            data-offset-bottom="260"
+          >
+            <li>
+              <a href="#principalinvestigator"> Principal Investigators </a>
+            </li>
+            <li><a href="#researhers">Researchers</a></li>
+            <li><a href="#collaborators"> Collaborators </a></li>
+            <li><a href="#undergraduate">Undergraduate Students</a></li>
+            <li><a href="#past">Past Researchers & Collaborators</a></li>
+          </ul>
+        </div>
+        <div class="span8 offset1">
+          <section id="principalinvestigator">
+            <div class="page-header">
+              <h3>Principal Investigators</h3>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="http://www.cse.iub.edu.bd/faculties/25"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/ashraful-amin.jpg"
+                    alt="ashraful-amin"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="http://www.cse.iub.edu.bd/faculties/25"
+                    >Professor M. Ashraful Amin, PhD</a
+                  >
+                </h4>
+                <b>Co-ordinator</b>
+                <p>Research Area: Cybernetics</p>
+                <p>
+                  <b>Email: </b
+                  ><a href="mailto:aminmdashraful@iub.edu.bd"
+                    >aminmdashraful@iub.edu.bd</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="http://www.cse.iub.edu.bd/faculties/53"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/ali.jpg"
+                    alt="ali"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="http://www.cse.iub.edu.bd/faculties/53"
+                    >Amin Ahsan Ali, PhD</a
+                  >
+                </h4>
+                <b>Supervisor</b>
+                <p>Research Area: Machine Learning, mHealth & Data Science</p>
+                <p>
+                  <b>Email: </b
+                  ><a href="mailto:aminali@iub.edu.bd">aminali@iub.edu.bd</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="http://www.cse.iub.edu.bd/faculties/56"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/mahbubpic.jpg"
+                    alt="mahbubpic"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="http://www.cse.iub.edu.bd/faculties/56"
+                    >AKM Mahbubur Rahman, PhD</a
+                  >
+                </h4>
+                <b>Supervisor</b>
+                <p>Research Area: Machine Learning & Computer Vision</p>
+                <p>
+                  <b>Email: </b
+                  ><a href="mailto:akmmrahman@iub.edu.bd"
+                    >akmmrahman@iub.edu.bd</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="http://www.phy.iub.edu.bd/people/momen"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/Arshad-sir.jpg"
+                    alt="Arshad-sir"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="http://www.phy.iub.edu.bd/people/momen"
+                    >Professor Arshad Momen, PhD</a
+                  >
+                </h4>
+                <b>Supervisor</b>
+                <p>Research Area: Particle Physics</p>
+                <p>
+                  <b>Email: </b
+                  ><a href="mailto:arshad@iub.edu.bd">arshad@iub.edu.bd</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="http://www.phy.iub.edu.bd/people/begum"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/Asma-maam.jpg"
+                    alt="Asma-maam"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="http://www.phy.iub.edu.bd/people/begum"
+                    >Asma Begum, PhD</a
+                  >
+                </h4>
+                <b>Supervisor</b>
+                <p>Research Area: Plasma Physics</p>
+                <p>
+                  <b>Email: </b
+                  ><a href="mailto:ablipi@iub.edu.bd">ablipi@iub.edu.bd</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="http://www.phy.iub.edu.bd/people/asad"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/khan_asad_profile.jpg"
+                    alt="khan_asad_profile"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="http://www.phy.iub.edu.bd/people/asad"
+                    >Khan Muhammad Bin Asad, PhD</a
+                  >
+                </h4>
+                <b>Supervisor</b>
+                <p>Research Area: Astrophysics</p>
+                <p>
+                  <b>Email: </b
+                  ><a href="mailto:kasad@iub.edu.bd">kasad@iub.edu.bd</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="http://www.cse.iub.edu.bd/faculties/42"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/Faisal.jpg"
+                    alt="Faisal"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="http://www.cse.iub.edu.bd/faculties/42"
+                    >Faisal Uddin, PhD</a
+                  >
+                </h4>
+                <b>Supervisor</b>
+                <p>Research Area: Multivariate Optimization</p>
+                <p>
+                  <b>Email: </b
+                  ><a href="mailto:faisal@iub.edu.bd">faisal@iub.edu.bd</a>
+                </p>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section id="researhers">
+            <div class="page-header">
+              <h3>Researchers</h3>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a
+                  href="https://sites.google.com/view/fahimfaisalniloy"
+                  class="thumbnail"
+                >
+                  <img
+                    class="people-image"
+                    src="images/people/FF_Niloy.jpg"
+                    alt="Fahim Faisal Niloy"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="https://sites.google.com/view/fahimfaisalniloy"
+                    >Fahim Faisal Niloy</a
+                  >
+                </h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="https://saif-mahmud.github.io/" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/saif.jpg"
+                    alt="saif"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="https://saif-mahmud.github.io/">Saif Mahmud</a>
+                </h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="https://thtonmoy.github.io/" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/tanjid.jpg"
+                    alt="tanjidy"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="https://thtonmoy.github.io/">Tanjid Hasan Tonmoy</a>
+                </h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="https://www.linkedin.com/in/forkkr/" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Kashob_Roy.jpg"
+                    alt="Kashob_Roy"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="https://www.linkedin.com/in/forkkr/"
+                    >Kashob Kumar Roy</a
+                  >
+                </h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="https://amitroy7781.github.io/" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Amit_Roy.jpg"
+                    alt="Amit_Roy"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="https://amitroy7781.github.io/">Amit Roy</a></h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/hashnain.jpg"
+                    alt="hashnain"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="">Hasnain Hossain</a></h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Sugandha_photo.jpeg"
+                    alt="Sugandha_photo"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="">Sugandha Roy</a></h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="https://ovipaul.github.io/" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Paul-Image.png"
+                    alt="Ovi Paul"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="https://ovipaul.github.io/">Ovi Paul</a></h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/absnayem.jpg"
+                    alt="absnayem"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="">Abu Bakar Siddik Nayem</a></h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="https://ansarker.github.io/" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/anis-sarker.jpg"
+                    alt="anis-sarker"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="https://ansarker.github.io/">Anis Sarker</a></h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/akil.jpg"
+                    alt="akil"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="">Akil Hamid Chowdhury</a></h4>
+                <b>Research Assistant</b>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section id="collaborators">
+            <div class="page-header">
+              <h3>Collaborators</h3>
+            </div>
+
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/mz1.jpg" alt="mz1" />
                      </a>
                   </div> -->
-               <div>
-                  <h4><a href="http://www.dndlab.org/">Moinul Islam Zaber, PhD</a></h4>
-                  <b>Department of Computer Science and Engineering, University of Dhaka</b>
-                  <p>Research Area: HCI & Public Policy</p>
-               </div>
-               <!-- </div> -->
+            <div>
+              <h4>
+                <a href="http://www.dndlab.org/">Moinul Islam Zaber, PhD</a>
+              </h4>
+              <b
+                >Department of Computer Science and Engineering, University of
+                Dhaka</b
+              >
+              <p>Research Area: HCI & Public Policy</p>
+            </div>
+            <!-- </div> -->
 
-               <!-- <div class="row-fluid">
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/blank-profile-picture-973460_640.png"
                            alt="blank-profile-picture-973460_640" />
                      </a>
                   </div> -->
-               <div>
-                  <h4><a href="http://www.itanveer.com/">Md. Iftekhar Tanveer, PhD</a></h4>
-                  <b>Spotify</b>
-                  <p>Research Area: Natural Language Processing</p>
-               </div>
-               <!-- </div> -->
+            <div>
+              <h4>
+                <a href="http://www.itanveer.com/">Md. Iftekhar Tanveer, PhD</a>
+              </h4>
+              <b>Spotify</b>
+              <p>Research Area: Natural Language Processing</p>
+            </div>
+            <!-- </div> -->
 
-               <!-- <div class="row-fluid">
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/iit_shoyaib.jpg" alt="iit_shoyaib" />
                      </a>
                   </div> -->
-               <div>
-                  <h4><a href="http://www.iit.du.ac.bd/about_iit/individual_teacher/48">Professor M Shoyaib, PhD</a>
-                  </h4>
-                  <b>Institute of Information Technology, University of Dhaka</b>
-                  <p>Research Area: Image Processing</p>
-               </div>
-               <!-- </div> -->
+            <div>
+              <h4>
+                <a
+                  href="http://www.iit.du.ac.bd/about_iit/individual_teacher/48"
+                  >Professor M Shoyaib, PhD</a
+                >
+              </h4>
+              <b>Institute of Information Technology, University of Dhaka</b>
+              <p>Research Area: Image Processing</p>
+            </div>
+            <!-- </div> -->
 
-               <!-- <div class="row-fluid">
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/Iftekhar-Anam.jpg" alt="Iftekhar-Anam" />
                      </a>
                   </div> -->
-               <div>
-                  <h4><a href="https://www.uwgb.edu/computer-science/faculty-staff/iftekhar-anam/">Iftekhar Anam,
-                        PhD</a></h4>
-                  <b>University of Wisconsin Green Bay, USA</b>
-                  <p>Research Area: HCI & Assistive Technology</p>
-               </div>
-               <!-- </div> -->
+            <div>
+              <h4>
+                <a
+                  href="https://www.uwgb.edu/computer-science/faculty-staff/iftekhar-anam/"
+                  >Iftekhar Anam, PhD</a
+                >
+              </h4>
+              <b>University of Wisconsin Green Bay, USA</b>
+              <p>Research Area: HCI & Assistive Technology</p>
+            </div>
+            <!-- </div> -->
 
-               <!-- <div class="row-fluid">
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/mahmood-kazi-mohammed.jpg" alt="mahmood-kazi-mohammed" />
@@ -400,520 +537,614 @@
                   </div>
                </div> -->
 
-               <!-- <div class="row-fluid">
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/bruce-poon.jpg" alt="bruce-poon" />
                      </a>
                   </div> -->
-               <!-- <div>
+            <!-- <div>
                   <h4>Bruce Poon, PhD</h4>
                   <p>Biometrics</p>
                </div> -->
 
+            <!-- </div> -->
 
-               <!-- </div> -->
-
-               <!-- <div class="row-fluid">
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/Iftekhar-Anam.jpg" alt="Iftekhar-Anam" />
                      </a>
                   </div> -->
-               <div>
-                  <h4><a href="https://sakira.github.io/">Syeda Sakira Hassan, PhD</a></h4>
-                  <b>Department of Electrical Engineering and Automation, Aalto University</b>
-                  <p>Research Area: Machine learning, Deep learning, (Deep) Reinforcement learning, Probabilistic
-                     Inference</p>
-                  <!-- <p><b>Email: </b><a href="mailto:syeda.s.hassan@aalto.fi">syeda.s.hassan@aalto.fi</a> -->
-                  </p>
-               </div>
-               <!-- </div> -->
+            <div>
+              <h4>
+                <a href="https://sakira.github.io/">Syeda Sakira Hassan, PhD</a>
+              </h4>
+              <b
+                >Department of Electrical Engineering and Automation, Aalto
+                University</b
+              >
+              <p>
+                Research Area: Machine learning, Deep learning, (Deep)
+                Reinforcement learning, Probabilistic Inference
+              </p>
+              <!-- <p><b>Email: </b><a href="mailto:syeda.s.hassan@aalto.fi">syeda.s.hassan@aalto.fi</a> 
+                  </p> -->
+            </div>
+            <!-- </div> -->
 
+            <!-- </div> -->
 
-
-               <!-- </div> -->
-
-               <!-- <div class="row-fluid">
+            <!-- <div class="row-fluid">
                   <div class="span3">
                      <a href="" class="thumbnail">
                         <img class="people-image" src="images/people/Iftekhar-Anam.jpg" alt="Iftekhar-Anam" />
                      </a>
                   </div> -->
-               <div>
-                  <h4><a href=" https://www.linkedin.com/in/a-k-m-azad-6039931a/?originalSubdomain=au">A K M Azad,
-                        PhD</a></h4>
-                  <b>Data Scientist, Children's Medical Research Institute, Westmead, NSW, Australia</b>
-                  <p>Lecturer, Swinburne University of Technology Sydney, Parramatta, NSW, Australia</p>
-               </div>
-               <!-- </div> -->
-
-
-
-            </section>
-
-
-
-
-
-
-            <hr>
-            <section id="undergraduate">
-               <div class="page-header">
-                  <h3>Undergraduate Students</h3>
-
-
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-
-                     <img class="people-image" src="images/people/mir.jpg" alt="mir" />
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://mirsazzathossain.github.io/">Mir Sazzat Hossain</a></h4>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-
-                     <img class="people-image" src="images/people/Rafat.jpg" alt="Rafat" />
-
-                  </div>
-                  <div class="span9">
-                     <h4><a href="https://rafathasan.github.io">Rafat Hasan Khan</a></h4>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/ishmam.jpg" alt="Ishmam" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4><a href="">Alavi Ishmam</a> </h4>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Samin.jpg" alt="Samin" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Samin Bin Karim</h4>
-                  </div>
-               </div>
-
-
-
-            </section>
-
-
-            <hr>
-            <section id="past">
-               <div class="page-header">
-                  <h3>Past Researchers & Collaborators</h3>
-
-
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/tonmoay_deb.jpg" alt="tonmoay_deb" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Tonmoay Deb</h4>
-                     <b>PhD Student (Northwestern University)</b>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/asif.jpg" alt="asif" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Asif Zaman</h4>
-                     <!-- <b>Research Assistant</b> -->
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/akib.png" alt="akib" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Akib Sadmane</h4>
-                     <!-- <b>Research Assistant</b> -->
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Mahim-Photo.jpg" alt="Mahim-Photo" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Syed Amin Al Mahim</h4>
-                     <!-- <b>Research Assistant</b> -->
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Fahim.jpg" alt="Fahim" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Mohammad Raihanul Bashar</h4>
-                     <!-- <b>Research Assistant</b> -->
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/zakir-hossain.jpg" alt="zakir-hossain" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Md. Zakir Hossan</h4>
-                     <!-- <b>Research Assistant & Lab Manager</b> -->
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/kishorePic.jpg" alt="kishorePic" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Kishor Kumar Bhaumik</h4>
-                     <!-- <b>Research Assistant</b> -->
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/arif.jpg" alt="arif" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Arif</h4>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Farhim.jpg" alt="Farhim" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Farhim Ferdous</h4>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/ronok.jpg" alt="ronok" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Rakibur Rahman Ranak</h4>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/tahmid.jpg" alt="tahmid" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Tahmid Bin Mahmud</h4>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/wahid.jpeg" alt="wahid" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Md Wahidul Hasan</h4>
-                     <b>PhD Student (MS State Univ.)</b>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Aunnoy.jpg" alt="Aunnoy" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Aunnoy K Mutasim</h4>
-                     <b>MSc Student (SFU, SIAT)</b>
-                     <p>Machine Learning</p>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Proma.jpg" alt="Proma" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>TANJINA PIASH PROMA</h4>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Ela.jpg" alt="Ela" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Sharifa Sultana</h4>
-                     <b>PhD Student (Cornell)</b>
-                     <p>Human Computer Interaction</p>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Pinku.jpg" alt="Pinku" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Pinku Deb Nath</h4>
-                     <b>MSc Student (UBC)</b>
-                     <p>Data Science</p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/riashat-islam.jpg" alt="riashat-islam" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Riashat Islam</h4>
-                     <b>PhD Student (McGill)</b>
-                     <p>Reinforcement Learning</p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/photo_r_alam.jpg" alt="photo_r_alam" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Md Rakibul Alam</h4>
-                     <b>MSc Student (TU Munich)</b>
-                     <p>Machine Learning</p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/40nA7df.jpg" alt="shuvo" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Shuvo Kumar Paul</h4>
-                     <b>PhD Student (Univ. of Nevada)</b>
-                     <p>Machine Learnin</p>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Pias.jpg" alt="Pias" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Mir Pias</h4>
-                     <b>MSc Student (Univ. of Kaiserslautern)</b>
-                     <p>Machine Learning</p>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Tipu.jpg" alt="Tipu" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Rayhan Sardar Tipu</h4>
-                     <b>Jr. Software Engineer</b>
-                     <p>OscilloSoft Pty Ltd.</p>
-                  </div>
-               </div>
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Zulkar_Nine.jpg" alt="Zulkar_Nine" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Md. S. Q. Zulkar Nine, PhD</h4>
-                     <b>Research Intern, IBM</b>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/mridul-khan.jpg" alt="mridul-khan" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>MRIDUL KHAN</h4>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/Barua.jpg" alt="Barua" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>AUISHIK BARUA</h4>
-                  </div>
-               </div>
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/iqbal-nouyed.jpg" alt="iqbal-nouyed" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Iqbal Nouyed</h4>
-                     <b>PhD Student (WVU)</b>
-                     <p>Biometrics, Machine Learning</p>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/anoti.jpg" alt="anoti" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Anoti Deyala</h4>
-                     <b>Data Scientist</b>
-                     <p>Argus Adviory and Information</p>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/iftakhar-hasan.jpg" alt="iftakhar-hasan" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Iftakhar Hasan</h4>
-                     <b>Technical Project Manager</b>
-                     <p>Mighty Egg Technologies</p>
-                  </div>
-               </div>
-
-
-
-               <div class="row-fluid">
-                  <div class="span3">
-                     <a href="" class="thumbnail">
-                        <img class="people-image" src="images/people/saami-rahman.jpg" alt="saami-rahman" />
-                     </a>
-                  </div>
-                  <div class="span9">
-                     <h4>Saami Rahman</h4>
-                     <b>Software Engineer</b>
-                     <p>The NSLS</p>
-                  </div>
-               </div>
-
-
-            </section>
-         </div>
+            <div>
+              <h4>
+                <a
+                  href=" https://www.linkedin.com/in/a-k-m-azad-6039931a/?originalSubdomain=au"
+                  >A K M Azad, PhD</a
+                >
+              </h4>
+              <b
+                >Data Scientist, Children's Medical Research Institute,
+                Westmead, NSW, Australia</b
+              ><br />
+              <b
+                >Lecturer, Swinburne University of Technology Sydney,
+                Parramatta, NSW, Australia</b
+              >
+              <p>Research Area: Bioinformatics</p>
+            </div>
+            <!-- </div> -->
+          </section>
+
+          <hr />
+          <section id="undergraduate">
+            <div class="page-header">
+              <h3>Undergraduate Students</h3>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <img
+                  class="people-image"
+                  src="images/people/mir.jpg"
+                  alt="mir"
+                />
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="https://mirsazzathossain.github.io/"
+                    >Mir Sazzat Hossain</a
+                  >
+                </h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <img
+                  class="people-image"
+                  src="images/people/Rafat.jpg"
+                  alt="Rafat"
+                />
+              </div>
+              <div class="span9">
+                <h4>
+                  <a href="https://rafathasan.github.io">Rafat Hasan Khan</a>
+                </h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/ishmam.jpg"
+                    alt="Ishmam"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4><a href="">Alavi Ishmam</a></h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Samin.jpg"
+                    alt="Samin"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Samin Bin Karim</h4>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+          <section id="past">
+            <div class="page-header">
+              <h3>Past Researchers & Collaborators</h3>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/tonmoay_deb.jpg"
+                    alt="tonmoay_deb"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Tonmoay Deb</h4>
+                <b>PhD Student (Northwestern University)</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/asif.jpg"
+                    alt="asif"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Asif Zaman</h4>
+                <!-- <b>Research Assistant</b> -->
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/akib.png"
+                    alt="akib"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Akib Sadmane</h4>
+                <!-- <b>Research Assistant</b> -->
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Mahim-Photo.jpg"
+                    alt="Mahim-Photo"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Syed Amin Al Mahim</h4>
+                <!-- <b>Research Assistant</b> -->
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Fahim.jpg"
+                    alt="Fahim"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Mohammad Raihanul Bashar</h4>
+                <!-- <b>Research Assistant</b> -->
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/zakir-hossain.jpg"
+                    alt="zakir-hossain"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Md. Zakir Hossan</h4>
+                <!-- <b>Research Assistant & Lab Manager</b> -->
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/kishorePic.jpg"
+                    alt="kishorePic"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Kishor Kumar Bhaumik</h4>
+                <!-- <b>Research Assistant</b> -->
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/arif.jpg"
+                    alt="arif"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Arif</h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Farhim.jpg"
+                    alt="Farhim"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Farhim Ferdous</h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/ronok.jpg"
+                    alt="ronok"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Rakibur Rahman Ranak</h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/tahmid.jpg"
+                    alt="tahmid"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Tahmid Bin Mahmud</h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/wahid.jpeg"
+                    alt="wahid"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Md Wahidul Hasan</h4>
+                <b>PhD Student (MS State Univ.)</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Aunnoy.jpg"
+                    alt="Aunnoy"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Aunnoy K Mutasim</h4>
+                <b>MSc Student (SFU, SIAT)</b>
+                <p>Machine Learning</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Proma.jpg"
+                    alt="Proma"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>TANJINA PIASH PROMA</h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Ela.jpg"
+                    alt="Ela"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Sharifa Sultana</h4>
+                <b>PhD Student (Cornell)</b>
+                <p>Human Computer Interaction</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Pinku.jpg"
+                    alt="Pinku"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Pinku Deb Nath</h4>
+                <b>MSc Student (UBC)</b>
+                <p>Data Science</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/riashat-islam.jpg"
+                    alt="riashat-islam"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Riashat Islam</h4>
+                <b>PhD Student (McGill)</b>
+                <p>Reinforcement Learning</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/photo_r_alam.jpg"
+                    alt="photo_r_alam"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Md Rakibul Alam</h4>
+                <b>MSc Student (TU Munich)</b>
+                <p>Machine Learning</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/40nA7df.jpg"
+                    alt="shuvo"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Shuvo Kumar Paul</h4>
+                <b>PhD Student (Univ. of Nevada)</b>
+                <p>Machine Learnin</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Pias.jpg"
+                    alt="Pias"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Mir Pias</h4>
+                <b>MSc Student (Univ. of Kaiserslautern)</b>
+                <p>Machine Learning</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Tipu.jpg"
+                    alt="Tipu"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Rayhan Sardar Tipu</h4>
+                <b>Jr. Software Engineer</b>
+                <p>OscilloSoft Pty Ltd.</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Zulkar_Nine.jpg"
+                    alt="Zulkar_Nine"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Md. S. Q. Zulkar Nine, PhD</h4>
+                <b>Research Intern, IBM</b>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/mridul-khan.jpg"
+                    alt="mridul-khan"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>MRIDUL KHAN</h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/Barua.jpg"
+                    alt="Barua"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>AUISHIK BARUA</h4>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/iqbal-nouyed.jpg"
+                    alt="iqbal-nouyed"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Iqbal Nouyed</h4>
+                <b>PhD Student (WVU)</b>
+                <p>Biometrics, Machine Learning</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/anoti.jpg"
+                    alt="anoti"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Anoti Deyala</h4>
+                <b>Data Scientist</b>
+                <p>Argus Adviory and Information</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/iftakhar-hasan.jpg"
+                    alt="iftakhar-hasan"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Iftakhar Hasan</h4>
+                <b>Technical Project Manager</b>
+                <p>Mighty Egg Technologies</p>
+              </div>
+            </div>
+
+            <div class="row-fluid">
+              <div class="span3">
+                <a href="" class="thumbnail">
+                  <img
+                    class="people-image"
+                    src="images/people/saami-rahman.jpg"
+                    alt="saami-rahman"
+                  />
+                </a>
+              </div>
+              <div class="span9">
+                <h4>Saami Rahman</h4>
+                <b>Software Engineer</b>
+                <p>The NSLS</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-   </div>
-   <div id="footer"></div>
+    </div>
+    <div id="footer"></div>
 
-   <!-- Le javascript
+    <!-- Le javascript
          ================================================== -->
-   <!-- Placed at the end of the document so the pages load faster -->
-   <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
-   <script src="js/bootstrap.min.js"></script>
-   <script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
       $(document).ready(function () {
-         $(document.body).scrollspy({
-            target: "#navparent"
-         });
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
       });
-
-   </script>
-</body>
-
+    </script>
+  </body>
 </html>
