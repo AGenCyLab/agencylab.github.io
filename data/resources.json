@@ -4,10 +4,16 @@
       "semester": "Fall 2021",
       "slides": [
         {
+          "date": "06/11/2021",
+          "title": "Intro to RL",
+          "image": "images/reading-group/fall_2021_nov_6.png",
+          "link": "https://drive.google.com/file/d/1kuORodyDM8RJWKLFFexRuHLQNgmT81Z4/view"
+        },
+        {
           "date": "30/10/2021",
-          "title": "Graph Spectral methods",
+          "title": "Graph Spectral Methods",
           "image": "images/reading-group/fall_2021_oct_30.png",
-          "link": "#"
+          "link": "https://drive.google.com/drive/folders/1VuZOwRsJxwcgdV4-jr7-TsV1m0F8AR8A?usp=sharing"
         },
         {
           "date": "23/10/2021",
@@ -26,12 +32,6 @@
           "title": "Self-supervised learning - contrastive loss",
           "image": "images/reading-group/fall_2021_oct_9.png",
           "link": "https://drive.google.com/file/d/1wrW-233PKgs9485LMofs0SazKkrRMVf0/preview"
-        },
-        {
-          "date": "02/10/2021",
-          "title": "Transformer and extensions",
-          "image": "images/reading-group/fall_2021_oct_2.png",
-          "link": "#"
         },
         {
           "date": "25/09/2021",
