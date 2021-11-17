@@ -121,7 +121,7 @@ class ResourcePost extends HTMLElement {
         height="100%"
         allow="fullscreen;"
         src="${link}"
-      ></iframe>;
+      ></iframe>
     `;
     resourceImageContainer.insertAdjacentHTML("beforeend", iframeHtml);
 
