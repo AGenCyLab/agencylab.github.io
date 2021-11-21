@@ -1,46 +1,46 @@
 {
   "news": [
     {
+      "id": "rehab-team-visits-crp",
       "date": "25/05/2021",
       "title": "Rehab team visits CRP",
-      "description": "Our Rehab team has a successful meeting with the CRP physiotherapy team at Savar, Dhaka. Rehab team has shown demonstration for wearable sensors and  Kinect sensors to track limb movements",
-      "image": "images/news/crp.png",
-      "link": "news.html"
+      "description": "Our Rehab team has a successful meeting with the Centre for the Rehabilitation of the Paralysed (CRP) physiotherapy team at Savar, Dhaka. Rehab team has shown demonstration for wearable sensors and Kinect sensors to track limb movements",
+      "image": "images/news/crp.png"
     },
     {
+      "id": "paper-accepted-at-ieee-icip-2021-attention-toward-neighbors",
       "date": "20/05/2021",
       "title": "Paper accepted at IEEE ICIP 2021",
       "description": "Our paper 'Attention Toward Neighbors: A Context Aware Framework for High Resolution Image Segmentation', has been accepted in IEEE ICIP 2021. Congratulations to Niloy.",
-      "image": "images/news/icip2021.png",
-      "link": "news.html"
+      "image": "images/news/icip2021.png"
     },
     {
+      "id": "presentation-on-semi-supervised-variational-inference",
       "date": "17/04/2021",
       "title": "Presentation on semi-supervised variational interface",
       "description": "We have an online presentation and discussion on semi-supervised variational inference at 22:30 through Google Meet platform.",
-      "image": "images/news/semi-vae.png",
-      "link": "news.html"
+      "image": "images/news/semi-vae.png"
     },
     {
+      "id": "paper-accepted-at-ijcnn-2021-structure-aware-hierarchical",
       "date": "10/04/2021",
       "title": "Paper accepted at IJCNN 2021",
       "description": "Our paper 'Structure-Aware Hierarchical Graph Pooling using Information Bottleneck', has been accepted in IJCNN 2021 (Core Rank: A). Congratulations to Kashob and Amit.",
-      "image": "images/news/ijcnn2021.png",
-      "link": "news.html"
+      "image": "images/news/ijcnn2021.png"
     },
     {
+      "id": "paper-accepted-at-ijcnn-2021-node-embedding-using-mutual-information",
       "date": "10/04/2021",
       "title": "Paper accepted at IJCNN 2021",
       "description": "Our paper 'Node Embedding using Mutual Information and Self-Supervision based Bi-level Aggregation', has been accepted in IJCNN 2021 (Core Rank: A). Congratulations to Kashob and Amit.",
-      "image": "images/news/ijcnn2021.png",
-      "link": "news.html"
+      "image": "images/news/ijcnn2021.png"
     },
     {
+      "id": "paper-accepted-at-pakdd-2021-hierarchical-self-attention",
       "date": "09/02/2021",
       "title": "Paper accepted at PAKDD 2021",
       "description": "Our Human Activity Recognition paper 'Hierarchical Self Attention Based Autoencoder for Open-Set Human Activity Recognition', has been accepted in PAKDD 2021 (Core Rank: A). Congratulations to Saif and Tanjid.",
-      "image": "images/news/pakdd2021.png",
-      "link": "news.html"
+      "image": "images/news/pakdd2021.png"
     },
     {
       "date": "10/04/2021",
