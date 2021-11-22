@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>News Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="js/web-components/NavBar.js"></script>
+    <script src="js/web-components/NewsDetails.js"></script>
+
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div class="row-fluid"></div>
+    </div>
+
+    <div id="footer"></div>
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- for date time parsing -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"
+      integrity="sha512-R3qVfQx4LUWixeZgtptH0NDb+/FB8qVflpPQUKzDQlz1zKE3BiN4wG3aBUwzabgMo/45MXHucjcC2/BWBxMJwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- for date formatting -->
+    <script src="js/utils.js"></script>
+
+    <!-- for loading news details -->
+    <script src="js/load-news-details.js"></script>
+
+    <!-- for listening to changes to window hash -->
+    <script>
+      window.onhashchange = function () {
+        loadNewsDetails();
+      };
+    </script>
+  </body>
+</html>
