@@ -31,56 +31,16 @@
 
     <div class="container">
       <div class="row-fluid">
-        <div class="span12">
-          <div id="main-carousel" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img
-                  src="images/featured/featured1.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
-                <div class="carousel-caption">
-                  <h4>Photo session after a successful workshop</h4>
-                  <!-- -->
-                  <p></p>
-                </div>
-              </div>
-              <div class="item">
-                <img
-                  src="images/featured/researchers.png"
-                  class="carousel-image"
-                  alt=""
-                />
-                <div class="carousel-caption">
-                  <h4>Researchers</h4>
-                  <p></p>
-                </div>
-              </div>
-              <div class="item">
-                <img
-                  src="images/featured/featured2.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
-                <div class="carousel-caption">
-                  <h4>Workshop on CERN data analysis framework ROOT</h4>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <a
-              class="left carousel-control"
-              href="#main-carousel"
-              data-slide="prev"
-              >‹</a
-            >
-            <a
-              class="right carousel-control"
-              href="#main-carousel"
-              data-slide="next"
-              >›</a
-            >
+        <div class="span12 group-photo-container">
+          <img
+            id="group-photo"
+            src="/images/featured/group_photo_nov_2021.jpg"
+          />
+          <div class="group-photo-heading">
+            <p>
+              Group photo of the collaborators and the researchers, November
+              2021
+            </p>
           </div>
         </div>
       </div>
@@ -131,9 +91,6 @@
     <!-- Javascript files -->
     <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      $("#main-carousel").carousel();
-    </script>
     <!-- for date time parsing -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"
