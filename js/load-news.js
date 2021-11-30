@@ -21,13 +21,13 @@ function loadNews() {
       );
       const otherNewsTargetDiv = document.querySelector("#other_news_content");
 
-      featuredNews.forEach(({ date, description, image, link, title }) => {
+      featuredNews.forEach(({ date, description, image, id, title }) => {
         const html = `<featured-news
                       date="${formatDate(date)}"
                       title="${title}"
                       description="${description}"
                       image=${image}
-                      link=${link}
+                      link="/news-details.html#${id}"
                     >
                     </featured-news>
       `;
