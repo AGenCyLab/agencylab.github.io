@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- use root domain folder to load the css inside subfolders -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/bootstrap-responsive.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MathJAX -->
+    <script type="text/x-mathjax-config;executed=false">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[', '\\]']],
+          processEscapes: true,
+        }
+      });
+    </script>
+    <!-- cdnjs is the recommended cdn for mathjax -->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <title>Sholo Guti (Bead 16)</title>
+  </head>
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div class="row-fluid">
+        <h1>
+          A Web-based Sholo Guti (Bead 16) Game that uses Reinforcement Learning
+          Agents
+        </h1>
+        <div class="author_date_pdf">
+          <span class="post-author">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Dr. Amin Ahsan Ali
+            <p class="post-date">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              December 04, 2021
+            </p>
+          </span>
+        </div>
+
+        <div class="blog-image-container">
+          <img src="/images/blog/sholo_guti.png" />
+          <em>Screenshot from Sholo Guti game</em>
+        </div>
+
+        <p>
+          We invite you to play the web-based <b>Sholo Guti (Bead 16)</b> game
+          built by our own <b>Samin Bin Karim</b>, an CSE undergrad from IUB and
+          intern at AGenCy Lab. It is in its early state of development but
+          playable.
+        </p>
+        <p>
+          Samin used <b>Unity3D</b> and RL-Agents with the aim to create a
+          platform that could be used to train and test state-of-the art
+          Reinforcement Learning Algorithms in an indigenous game that has
+          almost no prior work done. The aim was to create an environment that
+          can be accessed using python to enable easier training while also
+          being a game playable with trained agents on multiple platforms.
+        </p>
+        <p>
+          Sholo Guti poses an interesting challenge to AI with a state space
+          complexity of $10^{17}$, which is comparable to the state space
+          complexity $(10^{18})$ of popularly researched games like Checkers.
+        </p>
+        <p>
+          Firstly, Alpha-Beta MinMax search was implemented for the game in
+          order to have a baseline against which to gauge the performance of the
+          RL Agents and also to train RL Agents against it. Samin trained agents
+          using two state-of-the art Reinforcement Learning Algorithms,
+          <b>Proximal Policy Optimization (PPO)</b> and
+          <b>Soft Actor Critic (SAC)</b>. The agents were trained against MinMax
+          opponents and against each other. The famous Open AI Five that
+          defeated Dota 2 champions in 2019 was using an implementation of the
+          PPO algorithm that had been adapted for training over large scale
+          distributed systems.
+        </p>
+        <p>
+          After some limited training using very small networks (64 x 64), two
+          fully connected layers, he managed to weakly solve the game. Both
+          agents trained with PPO and SAC, managed to learn rudimentary
+          defensive strategies for the initial phase of the game. The trained
+          agents were able to achieve high win-rates against shallow searching
+          Alpha Beta MinMax agents. However, MinMax Agents searching deeper
+          still outperform this RL agent. He is working on training better RL
+          agents.
+        </p>
+        <p>
+          We would appreciate your comments and suggestions about the game. You
+          can check it out at
+          <a>https://saminbinkarim.itch.io/sholo-guti-project</a>
+        </p>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
+    <script src="/js/post.js"></script>
+  </body>
+</html>

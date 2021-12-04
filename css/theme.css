@@ -976,3 +976,16 @@ ul.sponsors {
   text-transform: capitalize;
   font-size: 1.8em;
 }
+
+.blog-image-container {
+  text-align: center;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-image-container > img {
+  margin-bottom: 8px;
+  max-height: 60vh;
+  object-fit: cover;
+}

@@ -78,6 +78,13 @@
   ],
   "blogPostData": [
     {
+      "date": "04/12/2021",
+      "title": "A Web-based Sholo Guti (Bead 16) Game",
+      "link": "resource-contents/5_sholo_guti.html",
+      "author": "Dr. Amin Ahsan Ali",
+      "image": "images/blog/sholo_guti.png"
+    },
+    {
       "date": "05/11/2021",
       "title": "Mathematics and Statistics for Undergraduate Computer Science and Engineering Students",
       "link": "resource-contents/4_cse_math_booklist.html",
