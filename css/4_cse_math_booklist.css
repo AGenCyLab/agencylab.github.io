@@ -2791,6 +2791,7 @@ h2 {
   widows: 2;
   text-align: left;
 }
+
 h3 {
   padding-top: 16pt;
   color: #434343;
@@ -2801,7 +2802,7 @@ h3 {
   page-break-after: avoid;
   orphans: 2;
   widows: 2;
-  text-align: left;
+  text-align: center;
 }
 h4 {
   padding-top: 14pt;
