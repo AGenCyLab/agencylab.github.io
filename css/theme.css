@@ -989,3 +989,19 @@ ul.sponsors {
   max-height: 60vh;
   object-fit: cover;
 }
+
+.page-404-inner-container {
+  padding: 16px 0;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-404-inner-container a {
+  font-size: 1.5em;
+  margin: unset;
+  padding: unset;
+  padding: 16px 0;
+}
