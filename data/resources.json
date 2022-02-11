@@ -112,5 +112,21 @@
       "author": "Mir Sazzat Hossain",
       "image": "images/blog/group_theory.jpg"
     }
+  ],
+  "undergraduatePostData": [
+    {
+      "date": "11/02/2022",
+      "title": "Assessment of Rehabilitation Exercises from Depth Sensor Data",
+      "image": "images/blog/thesis_rehab.png",
+      "slideLink": "",
+      "reportLink": "/pdfs/ThesisRehab.pdf"
+    },
+    {
+      "date": "11/02/2022",
+      "title": "Creating an Open-AI gym like environment for Bangladeshi game Shologuti using Unity 3D and MLAgents",
+      "image": "images/blog/shologuti_ss.png",
+      "slideLink": "/pdfs/shologuti_slides.pdf",
+      "reportLink": "/pdfs/shologuti_report.pdf"
+    }
   ]
 }

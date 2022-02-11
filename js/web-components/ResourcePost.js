@@ -15,7 +15,7 @@ resourcePostTemplate.innerHTML = `
   <div class="resource-container">
     <div class="resource-description-container">
       <div>
-        <h3><a href="" class="resource-title"></a></h3>
+        <h3><a href="" target="_blank" class="resource-title"></a></h3>
 
         <div class="media">
           <div class="resource-date-container">
@@ -31,6 +31,7 @@ resourcePostTemplate.innerHTML = `
 
         <p class="resource-preview"></p>
       </div>
+      
       <a href="" target="_blank" class="btn btn-info read-more-btn"></a>
     </div>
 
@@ -142,6 +143,39 @@ class ResourcePost extends HTMLElement {
     this.shadowRoot.querySelector(".read-more-btn").innerHTML = "Read Post";
   }
 
+  renderUndergradProject({ date, title, slideLink, reportLink, image }) {
+    this.setDate(date);
+    this.setTitle(title);
+    this.setImage(image, title);
+
+    if (Boolean(slideLink)) {
+      // if slide link exists, we want to have two buttons
+      this.setLink(slideLink);
+      this.shadowRoot.querySelector(".read-more-btn").innerHTML = "View Slides";
+    } else {
+      // remove the previously exising button as declared in the template
+      this.shadowRoot.querySelector(".read-more-btn").remove();
+    }
+
+    if (Boolean(reportLink)) {
+      // create the new button
+      const viewReportButton = `
+      <a href="${reportLink}" target="_blank" class="btn btn-info read-more-btn">View Report</a>
+      `;
+
+      this.shadowRoot
+        .querySelector(".resource-description-container")
+        .insertAdjacentHTML("beforeend", viewReportButton);
+
+      // if slide link is missing, update title link with report link
+      if (!Boolean(slideLink)) {
+        this.setLink(reportLink);
+      }
+    }
+
+    this.shadowRoot.querySelector(".resource-author-container").remove();
+  }
+
   renderContent(context, data) {
     if (!Boolean(context)) return;
 
@@ -151,17 +185,21 @@ class ResourcePost extends HTMLElement {
       this.renderSlide(data);
     } else if (context === "video") {
       this.renderVideo(data);
+    } else if (context === "undergrad-project") {
+      this.renderUndergradProject(data);
     }
   }
 
   connectedCallback() {
-    // will be one of ["blog", "slide", "video"]
+    // will be one of ["blog", "slide", "video", "undergrad-project"]
     const context = this.getAttribute("context");
 
     // the rest will be passed as props
     const date = this.getAttribute("date");
     const title = this.getAttribute("title");
     const link = this.getAttribute("link");
+    const slideLink = this.getAttribute("slide-link");
+    const reportLink = this.getAttribute("report-link");
     const author = this.getAttribute("author");
     const image = this.getAttribute("image");
     const description = this.getAttribute("description");
@@ -170,6 +208,8 @@ class ResourcePost extends HTMLElement {
       date,
       title,
       link,
+      slideLink,
+      reportLink,
       author,
       image,
       description,

@@ -115,12 +115,46 @@ function renderBlogPost(blogPostData) {
   });
 }
 
+function renderUndergraduatePostData(undergraduatePostData) {
+  const undergradProjectsTargetDiv = document.querySelector(
+    "#undergrad-contents"
+  );
+  const sidebarTarget = document.querySelector(".nav-list");
+
+  let id = "undergrad-projects";
+  renderHeading("h2", id, "Undergraduate Projects", undergradProjectsTargetDiv);
+  let navigation = `
+    <li>
+      <a href="#${id}">Undergraduate Projects</a>
+    </li>
+  `;
+  sidebarTarget.insertAdjacentHTML("beforeend", navigation);
+
+  undergraduatePostData.forEach(
+    ({ date, title, image, slideLink, reportLink }) => {
+      const html = `
+        <resource-post
+          context="undergrad-project"
+          date="${formatDate(date)}"
+          image="${image}"
+          title="${title}"
+          slide-link="${slideLink}"
+          report-link="${reportLink}"
+        ></resource-post>
+      `;
+
+      undergradProjectsTargetDiv.insertAdjacentHTML("beforeend", html);
+    }
+  );
+}
+
 fetch("/data/resources.json")
   .then((response) => response.json())
-  .then(({ slideData, videoData, blogPostData }) => {
+  .then(({ slideData, videoData, blogPostData, undergraduatePostData }) => {
     renderBlogPost(blogPostData);
     renderSlideData(slideData);
     renderVideoData(videoData);
+    renderUndergraduatePostData(undergraduatePostData);
 
     // refresh scroll spy since we finished adding sidebar elements dynamically
     $(document.body).scrollspy("refresh");
