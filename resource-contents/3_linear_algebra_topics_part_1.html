@@ -96,8 +96,15 @@
           </a>
         </div>
         <div class="blog-image-container">
-          <img src="/images/blog/topics_on_la.png" />
-          <em>Projection of a 3D vector onto a 2D plane</em>
+          <img src="/images/blog/topics_on_la_part_1.png" />
+          <em
+            >Matrix Multiplication. Courtesy:
+            <a
+              href="https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices/x9e81a4f98389efdf:multiplying-matrices-by-matrices/a/multiplying-matrices"
+            >
+              Khan Academy
+            </a></em
+          >
         </div>
         <h3>Matrix Multiplication</h3>
         <br />
@@ -145,10 +152,11 @@
               a_n b^*_n \tag{$\text{Sum of rank 1 matrices}$} \end{align*}
             </li>
             <li>
-              \begin{gather*} \textbf{AB} = \textbf{A} \begin{bmatrix} | & | & &
-              | \\ \textbf{b_1} & \textbf{b_2} & \ldots & \textbf{b_p} \\ | & |
-              & & | \end{bmatrix} = \begin{bmatrix} \textbf{Ab_1} &
-              \textbf{Ab_2} & \ldots & \textbf{Ab_p} \end{bmatrix} \end{gather*}
+              \begin{align*} \textbf{AB} = \textbf{A} \begin{bmatrix} | & | & &
+              | \\ \textbf{b}_1 & \textbf{b}_2 & \ldots & \textbf{b}_{p} \\ | &
+              | & & | \end{bmatrix} = \begin{bmatrix} \textbf{A} \textbf{b}_1 &
+              \textbf{A} \textbf{b}_2 & \ldots & \textbf{A} \textbf{b}_{p}
+              \end{bmatrix} \end{align*}
             </li>
             <li>
               <p>From 3</p>
@@ -205,6 +213,62 @@
               \begin{gather*} \sum_{i=1}^n (\textbf{A} {x}_i)(\textbf{A}
               {x}_i)^T = \textbf{A} (\sum {x}_i {x}_i^T) \textbf{A}^T =
               \textbf{A} \textbf{X} \textbf{X}^T \textbf{A}^T \end{gather*}
+            </li>
+            <li>
+              <p>Diagonal Matrices</p>
+              <ol type="a">
+                <li>
+                  \begin{gather*} \textbf{P}\textbf{D} = \underbrace{
+                  \begin{bmatrix} | & | & & | \\ | & | & & | \\ \textbf{p}_1 &
+                  \textbf{p}_2 & \ldots & \textbf{p}_{m} \\ | & | & & | \\ | & |
+                  & & | \\ \end{bmatrix} }_{m \times m} \underbrace{
+                  \begin{bmatrix} d_1 & 0 & ... & 0 \\ 0 & d_2 & ... & 0 \\
+                  \vdots & \vdots & ... & \vdots \\ 0 & 0 & ... & d_{m}
+                  \end{bmatrix} }_{m \times m} = \begin{bmatrix} | & | & & | \\
+                  d_1\textbf{p}_1 & d_2\textbf{p}_2 & \ldots & d_m\textbf{p}_{m}
+                  \\ | & | & & | \end{bmatrix} \end{gather*} \begin{gather*}
+                  \textbf{D}\textbf{P} = \underbrace{ \begin{bmatrix} d_1 & 0 &
+                  ... & 0 \\ 0 & d_2 & ... & 0 \\ \vdots & \vdots & \ddots &
+                  \vdots \\ 0 & 0 & ... & d_{m} \end{bmatrix} }_{m \times m}
+                  \underbrace{ \begin{bmatrix} | & | & & | \\ | & | & & | \\
+                  \textbf{p}_1 & \textbf{p}_2 & \ldots & \textbf{p}_{m} \\ | & |
+                  & & | \\ | & | & & | \end{bmatrix} }_{m \times m} =
+                  \begin{bmatrix} - d_1\textbf{p}_1^* - \\ - d_2\textbf{p}_2^* -
+                  \\ \vdots \\ - d_m\textbf{p}_m^* - \\ \end{bmatrix}
+                  \end{gather*}
+                </li>
+                <li>
+                  \begin{gather*} \textbf{U}\Sigma = \underbrace{
+                  \begin{bmatrix} | & | & & | \\ | & | & & | \\ \textbf{u}_1 &
+                  \textbf{u}_2 & \ldots & \textbf{u}_{m} \\ | & | & & | \\ | & |
+                  & & | \\ \end{bmatrix} }_{m \times m} \underbrace{
+                  \begin{bmatrix} \sigma_1 & 0 & 0 & ... & 0 & 0 & 0 \\ 0 &
+                  \sigma_2 & 0 & ... & 0 & 0 & 0 \\ 0 & 0 & \sigma_3 & ... & 0 &
+                  0 & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots & \vdots &
+                  \vdots \\ 0 & 0 & 0 & ... & \sigma_{r} & 0 & 0 \\ & & & \vdots
+                  \\ 0 & 0 & 0 & ... & 0 & 0 & 0 \end{bmatrix} }_{m \times n} =
+                  \underbrace{ \begin{bmatrix} | & | & & | & | & & | \\ | & | &
+                  & | & | & & | \\ \sigma_1\textbf{u}_1 & \sigma_2\textbf{u}_2 &
+                  \ldots & \sigma_r\textbf{u}_{r} & \textbf{0} & \ldots &
+                  \textbf{0}_n \\ | & | & & | & | & & | \\ | & | & & | & | & & |
+                  \\ \end{bmatrix} }_{m \times n} \end{gather*}
+                </li>
+
+                <li>
+                  \begin{gather*} \textbf{U}\Sigma\textbf{V^T} = \underbrace{
+                  \begin{bmatrix} | & | & & | & | & & | \\ | & | & & | & | & & |
+                  \\ \sigma_1\textbf{u}_1 & \sigma_2\textbf{u}_2 & \ldots &
+                  \sigma_r\textbf{u}_{r} & \textbf{0} & \ldots & \textbf{0}_n \\
+                  | & | & & | & | & & | \\ | & | & & | & | & & | \\
+                  \end{bmatrix} }_{m \times n} \underbrace{ \begin{bmatrix} -
+                  \textbf{v}_1^* - \\ - \textbf{v}_2^* - \\ \vdots \\ -
+                  \textbf{v}_n^* - \\ \end{bmatrix} }_{n \times n} \\ =
+                  \sigma_1\textbf{u}_1\textbf{v}_1^* +
+                  \sigma_2\textbf{u}_2\textbf{v}_2^* +
+                  \sigma_3\textbf{u}_3\textbf{v}_3^* + \ldots +
+                  \sigma_r\textbf{u}_r\textbf{v}_r^* + \textbf{0} \end{gather*}
+                </li>
+              </ol>
             </li>
           </ol>
         </div>
