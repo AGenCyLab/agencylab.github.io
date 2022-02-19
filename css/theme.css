@@ -986,6 +986,16 @@ ul.sponsors {
 
 .blog-image-container > img {
   margin-bottom: 8px;
-  max-height: 60vh;
+  max-height: 65vh;
   object-fit: cover;
+}
+
+.blog-content-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-content-image-container > img {
+  margin: 8px 0;
 }

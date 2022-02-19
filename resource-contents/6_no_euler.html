@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Resources: Do Computer Scientists need to "Learn" Calculus of Variations?
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- use root domain folder to load the css inside subfolders -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/bootstrap-responsive.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MathJAX -->
+    <script type="text/x-mathjax-config;executed=false">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[', '\\]']],
+          processEscapes: true,
+        },
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <!-- cdnjs is the recommended cdn for mathjax -->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div class="row-fluid">
+        <h1>Do Computer Scientists need to "Learn" Calculus of Variations?</h1>
+        <div class="author_date_pdf">
+          <span class="post-author">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Professor Dr. Arshad Momen
+            <p class="post-date">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              February 12, 2022
+            </p>
+          </span>
+          <a target="_blank" href="/pdfs/No_Euler.pdf" class="pdf_link">
+            <i class="fa fa-file-pdf-o"></i> PDF
+          </a>
+        </div>
+        <div class="blog-image-container">
+          <img src="/images/blog/no_euler.png" />
+          <em>The "energy" functional of "harmonic maps"</em>
+        </div>
+        <p>
+          In regular differential calculus courses, one picks a function ( which
+          can be thought of as an element of a vector space ) and they vary its
+          argument and then see how it changes etc. This is the standard story.
+          But there are other calculus' too. Let us consider a functional which
+          is a map from a vector space $V$ ( which in our case will be a
+          function space ) to the reals:
+        </p>
+        <div>
+          \begin{equation} I : \Phi \in V \rightarrow \mathbb{R} , \qquad \quad
+          I[\Phi] = \int F(\Phi(\textbf{x}), \nabla \Phi,
+          \textbf{x})~d\textbf{x} \label{1} \end{equation}
+        </div>
+        <p>
+          where $F$ is a function of $\Phi$, its derivatives and on
+          $\textbf{x}$. But note $I$ is not a function of $\textbf{x}$.
+        </p>
+        <p>
+          We will hereafter think that the change of $\Phi$ is caused by the
+          change of its functional form but not in its argument $\textbf{x}$.
+          Let me give an example by considering a simple example in 1D. Say
+          $\Phi(\textbf{x})$, as its basis, has $1, x, x^2$, so that
+        </p>
+        <div>
+          \begin{equation} \Phi(x) = \alpha 1 + \beta x + \gamma x^2 \label{2}
+          \end{equation}
+        </div>
+        <p>
+          So the change in the function (in this view) is caused by the change
+          in the components $\{ \alpha, \beta, \gamma\}$.
+        </p>
+        <p>
+          Therefore, when the basis (\ref{2}) is used in the example (\ref{1})
+          one should get
+        </p>
+        <div>$$I = I ( \alpha, \beta, \gamma )$$</div>
+        <p>
+          Therefore after a choice of finite number of "basis" for the function,
+          the problem will reduce to a problem of multivariate calculus.
+        </p>
+        <p>
+          Let us look at a more standard example, the problem of "harmonic
+          maps". The "energy" functional for these type of maps is given by
+        </p>
+        <div>
+          \begin{equation} I = \frac{1}{2} \int d^D \textbf{x} \left[~ \nabla
+          \Phi(\textbf{x}) \cdot \nabla \Phi(\textbf{x}) ~\right]. \label{sigma}
+          \end{equation}
+        </div>
+        <p>
+          If the function $I$ is an extremum, its change under an infinitesimal
+          change in $\Phi$ should be zero ( just like the extrema of a function
+          ):
+        </p>
+        <div>
+          \begin{equation} I[\Phi + \delta \Phi ] - I[\Phi] \equiv E[\Phi] \cdot
+          \delta \Phi = 0 \rightarrow E[\Phi]=0 \label{varia} \end{equation}
+        </div>
+        <p>
+          for infinitesimal $\delta \Phi$, where we have tossed out terms
+          quadratic and higher in $\delta \Phi$. For example (\ref{2}), this
+          change will be caused by the changes $(\delta \alpha, \delta \beta ,
+          \delta \gamma)$ i.e. for each component of the vector $\delta \Phi$
+          which are all infinitesimals of first order.
+        </p>
+        <p>
+          Let us compute the variation when one has (\ref{sigma}) for our system
+          (which we take to be one dimensional):
+        </p>
+        <div>
+          $$ I[\Phi + \delta \Phi ] - I [\Phi] \equiv \delta I = \frac{1}{2}
+          \int dx~ \left[ \bigg(\frac{d \Phi }{dx} + \frac{d( \delta
+          \Phi)}{dx}\bigg)^2 - \bigg( \frac{d \Phi }{dx}\bigg)^2 \right] = \int
+          dx~ \frac{d \Phi }{dx}\frac{d( \delta \Phi)}{dx} $$
+        </div>
+        <p>
+          where we have dropped the term quadratic in $\delta \Phi$ ( rather its
+          derivative ).
+        </p>
+        <p>
+          Integrating by parts and dropping the endpoint terms ( which are zero
+          as $\delta \Phi$ is zero at those endpoints), one gets
+        </p>
+        <div>$$ \delta I = -\int dx~ \frac{d^2 \Phi}{dx^2} \delta \Phi $$</div>
+        <p>
+          As $ \delta \Phi $ is arbitrary everywhere along the curve and this is
+          true for any infinitesimal $\delta \Phi$ around the "stationary"
+          point, we are then led to the equation for the extrema:
+        </p>
+        <div>
+          \begin{equation} \frac{d^2 \Phi}{dx^2} =0 \label{eq1} \end{equation}
+        </div>
+        <p>which is nothing but the Euler-Lagrange equation for this system.</p>
+        <p>
+          Now I am going to claim that if the discretized theory has the right
+          symmetries as the original theory - the ensuing relation will be the
+          correct finite difference equation which will give the same equation
+          in the continuum limit.
+        </p>
+        <p>
+          Note that the functional (\ref{sigma}) is invariant under $ x
+          \leftrightarrow -x$ and just simply means the energy is independent of
+          the orientation of the line. This feature must be
+        </p>
+        <div>
+          $$ I[\{\Phi_i\}] = \sum_i \left( \frac{\Phi_{i+1} - \Phi_i}{\Delta x}
+          \right) \left( \frac{\Phi_i - \Phi_{i-1}}{\Delta x} \right) =
+          \frac{1}{(\Delta x)^2} \sum_i \Phi_i \Big[ \left( \Phi_{i+1} +
+          \Phi_{i-1} \right) - \Phi_i \Big] $$
+        </div>
+        <p>As before we vary $\Phi_i$ independently ( i.e. pointwise )</p>
+        <div>
+          $$ \delta I = \sum_i \delta \Phi_i \Big[ \frac{\left( \Phi_{i+1} +
+          \Phi_{i-1} \right) - 2 \Phi_i }{(\Delta x)^2} \Big] $$
+        </div>
+        <p>
+          As $\delta I = 0 $ under $\delta \Phi_i$ which are ( linearly)
+          independent one must have the coefficients of $\delta \Phi_i$ zero for
+          each $i$ , leading to
+        </p>
+        <div>
+          $$ \Big[ \frac{\left( \Phi_{i+1} + \Phi_{i-1} \right) - 2 \Phi_i
+          }{(\Delta x)^2} \Big] $$
+        </div>
+        <p>which is nothing but the discrete analog of (\ref{eq1}).</p>
+        <p>
+          So the apparent lesson is that if we understand the correct finitary
+          approximation to the continuum theory, one just can use the standard
+          multivariate calculus techniques without recoursing to Euler-Lagrange
+          eqs. or some such things.
+        </p>
+      </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
+    <script src="/js/post.js"></script>
+  </body>
+</html>

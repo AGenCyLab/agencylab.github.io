@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resources : Elements of Riemannian Geometry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- use root domain folder to load the css inside subfolders -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/bootstrap-responsive.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/blog_style.css" type="text/css" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MathJAX -->
+    <script type="text/x-mathjax-config;executed=false">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[', '\\]']],
+          processEscapes: true,
+        },
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <!-- cdnjs is the recommended cdn for mathjax -->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div class="row-fluid">
+        <h1>Elements of Riemannian Geometry</h1>
+        <div class="author_date_pdf">
+          <span class="post-author">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Professor Dr. Arshad Momen
+            <p class="post-date">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              August 07, 2021
+            </p>
+          </span>
+          <a target="_blank" href="/pdfs/Riemann_IUB.pdf" class="pdf_link">
+            <i class="fa fa-file-pdf-o"></i> PDF
+          </a>
+        </div>
+        <div class="blog-image-container">
+          <img src="/images/blog/geodesic.png" />
+          <em
+            >A geodesic is commonly a curve representing in some sense the
+            shortest path between two points in a surface, or more generally in
+            a Riemannian manifold</em
+          >
+        </div>
+
+        <p>
+          We saw that manifolds are sets whose subsets have a bijective mapping
+          to subsets of $\mathbb{R}^n$. As there is a natural differentiable
+          structure on $\mathbb{R}^n$ the manifold hence inherits a diffentiable
+          structure on it too.
+        </p>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+          "
+        >
+          <img src="/images/blog/manifold.png" style="height: 50vh" />
+          <p>Figure: <em>Map for Manifolds</em></p>
+        </div>
+
+        <p>
+          Now now can thus import the concept of "distance" in $\mathbb{R}^n$ to
+          the manifold $\mathcal{M}$ via the existence of this bijection.
+        </p>
+        <p>
+          The metric (which is a rank-2 symmetric tensor) is given by the
+          existence of the symmetric form :
+        </p>
+        <div>
+          \begin{equation} ds^2 = g_{ij}(x) dx^i dx^j \Rightarrow (ds)^2=(d
+          \pmb{x})^T G~ (d \pmb{x}) \end{equation}
+        </div>
+        <p>
+          where $G $ is a <u>symmetric</u> and <u>invertible</u> matrix
+          representing the metric $g_{ij}$.
+        </p>
+        <p>Let us consider a simple example:</p>
+        <p>
+          In the first quadrant in the $xy$ plane we can introduce the
+          coordinates $(u,v)$ :
+        </p>
+        <div>
+          \begin{equation} xy=u;~~ y=vx \Rightarrow x= \sqrt{\frac{u}{v}}, ~~~~
+          y= \sqrt{u v} \end{equation}
+        </div>
+        <p>
+          So that $ dx= \frac{1}{2} \sqrt{\frac{u}{v}}( \frac{du}{u} -
+          \frac{dv}{v})$ and $dy = \sqrt{uv}( \frac{du}{u} + \frac{dv}{v})$
+        </p>
+        <p>
+          Plugging this back into $ds^2 = dx^2 + dy^2 $ and carrying out the
+          standard algebra one ends up with the matrix for the
+        </p>
+        <div>
+          $$ G = \left( \begin{array}{ll} \frac{
+          \left(\sqrt{\frac{u}{v}}+\sqrt{u v}\right)}{u^2} & ~~\frac{
+          \left(\sqrt{u v}-\sqrt{\frac{u}{v}}\right)}{u v} \\ \frac{
+          \left(\sqrt{u v}-\sqrt{\frac{u}{v}}\right)}{u v} & ~~\frac{
+          \left(\sqrt{\frac{u}{v}}+\sqrt{u v}\right)}{v^2} \end{array} \right)
+          $$
+        </div>
+        <hr />
+        <p>
+          The presence of a metric thus allows us to define the arc length along
+          a curve $\pmb{x} = \pmb{x}(\tau)$, where $\tau$ is the parameter along
+          the arc:
+        </p>
+        <div>
+          \begin{equation} \int_A^B d\tau ~\sqrt{g_{ij}(\pmb{x})
+          \frac{d\pmb{x}^i}{d\tau} \frac{d\pmb{x}^j}{d\tau}} \label{length}
+          \end{equation}
+        </div>
+        <p>
+          An interesting property to note that this expression is invariant
+          under the reparameterization $\tau \rightarrow \tau'$ , establishing
+          that we are indeed measuring something geometrical related to the
+          curve.
+        </p>
+
+        <br />
+        <h3>The Geodesic</h3>
+        <p>
+          Our expression (\ref{length}) is valid for <b>any</b> curve. However
+          if one is interested in the shortest curve ( which is known as
+          <strong><em>geodesic</em></strong
+          >) between two points, one has to minimize the expression
+          (\ref{length}) under a local change
+        </p>
+        <div>
+          \begin{equation} \pmb{x} \rightarrow \pmb{x'} \equiv \pmb{x} +\delta
+          \pmb{x} \label{varia} \end{equation}
+        </div>
+        <p>
+          in the function $\pmb{x} : \tau \rightarrow \mathbb{R}^n$. Note that
+        </p>
+        <ol type="a">
+          <li>
+            We can think of the variation, $\delta \pmb{x} = \pmb{x'} - \pmb{x}
+            \equiv \epsilon ~\pmb{v}$ as a vector field defined over the curve
+            in question.
+          </li>
+          <div style="padding: 24px 0">
+            <img src="/images/blog/geodesic.png" />
+          </div>
+          <li>
+            The infinitesimal parameter $\epsilon$ is introduced just to
+            emphasize that we will only keep terms first order in $\epsilon$ in
+            our manipulations.
+          </li>
+        </ol>
+
+        <p>Let us rewrite (\ref{length}) as</p>
+        <div>
+          \begin{equation} s = \int_A^B d\tau \sqrt{F}, \qquad ~~ F\equiv F[g,
+          \pmb{x} ] = g_{ij}(\pmb{x}) \dot{x}^i \dot{x}^j \label{length2}
+          \end{equation}
+        </div>
+        <p>
+          If $s $ is a local extrema ( just like 1D calculus ) its change under
+          the change (\ref{varia}) will be zero: $ \delta s =0$. Thus
+        </p>
+        <div>
+          \begin{equation} \delta s = \frac{1}{2} \int d\tau~ \frac{1}{\sqrt{F}}
+          \delta F =0 \label{vary} \end{equation}
+        </div>
+        <p>
+          Now this equation shows that if we extremize instead the functional:
+        </p>
+        <div>
+          $$ s'= \int_A^B d\tau ~F \Rightarrow \delta s' = \int_A^B d\tau
+          ~\delta F $$
+        </div>
+        <p>i.e. we will end up with the same local minima. One can see</p>
+        <div>
+          $$ \delta F = \frac{\partial F}{\partial g_{ij}} \delta
+          g_{ij}(\pmb{x}) + \frac{\partial F}{\partial \dot{x}^i} \delta
+          \dot{x}^i = \dot{x}^i \dot{x}^j \delta g_{ij}(\pmb{x}) + 2
+          g_{ij}(\pmb{x}) \dot{x}^j \delta \dot{x}^i $$
+        </div>
+        <p>Now some math gymnastics ( Sorry! Tokyo Olympics is on ):</p>
+        <div>
+          $$ \delta \dot{x}^i = \frac{d}{d\tau} ( \delta x^i) \qquad \delta
+          g_{ij} = \frac{\partial g_{ij}}{\partial x^k } \delta x^k $$
+        </div>
+        <p>So that</p>
+        <div>
+          $$ \delta s' = \int_A^B d\tau \left[ \dot{x}^i \dot{x}^j
+          \frac{\partial g_{ij}}{\partial x^k } \delta x^k + 2 g_{kj} \dot{x}^j
+          \frac{d}{d\tau} ( \delta x^k) \right] $$
+        </div>
+        <p>The second term can be integrated by parts :</p>
+        <div>
+          $$\delta s' = \int_A^B d\tau \left[ \dot{x}^i \dot{x}^j \frac{\partial
+          g_{ij}}{\partial x^k } - 2 \frac{d}{d\tau}\left(g_{kj} \dot{x}^j
+          \right)\right] \delta x^k $$
+        </div>
+        <p>The "boundary" term vanishes as $\delta \pmb{x}$ vanish there.</p>
+        <p>So the geodesic equation can be obtained from the condition:</p>
+        <div>
+          $$ \frac{d}{d\tau}\left(g_{kj} \dot{x}^j \right) - \frac{1}{2}
+          \dot{x}^i \dot{x}^j \frac{\partial g_{ij}}{\partial x^k } = g_{jk}
+          \ddot{x}^k + \frac{\partial g_{jk}}{\partial x^i} \dot{x}^i \dot{x}^j
+          - \frac{1}{2} \dot{x}^i \dot{x}^j \frac{\partial g_{ij}}{\partial x^k
+          } = 0 $$
+        </div>
+        <p>
+          As $\dot{x}^i \dot{x}^j $ is symmetric under the exchange of the
+          indices $ i \leftrightarrow j$ we can rewrite the 2nd term
+        </p>
+        <div>
+          $$ \frac{\partial g_{jk}}{\partial x^i} \dot{x}^i \dot{x}^j =
+          \frac{1}{2} \left( \frac{\partial g_{jk}}{\partial x^i} +
+          \frac{\partial g_{ik}}{\partial x^j} \right)\dot{x}^i \dot{x}^j. $$
+        </div>
+        <p>Putting all of these together</p>
+        <div>
+          $$ g_{jk}( \pmb{x}) \ddot{x}^k + \frac{1}{2} \left[ \frac{\partial
+          g_{jk}}{\partial x^i} + \frac{\partial g_{ik}}{\partial x^j}
+          -\frac{\partial g_{ij}}{\partial x^k} \right] \dot{x}^i \dot{x}^j = 0.
+          $$
+        </div>
+        <p>
+          As $G=\{g_{jk}\}$ is an invertible matrix, we can remove the $g_{jk}$
+          from the first term :
+        </p>
+        <div>
+          \begin{equation} \ddot{x}^m + \Gamma^m_{ij} \dot{x}^i \dot{x}^j =0
+          \end{equation}
+        </div>
+        <p>where</p>
+        <div>
+          $$ \Gamma^m_{ij} \equiv \frac{1}{2} g^{mk} \left[ \frac{\partial
+          g_{jk}}{\partial x^i} + \frac{\partial g_{ik}}{\partial x^j}
+          -\frac{\partial g_{ij}}{\partial x^k} \right] $$
+        </div>
+        <p>
+          which is known as Christoffel's (second) symbol. Despite carrying
+          several indices it is not a tensor!
+        </p>
+        <p>Note $g^{ij}$ are the matrix elements of the inverse $G^{-1}$.</p>
+      </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document.body).scrollspy({
+          target: "#navparent",
+        });
+      });
+    </script>
+    <script src="/js/post.js"></script>
+  </body>
+</html>

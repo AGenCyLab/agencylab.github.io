@@ -78,6 +78,20 @@
   ],
   "blogPostData": [
     {
+      "date": "12/02/2022",
+      "title": "Do Computer Scientists need to 'Learn' Calculus of Variations?",
+      "link": "resource-contents/6_no_euler.html",
+      "author": "Professor Dr. Arshad Momen",
+      "image": "images/blog/no_euler.png"
+    },
+    {
+      "date": "20/12/2021",
+      "title": "Topics on Linear Algebra for Data Analysis - Part 2",
+      "link": "resource-contents/8_linear_algebra_topics_part_2.html",
+      "author": "Sugandha Roy, Hasnain Hossain",
+      "image": "images/blog/topics_on_la_part_2.png"
+    },
+    {
       "date": "04/12/2021",
       "title": "A Web-based Sholo Guti (Bead 16) Game",
       "link": "resource-contents/5_sholo_guti.html",
@@ -111,6 +125,13 @@
       "link": "resource-contents/2_group_theory.html",
       "author": "Mir Sazzat Hossain",
       "image": "images/blog/group_theory.jpg"
+    },
+    {
+      "date": "07/08/2021",
+      "title": "Elements of Riemannian Geometry",
+      "link": "resource-contents/7_riemann.html",
+      "author": "Professor Dr. Arshad Momen",
+      "image": "images/blog/geodesic.png"
     }
   ],
   "undergraduatePostData": [
