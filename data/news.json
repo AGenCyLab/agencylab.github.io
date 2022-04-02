@@ -1,6 +1,13 @@
 {
   "news": [
     {
+      "date": "08/03/2022",
+      "title": "AGenCy Lab Meetup",
+      "description": "We had the CCDS / AGenCy lab's big meetup today. The new faculty members Dr. M M Mahbubul Sayeed,  Dr. Asm Shihavuddin and Dr. Saadia Binte Alam who joined IUB this year, the current faculty members - Prof Arshad Momen, Prof Ashraful Amin, Dr. Amin Ahsan Ali and Dr. AKM Mahbubur Rahman,  the outgoing RAs, the new RAs, and the undergrads who are doing their senior project with us we present. We had a special session conducted by our outgoing RAs who received PhD admission with RAships/fellowships sharing their research experience and journey towards PhD admission. Special thanks to Amit Roy, Kashob Roy , Saif Mahmud Dhrubo and Tanjid Hasan Tonmoy, Fahim Faisal Niloy for sharing their phd admission experience.",
+      "image": "images/news/group_photo_mar_2022.jpg",
+      "link": "news.html"
+    },
+    {
       "date": "25/05/2021",
       "title": "Rehab team visits CRP",
       "description": "Our Rehab team has a successful meeting with the CRP physiotherapy team at Savar, Dhaka. Rehab team has shown demonstration for wearable sensors and  Kinect sensors to track limb movements",

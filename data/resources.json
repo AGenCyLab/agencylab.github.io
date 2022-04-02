@@ -78,6 +78,13 @@
   ],
   "blogPostData": [
     {
+      "date": "08/03/2022",
+      "title": "Higher Study Roadmap",
+      "link": "/pdfs/higher_study_roadmap.pdf",
+      "author": "Saif Mahmud, Kashob Roy, Amit Roy, Fahim Faisal Niloy, Tanjid Hasan Tonmoy, Sugandha Roy",
+      "image": "images/blog/higher_study_roadmap.png"
+    },
+    {
       "date": "12/02/2022",
       "title": "Do Computer Scientists need to 'Learn' Calculus of Variations?",
       "link": "resource-contents/6_no_euler.html",
