@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Paper accepted at IJCNN 2021</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <!-- for date time parsing -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"
+      integrity="sha512-R3qVfQx4LUWixeZgtptH0NDb+/FB8qVflpPQUKzDQlz1zKE3BiN4wG3aBUwzabgMo/45MXHucjcC2/BWBxMJwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/utils.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <script src="/js/web-components/NewsDetails.js"></script>
+
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div id="container-fluid">
+        <news-details date="10/04/2021">
+          <span slot="news-title">Paper accepted at IJCNN 2021</span>
+          <img slot="news-image" src="/images/news/ijcnn2021.png" />
+          <span slot="news-image-caption">IJCNN 2021</span>
+          <span slot="news-body">
+            Our paper 'Node Embedding using Mutual Information and
+            Self-Supervision based Bi-level Aggregation', has been accepted in
+            IJCNN 2021 (Core Rank: A). Congratulations to Kashob and Amit.
+          </span>
+        </news-details>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

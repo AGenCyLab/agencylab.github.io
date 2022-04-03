@@ -48,7 +48,7 @@ class FeaturedNews extends HTMLElement {
 
     if (featureDescription) {
       this.shadowRoot.querySelector(".feature-description").innerHTML =
-        featureDescription;
+        featureDescription + "...";
     }
 
     if (featureImage) {

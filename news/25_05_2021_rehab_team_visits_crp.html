@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rehab team visits CRP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <!-- for date time parsing -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"
+      integrity="sha512-R3qVfQx4LUWixeZgtptH0NDb+/FB8qVflpPQUKzDQlz1zKE3BiN4wG3aBUwzabgMo/45MXHucjcC2/BWBxMJwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/utils.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <script src="/js/web-components/NewsDetails.js"></script>
+
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div id="container-fluid">
+        <news-details date="25/05/2021">
+          <span slot="news-title">Rehab team visits CRP</span>
+          <img
+            style="max-height: 55vh"
+            class="tall-image"
+            slot="news-image"
+            src="/images/news/crp.png"
+          />
+          <span slot="news-image-caption">
+            A human skeleton as visualized by a Kinect Sensor
+          </span>
+          <span slot="news-body">
+            Our Rehab team has a successful meeting with the Center for the
+            Rehabilitation of the Paralyzed (CRP) physiotherapy team at Savar,
+            Dhaka. Rehab team has shown demonstration for wearable sensors and
+            Kinect sensors to track limb movements
+          </span>
+        </news-details>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
