@@ -12,35 +12,35 @@
       "title": "Rehab team visits CRP",
       "description": "Our Rehab team has a successful meeting with the CRP physiotherapy team at Savar, Dhaka. Rehab team has shown demonstration for wearable sensors and  Kinect sensors to track limb movements",
       "image": "images/news/crp.png",
-      "link": "news.html"
+      "link": "/news/25_05_2021_rehab_team_visits_crp.html"
     },
     {
       "date": "20/05/2021",
       "title": "Paper accepted at IEEE ICIP 2021",
       "description": "Our paper 'Attention Toward Neighbors: A Context Aware Framework for High Resolution Image Segmentation', has been accepted in IEEE ICIP 2021. Congratulations to Niloy.",
       "image": "images/news/icip2021.png",
-      "link": "news.html"
+      "link": "/news/20_05_2021_paper_accespted_at_IEEE_ICIP_2021.html"
     },
     {
       "date": "17/04/2021",
       "title": "Presentation on semi-supervised variational interface",
       "description": "We have an online presentation and discussion on semi-supervised variational inference at 22:30 through Google Meet platform.",
       "image": "images/news/semi-vae.png",
-      "link": "news.html"
+      "link": "/news/17_04_2021_presentation_on_semi_supervised_vi.html"
     },
     {
       "date": "10/04/2021",
       "title": "Paper accepted at IJCNN 2021",
       "description": "Our paper 'Structure-Aware Hierarchical Graph Pooling using Information Bottleneck', has been accepted in IJCNN 2021 (Core Rank: A). Congratulations to Kashob and Amit.",
       "image": "images/news/ijcnn2021.png",
-      "link": "news.html"
+      "link": "/news/10_04_2021_struture_aware_hierarchical_graph_pooling_ijcnn_2021.html"
     },
     {
       "date": "10/04/2021",
       "title": "Paper accepted at IJCNN 2021",
       "description": "Our paper 'Node Embedding using Mutual Information and Self-Supervision based Bi-level Aggregation', has been accepted in IJCNN 2021 (Core Rank: A). Congratulations to Kashob and Amit.",
       "image": "images/news/ijcnn2021.png",
-      "link": "news.html"
+      "link": "/news/10_04_2021_node_embedding_using_mi_ijcnn_2021.html"
     },
     {
       "date": "09/02/2021",

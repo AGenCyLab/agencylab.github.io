@@ -39,7 +39,6 @@ class NewsDetails extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(newsDetailsTemplate.content.cloneNode(true));
-    this.disabledDuration = 10 * 1000;
   }
 
   setNewsDate(date) {
@@ -65,7 +64,7 @@ class NewsDetails extends HTMLElement {
       setTimeout(() => {
         copyNewsLinkButton.innerHTML = "Share News Link";
         copyNewsLinkButton.disabled = false;
-      }, this.disabledDuration);
+      }, 10 * 1000);
     });
   }
 }
