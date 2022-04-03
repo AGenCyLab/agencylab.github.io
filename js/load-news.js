@@ -25,7 +25,7 @@ function loadNews() {
         const html = `<featured-news
                       date="${formatDate(date)}"
                       title="${title}"
-                      description="${description}"
+                      description="${description.slice(0, 240)}"
                       image=${image}
                       link=${link}
                     >
