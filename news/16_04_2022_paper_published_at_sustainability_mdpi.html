@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Paper published at Sustainability 2022, MDPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <!-- for date time parsing -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"
+      integrity="sha512-R3qVfQx4LUWixeZgtptH0NDb+/FB8qVflpPQUKzDQlz1zKE3BiN4wG3aBUwzabgMo/45MXHucjcC2/BWBxMJwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/utils.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <script src="/js/web-components/NewsDetails.js"></script>
+
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div id="container-fluid">
+        <news-details date="16/04/2022">
+          <span slot="news-title"
+            >Paper published at Sustainability 2022, MDPI</span
+          >
+          <img slot="news-image" src="/images/news/mdpi_sustainability.png" />
+          <span slot="news-image-caption">Sustainability 2022, MDPI</span>
+          <span slot="news-body">
+            <p>
+              As a joint collaboration between Data and Design Lab and AGenCy
+              Lab with Center for Spatial Information Science (The University of
+              Tokyo) the paper titled "Understanding the Urban Environment from
+              Satellite Images with New Classification Method—Focusing on
+              Formality and Informality" has been published in Sustainability,
+              MDPI.
+            </p>
+            <p>
+              Based on easily accessible data from Google Earth, this work
+              develops and proposes a new urban environment classification
+              method focusing on formality and informality. Firstly, the method
+              gives a new model to scrutinize the urban environment based on the
+              buildings and their surroundings. Secondly, the method is suited
+              for the state-of-the-art machine learning processes that make it
+              applicable and scalable for forecasting, analytics, or
+              computational modeling. The paper first demonstrates the model and
+              its applicability based on the urban environment in the developing
+              world. The method divides the urban environment into 16 categories
+              under four classes. Then it is used to draw the urban environment
+              classes maps of the following emerging cities: Nairobi in Kenya,
+              Mumbai in India, Guangzhou in China, Jakarta in Indonesia, Cairo
+              in Egypt, and Lima in Chile. The characteristics of the different
+              urban environments and the differences between the same class in
+              different cities are presented. The paper also demonstrate the
+              agility of the proposed method by showing how this classification
+              method can be easily augmented with other data such as population
+              per square kilometer to aid the decision-making process
+            </p>
+          </span>
+        </news-details>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

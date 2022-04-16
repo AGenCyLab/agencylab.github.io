@@ -1,6 +1,13 @@
 {
   "news": [
     {
+      "date": "16/04/2022",
+      "title": "Paper published at Sustainability 2022, MDPI",
+      "description": "As a joint collaboration between Data and Design Lab and AGenCy Lab with Center for Spatial Information Science (The University of Tokyo) the paper titled \"Understanding the Urban Environment from Satellite Images with New Classification Method—Focusing on Formality and Informality\" has been published in Sustainability, MDPI.",
+      "image": "/images/news/mdpi_sustainability.png",
+      "link": "/news/16_04_2022_paper_published_at_sustainability_mdpi.html"
+    },
+    {
       "date": "08/03/2022",
       "title": "News on Graduate school admissions",
       "description": "Big congratulations to our RAs who have received admission to graduate program at top universities of USA.",
