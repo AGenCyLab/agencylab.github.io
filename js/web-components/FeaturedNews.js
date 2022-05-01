@@ -6,7 +6,7 @@ featuredNewsTemplate.innerHTML = `
   <div class="feature-container">
     <div class="centered">
       <a href="news.html">
-        <img class="news-content-img tall-image feature-img" src="" alt=""/>
+        <img loading="lazy" class="news-content-img tall-image feature-img" src="" alt=""/>
       </a>
     </div>
     <h5><span class="date feature-date"></span></h5>

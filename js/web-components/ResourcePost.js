@@ -36,7 +36,7 @@ resourcePostTemplate.innerHTML = `
     </div>
 
     <div class="resource-image-container">
-      <img src="" alt="" class="resource-image"/>
+      <img loading="lazy" src="" alt="" class="resource-image"/>
     </div>
   </div>
 `;
