@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Session on Deep Learning Code Management held at IUB premises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGenCy Lab, Independent University Bangladesh"
+    />
+    <meta name="author" content="" />
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <!-- for date time parsing -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.1.1/luxon.min.js"
+      integrity="sha512-R3qVfQx4LUWixeZgtptH0NDb+/FB8qVflpPQUKzDQlz1zKE3BiN4wG3aBUwzabgMo/45MXHucjcC2/BWBxMJwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/utils.js"></script>
+
+    <script>
+      $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="/js/web-components/NavBar.js"></script>
+    <script src="/js/web-components/NewsDetails.js"></script>
+
+    <div id="header"></div>
+    <nav-bar></nav-bar>
+
+    <div class="container">
+      <div id="container-fluid">
+        <news-details date="24/05/2022">
+          <span slot="news-title"
+            >Session on Deep Learning Code Management Held at IUB Premises</span
+          >
+          <img
+            loading="lazy"
+            slot="news-image"
+            src="/images/news/dl_code_management_session.jpg"
+          />
+          <span slot="news-image-caption">
+            Group photo of the RAs at the Deep Learning Code Management Session
+          </span>
+          <span slot="news-body">
+            <p>
+              Recently, a general trend in the machine learning research
+              community is that most of the research papers include links to the
+              code of their experiments. As such, it becomes very much necessary
+              to be able to write DRY, scalable, and modular code that can
+              easily be used to reproduce experimental results. Additionally, it
+              is equally important to be able to tweak the network and dataset
+              parameters with minimal effort, which is critical when performing
+              ablation studies or simply trying to improve the architecture
+              trainable model.
+            </p>
+            <p>
+              In an endeavor to enlighten the existing and new RAs in this
+              regard, AGenCy Lab of the Centre for Computation and Data Science
+              (CCDS), IUB arranged a deep learning code management session at
+              the IUB premises on May 24, 2022 (Tuesday) at 7 PM. Our RAs Saif
+              Mahmud, Tanjid Hasan Tonmoay, and Mahieyin Rahmun were the
+              speakers in the session. They talked about how SOLID and DRY
+              principles can help in keeping the codebase modular and manageable
+              while at the same time can make working in teams require minimal
+              effort. Managing configuration files, project structuring, logging
+              and visualization, unit testing, and debugging were discussed.
+              Afterward, a short coding session was arranged where the
+              participants were required to code a basic image classification
+              model and apply the concepts they learned from the session.
+              Interested readers can find the presentation slides
+              <a
+                href="https://docs.google.com/presentation/d/1VpPfsRR36ImDQSDY59QelnFyem2_4eDqMsy21h8IgDY/edit?usp=sharing"
+                >here.</a
+              >
+            </p>
+          </span>
+        </news-details>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

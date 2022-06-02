@@ -1,6 +1,13 @@
 {
   "news": [
     {
+      "date": "24/05/2022",
+      "title": "Session on Deep Learning Code Management Held at IUB Premises",
+      "description": "Recently, a general trend in the machine learning research community is that most of the research papers include links to the code of their experiments. As such, it becomes very much necessary to be able to write DRY, scalable, and modular code that can easily be used to reproduce experimental results.",
+      "image": "/images/news/dl_code_management_session.jpg",
+      "link": "/news/24_05_2022_dl_code_management_session.html"
+    },
+    {
       "date": "16/04/2022",
       "title": "Paper published at Sustainability 2022, MDPI",
       "description": "As a joint collaboration between Data and Design Lab and AGenCy Lab with Center for Spatial Information Science (The University of Tokyo) the paper titled \"Understanding the Urban Environment from Satellite Images with New Classification Method—Focusing on Formality and Informality\" has been published in Sustainability, MDPI.",
